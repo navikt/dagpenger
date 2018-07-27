@@ -1,8 +1,8 @@
 package no.nav.dagpenger.joark.ruting
 
 import mu.KotlinLogging
-import no.nav.dagpenger.events.journalføring.InngåendeJournalpost
-import no.nav.dagpenger.events.journalføring.Journalpost
+import no.nav.dagpenger.events.avro.journalføring.InngåendeJournalpost
+import no.nav.dagpenger.events.avro.journalføring.Journalpost
 import no.nav.dagpenger.streams.BlurgObject
 import no.nav.dagpenger.streams.Service
 import no.nav.dagpenger.streams.Topics.INNGÅENDE_JOURNALPOST
@@ -38,7 +38,7 @@ class JoarkRuting(
     }
 
     override fun stop() {
-        streams?.close()
+        streams.close()
     }
 
     fun setupStreams(): KafkaStreams {

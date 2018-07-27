@@ -45,4 +45,3 @@ fun addShutdownHookAndBlock(service: Service) {
     })
     Thread.currentThread().join()
 }
-

@@ -3,9 +3,9 @@ package no.nav.dagpenger.streams
 import io.confluent.kafka.serializers.AbstractKafkaAvroSerDeConfig
 import io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
 import no.nav.dagpenger.events.Person
-import no.nav.dagpenger.events.journalføring.InngåendeJournalpost
-import no.nav.dagpenger.events.journalføring.Journalpost
-import no.nav.dagpenger.events.journalføring.TynnInngåendeJournalpost
+import no.nav.dagpenger.events.avro.journalføring.InngåendeJournalpost
+import no.nav.dagpenger.events.avro.journalføring.Journalpost
+import no.nav.dagpenger.events.avro.journalføring.TynnInngåendeJournalpost
 import org.apache.avro.specific.SpecificRecord
 import org.apache.kafka.common.serialization.Serdes
 import org.apache.kafka.streams.Consumed
@@ -57,4 +57,3 @@ fun <K : Any, V : SpecificRecord> StreamsBuilder.consumeTopic(topic: Topic<K, V>
 fun <K, V> KStream<K, V>.toTopic(topic: Topic<K, V>) {
     return to(topic.name, Produced.with(topic.keySerde, topic.valueSerde))
 }
-

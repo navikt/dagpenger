@@ -1,4 +1,4 @@
-rootProject.name = "dagpenger"
+//rootProject.name = "dagpenger"
 
 include(
     "events",

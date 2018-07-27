@@ -1,8 +1,8 @@
 import org.jetbrains.kotlin.js.config.EcmaVersion.defaultVersion
 
 plugins {
-    kotlin("jvm")
     application
+    kotlin("jvm")
 }
 
 application {

@@ -1,7 +1,6 @@
 package no.nav.dagpenger.joark.mottak
 
-import io.confluent.kafka.serializers.AbstractKafkaAvroSerDeConfig
-import no.nav.dagpenger.events.journalføring.TynnInngåendeJournalpost
+import no.nav.dagpenger.events.avro.journalføring.TynnInngåendeJournalpost
 import no.nav.dagpenger.streams.Topics.JOARK_EVENTS
 import org.apache.kafka.clients.producer.KafkaProducer
 import org.apache.kafka.clients.producer.ProducerConfig

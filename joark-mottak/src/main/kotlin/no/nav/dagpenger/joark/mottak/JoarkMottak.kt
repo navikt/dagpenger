@@ -1,10 +1,10 @@
 package no.nav.dagpenger.joark.mottak
 
-import no.nav.dagpenger.events.journalføring.InngåendeJournalpost
-import no.nav.dagpenger.events.journalføring.JournalTilstand
-import no.nav.dagpenger.events.journalføring.TynnInngåendeJournalpost
-import no.nav.dagpenger.streams.Service
+import no.nav.dagpenger.events.avro.journalføring.InngåendeJournalpost
+import no.nav.dagpenger.events.avro.journalføring.JournalTilstand
+import no.nav.dagpenger.events.avro.journalføring.TynnInngåendeJournalpost
 import no.nav.dagpenger.streams.BlurgObject
+import no.nav.dagpenger.streams.Service
 import no.nav.dagpenger.streams.Topics.INNGÅENDE_JOURNALPOST
 import no.nav.dagpenger.streams.Topics.JOARK_EVENTS
 import no.nav.dagpenger.streams.addShutdownHookAndBlock
@@ -58,7 +58,6 @@ class JoarkMottak(
         var journalpost = journalpostArkiv.hentInngåendeJournalpost(inngåendeJournalpost.getId())
 
         return mapToInngåendeJournalpost(journalpost)
-
     }
 
     private fun mapToInngåendeJournalpost(journalpost: String): InngåendeJournalpost =
