@@ -3,6 +3,7 @@ rootProject.name = "dagpenger"
 include(
     "events",
     "joark-mottak",
+    "joark-ruting",
     "streams"
 )
 
