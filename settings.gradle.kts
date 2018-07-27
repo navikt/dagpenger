@@ -2,6 +2,7 @@ rootProject.name = "dagpenger"
 
 include(
     "events",
+    "streams"
 )
 
 pluginManagement {
