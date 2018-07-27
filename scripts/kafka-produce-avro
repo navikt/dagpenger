@@ -1,0 +1,20 @@
+#!/bin/bash
+#set -x
+
+TOPIC=${1:-dagpenger}
+#MAX_MESSAGES=${2:-0}
+
+PARAMS=(
+        --broker-list kafka:9092
+        --topic $TOPIC
+        --property schema.registry.url=http://schema-registry:8081
+        --property value.schema='{"type":"record","name":"myrecord","fields":[{"name":"f1","type":"string"}]}'
+)
+
+#if [ $MAX_MESSAGES -gt "0" ]; then
+#        PARAMS+=(--max-messages $MAX_MESSAGES)
+#fi
+
+docker-compose exec schema-registry \
+        kafka-avro-console-producer \
+        "${PARAMS[@]}"

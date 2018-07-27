@@ -1,0 +1,18 @@
+#!/bin/bash
+
+TOPIC=${1:-dagpenger}
+MAX_MESSAGES=${2:-0}
+
+PARAMS=(
+        --bootstrap-server kafka:9092
+        --topic $TOPIC
+        --from-beginning
+)
+
+if [ $MAX_MESSAGES -gt "0" ]; then
+        PARAMS+=(--max-messages $MAX_MESSAGES)
+fi
+
+docker-compose exec kafka  \
+        kafka-console-consumer \
+        "${PARAMS[@]}"
