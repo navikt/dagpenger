@@ -1,5 +1,9 @@
 rootProject.name = "dagpenger"
 
+include(
+    "events",
+)
+
 pluginManagement {
     repositories {
         gradlePluginPortal()

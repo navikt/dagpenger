@@ -1,0 +1,42 @@
+@namespace("no.nav.dagpenger.events.avro.journalføring")
+protocol Journalføring {
+  enum JournalTilstand {
+    MIDLERTIDIG,
+    UTGAAR,
+    ENDELIG
+  }
+
+  record InngåendeJournalpost {
+    string id;
+    string avsenderId;
+    string forsendelseMottatt;
+    string tema;
+    JournalTilstand journalTilstand;
+    string journalførendeEnhet;
+  }
+
+  record Journalpost {
+    /** Unik identifikator for journalposten */
+    string journalpostId;
+
+    union { null, string } avsender = null;
+
+    /** Beskriver innhold i hoveddokumentet */
+    union { null, string } innhold = null;
+
+    /** Hvilken sak journalposten gjelder */
+    union { null, string } arkivSak = null;
+
+    /** Tema/fagområde for forsendelsen */
+    string tema;
+
+    /** Personen/organisasjonen journalposten gjelder */
+    union { null, string } bruker = null;
+
+    /** Hoveddokumentet for journalposten */
+    union { null, string } hoveddokument = null;
+
+    /** Vedlegg */
+    union { null, array<string> } vedleggListe = null;
+  }
+}

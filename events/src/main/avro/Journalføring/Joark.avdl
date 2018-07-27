@@ -1,0 +1,12 @@
+@namespace("no.nav.dagpenger.events.avro.journalføring")
+protocol Joark {
+/**
+  Joark produserer kun tynne hendelser. Vi må hente dataen via eksisterende WS-tjenester
+  */
+  record TynnInngåendeJournalpost {
+  /**
+    Unik identifikator for journalposten
+    */
+    string id;
+  }
+}
