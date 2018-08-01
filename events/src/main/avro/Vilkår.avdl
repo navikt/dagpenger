@@ -1,0 +1,29 @@
+@namespace("no.nav.dagpenger.events.avro")
+protocol Dagpenger {
+  import idl "vilkår/ReellArbeidssøker.avdl";
+
+  enum Utfall {
+    JA,
+    NEI
+  }
+
+  record Regellogg {
+    string id;
+    string navn;
+    string type;
+    string utfall;
+    Regellogg parent;
+    array<Regellogg> children;
+  }
+
+  record Vilkår {
+    string id;
+    string navn;
+    Utfall utfall;
+    Regellogg logg;
+  /*union {
+    VilkårInntektData,
+    VilkårReellArbeidssøkerData
+  } data;*/
+  }
+}

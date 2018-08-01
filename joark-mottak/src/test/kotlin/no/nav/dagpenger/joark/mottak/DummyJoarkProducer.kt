@@ -25,7 +25,7 @@ class DummyJoarkProducer {
                 journalpostProducer.send(
                     ProducerRecord(JOARK_EVENTS.name, id, joarkJournalpost)
                 )
-                Thread.sleep(50000L)
+                Thread.sleep(5000L)
             }
         }
 

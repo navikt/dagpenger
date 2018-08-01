@@ -15,7 +15,7 @@ protocol Journalføring {
     string journalførendeEnhet;
   }
 
-  record Journalpost {
+  record Joursnalpost {
     /** Unik identifikator for journalposten */
     string journalpostId;
 

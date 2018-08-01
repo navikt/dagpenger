@@ -7,5 +7,5 @@ plugins {
 val avroVersion = "1.8.2"
 
 dependencies {
-    implementation("org.apache.avro:avro:$avroVersion")
+    api("org.apache.avro:avro:$avroVersion")
 }

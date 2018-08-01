@@ -1,0 +1,20 @@
+@namespace("no.nav.dagpenger.events")
+protocol Dagpenger {
+  record AktorID {
+    string id;
+  }
+
+  record Fødselsnummer {
+    string id;
+  }
+
+
+  record Person {
+    long id;
+    AktorID aktorId;
+    Fødselsnummer fnr;
+
+    //union { AktorID, Fnr } @aliases(["systemId"]) aktorOrFnr;
+  }
+
+}

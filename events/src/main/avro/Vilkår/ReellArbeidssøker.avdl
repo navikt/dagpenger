@@ -1,0 +1,25 @@
+@namespace("no.nav.dagpenger.events.avro.vilkår.reellarbeidssøker")
+protocol Dagpenger {
+
+
+  record Data {
+    boolean mobil;
+    boolean frisk;
+    boolean villig;
+    boolean whatevs;
+  }
+
+  record Tosdo {
+    string id;
+  /**
+    F.eks. LAG_ARENA_OPPGAVE, BEKREFT_VEDLEGG, OPPGI_BONDEGÅRDSINFORMASJON
+    */
+    string navn;
+  }
+
+  enum Todos {
+    BESVAR_VILLIG,
+    BESVAR_MOBIL,
+    BESVAR_FRISK
+  }
+}

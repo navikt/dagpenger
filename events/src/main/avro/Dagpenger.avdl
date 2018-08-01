@@ -1,0 +1,80 @@
+@namespace("no.nav.dagpenger.events.avro")
+protocol Dagpenger {
+  enum Rettighetstype {
+    DAGO,
+    LONN,
+    FISK,
+    PERM
+  }
+
+  enum Vedtakstype {
+    NY,
+    GJENOPPTAK,
+    UKJENT
+  }
+
+  enum Journaltilstand {
+    MIDLERTIDLIG,
+    FERDIGSTILT
+  }
+
+  record Journalpost {
+    string id;
+    Journaltilstand tilstand;
+    string gsakId;
+  }
+
+  record Sak {
+    string id;
+    string tidligereVedtak;
+  }
+
+  enum Utfall {
+    JA,
+    NEI
+  }
+
+
+  record Regellogg {
+    string id;
+    string navn;
+    string type;
+    string utfall;
+    Regellogg parent;
+    array<Regellogg> children;
+  }
+
+
+  record Vilkår {
+    string id;
+    string navn;
+    Utfall utfall;
+    Regellogg logg;
+    /*union {
+      VilkårInntektData,
+      VilkårReellArbeidssøkerData
+    } data;*/
+  }
+
+  record Todo {
+    string id;
+  /**
+    F.eks. LAG_ARENA_OPPGAVE, BEKREFT_VEDLEGG, OPPGI_BONDEGÅRDSINFORMASJON
+    */
+    string navn;
+  }
+
+  record Need {
+    long id;
+    Rettighetstype rettighetstype;
+    Vedtakstype vedtakstype;
+    Journalpost journalpost;
+    Sak sak;
+    boolean kravFramsatt;
+
+    array<Vilkår> vilkår;
+    array<Todo> todos;
+
+    string utfall;
+  }
+}

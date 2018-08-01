@@ -1,57 +1,45 @@
 package no.nav.dagpenger.joark.mottak
 
+import mu.KotlinLogging
 import no.nav.dagpenger.events.avro.journalføring.InngåendeJournalpost
 import no.nav.dagpenger.events.avro.journalføring.JournalTilstand
 import no.nav.dagpenger.events.avro.journalføring.TynnInngåendeJournalpost
-import no.nav.dagpenger.streams.BlurgObject
 import no.nav.dagpenger.streams.Service
 import no.nav.dagpenger.streams.Topics.INNGÅENDE_JOURNALPOST
 import no.nav.dagpenger.streams.Topics.JOARK_EVENTS
-import no.nav.dagpenger.streams.addShutdownHookAndBlock
 import no.nav.dagpenger.streams.consumeTopic
 import no.nav.dagpenger.streams.toTopic
 import org.apache.kafka.streams.KafkaStreams
 import org.apache.kafka.streams.StreamsBuilder
 import java.time.LocalDate
 
-//private val LOGGER = KotlinLogging.logger {}
+private val LOGGER = KotlinLogging.logger {}
 
 class JoarkMottak(
-    private val blurg: BlurgObject,
-    private val journalpostArkiv: JournalpostArkivDummy
-) : Service {
-    private val SERVICE_APP_ID = "joark-mottak"
-    private lateinit var streams: KafkaStreams
+    private val journalpostArkiv: JournalpostArkiv
+) : Service() {
+    override val SERVICE_APP_ID = "joark-mottak"
 
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
-            val service = JoarkMottak(BlurgObject, JournalpostArkivDummy())
+            val service = JoarkMottak(JournalpostArkivDummy())
             service.start()
-            addShutdownHookAndBlock(service)
         }
     }
 
-    override fun start() {
-        streams = setupStreams()
-        streams.start()
-    }
-
-    override fun stop() {
-        streams?.close()
-    }
-
-    private fun setupStreams(): KafkaStreams {
+    override fun setupStreams(): KafkaStreams {
+        println(SERVICE_APP_ID)
         val builder = StreamsBuilder()
         val inngåendeJournalposter = builder.consumeTopic(JOARK_EVENTS)
 
         inngåendeJournalposter
-            .peek { key, value -> println(key + value) }
+            .peek { key, value -> LOGGER.info("Processing ${value.javaClass} with key $key") }
             .mapValues(this@JoarkMottak::hentInngåendeJournalpost)
-            .peek { key, value -> println(key + value) }
+            .peek { key, value -> LOGGER.info("Producing ${value.javaClass} with key $key") }
             .toTopic(INNGÅENDE_JOURNALPOST)
 
-        return KafkaStreams(builder.build(), blurg.baseConfig(SERVICE_APP_ID))
+        return KafkaStreams(builder.build(), this.getConfig())
     }
 
     private fun hentInngåendeJournalpost(inngåendeJournalpost: TynnInngåendeJournalpost): InngåendeJournalpost {
