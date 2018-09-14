@@ -1,7 +1,6 @@
 package no.nav.dagpenger.streams
 
 import org.apache.kafka.clients.CommonClientConfigs
-import org.apache.kafka.clients.admin.AdminClientConfig
 import org.apache.kafka.clients.consumer.ConsumerConfig
 import org.apache.kafka.streams.StreamsConfig
 import org.apache.kafka.streams.errors.LogAndFailExceptionHandler

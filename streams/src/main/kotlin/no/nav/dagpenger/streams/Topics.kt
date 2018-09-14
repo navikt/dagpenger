@@ -2,7 +2,6 @@ package no.nav.dagpenger.streams
 
 import io.confluent.kafka.serializers.AbstractKafkaAvroSerDeConfig
 import io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
-import mu.KotlinLogging
 import no.nav.dagpenger.events.Person
 import no.nav.dagpenger.events.avro.Journalpost
 import no.nav.dagpenger.events.avro.journalføring.InngåendeJournalpost
