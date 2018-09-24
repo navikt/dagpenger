@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="/" />
+
+  <default remote="github" revision="master" />
+
+  <project name="dagpenger-repo" path="." />
+  <project name="dagpenger-soknadvelger" />
+  <project name="dagpenger-oppslag" />
+  <project name="dagpenger-secrets" />
+</manifest>
