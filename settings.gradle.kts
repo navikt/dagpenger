@@ -1,1 +1,5 @@
-rootProject.name = "dagpenger-repo"
+rootProject.name = "dagpenger-monorepo"
+
+includeBuild("dagpenger-streams")
+includeBuild("dagpenger-events")
+includeBuild("dagpenger-joark-mottak")
