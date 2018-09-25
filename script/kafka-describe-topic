@@ -1,0 +1,8 @@
+#!/bin/bash
+TOPIC=${1:-dagpenger}
+
+docker-compose exec kafka kafka-topics \
+        --describe \
+        --topic $TOPIC \
+        --zookeeper zookeeper:2181
+

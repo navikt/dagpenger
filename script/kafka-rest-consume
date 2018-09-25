@@ -1,0 +1,10 @@
+#!/bin/bash
+set -x
+TOPIC=${1:-dagpenger}
+CONSUMER_NAME=${2:-${TOPIC}_shell_consumer}
+CONSUMER_INSTANCE=${3:-shell_consumer_instance}
+
+docker-compose exec kafka-rest \
+        bash -c "curl -X GET \
+                -H 'Accept: application/vnd.kafka.avro.v1+json' \
+                http://kafka-rest:8082/consumers/$CONSUMER_NAME/instances/$CONSUMER_INSTANCE/topics/$TOPIC"

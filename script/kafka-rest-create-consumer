@@ -1,0 +1,19 @@
+#!/bin/bash
+
+TOPIC=${1:-dagpenger}
+CONSUMER_NAME=${2:-${TOPIC}_shell_consumer}
+
+REQUEST_BODY=$(cat <<EOF
+{
+  "name": "shell_consumer_instance",
+  "format": "avro",
+  "auto.offset.reset": "smallest"
+}
+EOF
+)
+
+docker-compose exec kafka-rest \
+        bash -c "curl -X POST \
+                -H 'Content-Type: application/vnd.kafka.v1+json' \
+                --data '$REQUEST_BODY' \
+                http://kafka-rest:8082/consumers/$CONSUMER_NAME"

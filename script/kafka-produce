@@ -1,0 +1,10 @@
+#!/bin/bash
+
+TOPIC=${1:-dagpenger}
+NUM_OF_MESSAGES=${2:-42}
+
+docker-compose exec kafka \
+        bash -c "seq $NUM_OF_MESSAGES | kafka-console-producer \
+        --request-required-acks 1 \
+        --broker-list kafka:9092 \
+        --topic $TOPIC && echo 'Produced $NUM_OF_MESSAGES messages.'"

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+TOPIC=${1:-dagpenger}
+APP=${2:-dagpenger}
+
+PARAMS=(
+        --bootstrap-servers kafka:9092
+        --zookeeper zookeeper:2181
+        --application-id $APP \
+        --input-topics $TOPIC \
+)
+#--intermediate-topics rekeyed-topic \
+
+docker-compose exec kafka  \
+        kafka-streams-application-reset \
+        "${PARAMS[@]}"
