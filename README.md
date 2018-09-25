@@ -1,11 +1,30 @@
-
 # Dagpenger
 
 En samling mikrotjenester for å behandle Dagpenger.
 
 # Komme i gang
 
-Gradle brukes som byggverktøy og er bundlet inn.
+[repo](https://source.android.com/setup/develop/repo) brukes til å sette opp
+repositories for alle microservicene. Det kan [innstalleres
+manuelt](https://source.android.com/setup/build/downloading) eller via homebrew
+
+`brew install repo`
+
+Repositoriene settes opp med:
+
+```
+repo init -u git@github.com:navikt/dagpenger.git
+repo sync
+repo start master
+```
+
+Nå kan git brukes som normalt for hvert repo.
+
+## Bygg
+
+Gradle brukes som byggverktøy og er bundlet inn. Composite build brukes for
+å unngå å bygge nye versjoner av fellesbibliotekene på nytt hver gang, men løses
+automatisk av Gradle.
 
 `./gradlew build`
 
