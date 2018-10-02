@@ -1,11 +1,7 @@
-Bruker sender inn generell dokumentasjon
+#language: no
+Egenskap: Bruker sender dokumentasjon uten NAV skjema ID
 
-  Scenario: Bruker har sak å gjenoppta
-    Gitt at bruker ikke har aktiv sak fra før
-    Og rettighet er <rettighetstype>
-    Når vi mottar søknaden
-    Så skal fagsak finnes
-    Og gsak (finnes) knyttes til fagsak
-    Og journalføring ferdigstilles
-    Og oppgave "BEHAN" opprettes på <benk>
-
+  Scenario: Bruker har sendt noe uten NAV skjema ID
+    Gitt at bruker har ettersendt noe som ikke kan knyttes til sak
+    Når vi behandler journalføringen
+    Så opprettes det en fordelingsoppgave i Gosys

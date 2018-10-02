@@ -1,21 +1,25 @@
 # language: no
 Egenskap: Bruker søker om gjenopptak av tidligere dagpengerperiode
 
-  Scenario: Bruker har tidligere sak å gjenoppta
-    Gitt at bruker har en sak å gjenoppta
-    Og rettighet er <rettighetstype>
-    Når vi mottar søknaden
-    Så skal fagsak finnes
-    Og gsak (finnes) knyttes til fagsak
-    Og journalføring ferdigstilles
-    Og oppgave "BEHAN" opprettes på <benk>
+  #Scenario: Bruker har sendt flere søknader etter hverandre
+  Scenariomal: Bruker har tidligere sak å gjenoppta
+    Gitt at bruker har søkt om gjenopptak av dagpenger <rettighetstype>
+    Og at bruker har en sak å gjenoppta
+    Og at bruker har <diskresjonskode>
+    Når vi behandler journalføringen
+    Så knyttes journalpost til eksisterende gsak
+    Og journalpost ferdigstilles
+    Og oppgave "Behandle Henvendelse" opprettes på <benk>
 
-  Eksempler
-    | rettighetstype | benk |
-    | DAGO           | 4450 |
-    | PERM           | 4453 |
+    Eksempler:
+    | rettighetstype    | diskresjonskode | benk |
+    | uten permittering |                 | 4450 |
+    | ved permittering  |                 | 4455 |
+    | uten permittering | 6,7             | 4499 |
+    | ved permittering  | 6,7             | 4499 |
 
   Scenario: Bruker har ikke tidligere sak å gjenoppta
-    Gitt at bruker ikke har en sak å gjenoppta
-    Når vi mottar søknaden
-    Så skal det opprettes manuell journalføringsoppgave
+    Gitt at bruker har søkt om gjenopptak av dagpenger
+    Og bruker ikke har en sak å gjenoppta
+    Når vi behandler journalføringen
+    Så opprettes det en manuell journalføringsoppgave i Gosys
