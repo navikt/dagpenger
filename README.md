@@ -45,7 +45,9 @@ Interne henvendelser kan sendes via Slack i kanalen #dagpenger.
 
 ## Teste lokalt
 I prosjektet finnes det en docke-compose.yml - kjør opp denne med `docker-compose up`
+
 NB 1: - legg til `kafka` som en host i hosts fila ca sånn (i `/etc/hosts` ) :
+
 ```
 ##
 # Host Database
@@ -58,5 +60,7 @@ NB 1: - legg til `kafka` som en host i hosts fila ca sånn (i `/etc/hosts` ) :
 ::1             localhost kafka
 xxxxx           <vpn ting>
 ```
+
 NB 2: - BigIp driver på å overskriver `/etc/hosts` med ujevne mellomrom - det kan hende en må legge til det på nytt
+
 I dagpenger-joark-mottak katalogen finnes det en `DummyJoarkProducer` som en kan starte opp for å simulere journalpost hendelser - start deretter `JoarkMottak` i dagpenger-joark-mottak for å starte første ledd i innløpet. 
