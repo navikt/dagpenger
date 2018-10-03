@@ -40,3 +40,9 @@ Spørsmål knyttet til koden eller prosjektet kan rettes mot:
 ## For NAV-ansatte
 
 Interne henvendelser kan sendes via Slack i kanalen #dagpenger.
+
+# HOWTO 
+
+## Teste lokalt
+I prosjektet finnes det en docke-compose.yml - kjør opp denne med `docker-compose up`
+I dagpenger-joark-mottak katalogen finnes det en `DummyJoarkProducer` som en kan starte opp for å simulere journalpost hendelser - start deretter `JoarkMottak` i dagpenger-joark-mottak for å starte første ledd i innløpet. 
