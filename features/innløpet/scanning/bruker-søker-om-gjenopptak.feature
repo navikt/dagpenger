@@ -1,7 +1,6 @@
 # language: no
-Egenskap: Bruker søker om gjenopptak av tidligere dagpengerperiode
+Egenskap: Bruker søker om gjenopptak av tidligere dagpengeperiode
 
-  #Scenario: Bruker har sendt flere søknader etter hverandre
   Scenariomal: Bruker har tidligere sak å gjenoppta
     Gitt at bruker har søkt om gjenopptak av dagpenger <rettighetstype>
     Og at bruker har en sak å gjenoppta
@@ -12,11 +11,11 @@ Egenskap: Bruker søker om gjenopptak av tidligere dagpengerperiode
     Og oppgave "Behandle Henvendelse" opprettes på <benk>
 
     Eksempler:
-    | rettighetstype    | diskresjonskode | benk |
-    | uten permittering |                 | 4450 |
-    | ved permittering  |                 | 4455 |
-    | uten permittering | 6,7             | 4499 |
-    | ved permittering  | 6,7             | 4499 |
+      | rettighetstype    | diskresjonskode | benk |
+      | uten permittering | ikke            | 4450 |
+      | ved permittering  | ikke            | 4455 |
+      | uten permittering | 6,7             | 4499 |
+      | ved permittering  | 6,7             | 4499 |
 
   Scenario: Bruker har ikke tidligere sak å gjenoppta
     Gitt at bruker har søkt om gjenopptak av dagpenger

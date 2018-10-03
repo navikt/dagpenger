@@ -1,7 +1,6 @@
 # language: no
 Egenskap: Bruker søker om ny dagpengeperiode
 
-  #Scenario: Bruker har sendt flere søknader etter hverandre
   Scenariomal: Bruker har ingen sak å gjenoppta
     Gitt at bruker har søkt om dagpenger <rettighetstype>
     Og at bruker ikke har en sak å gjenoppta
@@ -20,16 +19,16 @@ Egenskap: Bruker søker om ny dagpengeperiode
       | uten permittering | 6,7             | 4499 |
       | ved permittering  | 6,7             | 4499 |
 
-  #Scenario: Bruker har søkt på ny, men skulle søkt gjenopptak
+  # Denne er feil
   Scenario: Bruker har tidligere sak som kan gjenopptas
     Gitt at bruker har søkt om DAGO
     Og bruker har en tidligere sak som kan gjenopptas
     Når vi behandler journalføringen
     Så opprettes det en manuell journalføringsoppgave i Gosys
 
-  Scenario: Bruker har søkt, men har allerede en sak under behandling
+  Scenario: Bruker har søkt, men har allerede en aktiv sak
     Gitt at bruker har søkt
-    Og bruker har en sak under behandling
+    Og bruker har en aktiv sak
     Når vi behandler journalføringen
     Så opprettes det en manuell journalføringsoppgave i Gosys
 
