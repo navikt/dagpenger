@@ -35,6 +35,12 @@ Egenskap: Bruker søker om ny dagpengeperiode
 
   Scenario: Bruker finnes ikke i Arena
     Gitt at bruker har søkt
-    Og at bruker ikke finnes i Arena
+    Og bruker ikke finnes i Arena
+    Når vi behandler journalføringen
+    Så opprettes det en manuell journalføringsoppgave i Gosys
+
+  Scenario: Bruker mangler kontortilhørighet
+    Gitt at bruker har søkt
+    Og bruker mangler kontortilhørighet
     Når vi behandler journalføringen
     Så opprettes det en manuell journalføringsoppgave i Gosys
