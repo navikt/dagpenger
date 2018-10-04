@@ -9,4 +9,5 @@
   <project name="dagpenger-streams" />
   <project name="dagpenger-joark-mottak" />
   <project name="dagpenger-secrets" />
+  <project name="dagpenger-journalforing-skanning" />
 </manifest>
