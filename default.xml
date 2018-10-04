@@ -6,8 +6,9 @@
 
   <project name="dagpenger-repo" path="." />
   <project name="dagpenger-events" />
-  <project name="dagpenger-streams" />
+  <project name="dagpenger-features" />
   <project name="dagpenger-joark-mottak" />
-  <project name="dagpenger-secrets" />
   <project name="dagpenger-journalforing-skanning" />
+  <project name="dagpenger-secrets" />
+  <project name="dagpenger-streams" />
 </manifest>
