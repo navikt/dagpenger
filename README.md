@@ -15,7 +15,7 @@ Repositoriene settes opp med:
 ```
 repo init -u git@github.com:navikt/dagpenger.git
 repo sync
-repo start master
+repo start --all master
 ```
 
 Nå kan git brukes som normalt for hvert repo.
@@ -41,7 +41,7 @@ Spørsmål knyttet til koden eller prosjektet kan rettes mot:
 
 Interne henvendelser kan sendes via Slack i kanalen #dagpenger.
 
-# HOWTO 
+# HOWTO
 
 ## Teste lokalt
 I prosjektet finnes det en docke-compose.yml - kjør opp denne med `docker-compose up`
@@ -63,4 +63,4 @@ xxxxx           <vpn ting>
 
 NB 2: - BigIp driver på å overskriver `/etc/hosts` med ujevne mellomrom - det kan hende en må legge til det på nytt
 
-I dagpenger-joark-mottak katalogen finnes det en `DummyJoarkProducer` som en kan starte opp for å simulere journalpost hendelser - start deretter `JoarkMottak` i dagpenger-joark-mottak for å starte første ledd i innløpet. 
+I dagpenger-joark-mottak katalogen finnes det en `DummyJoarkProducer` som en kan starte opp for å simulere journalpost hendelser - start deretter `JoarkMottak` i dagpenger-joark-mottak for å starte første ledd i innløpet.
