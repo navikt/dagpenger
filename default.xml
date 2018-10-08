@@ -4,7 +4,7 @@
 
   <default remote="github" revision="master" />
 
-  <project name="dagpenger-repo" path="." />
+  <project name="dagpenger" path="." />
   <project name="dagpenger-events" />
   <project name="dagpenger-features" />
   <project name="dagpenger-joark-mottak" />
