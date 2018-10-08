@@ -6,7 +6,7 @@
 
   <project name="dagpenger" path="." />
   <project name="dagpenger-events" />
-  <project name="dagpenger-features" />
+  <project name="dagpenger-funksjonelle-tester" />
   <project name="dagpenger-joark-mottak" />
   <project name="dagpenger-journalforing-skanning" />
   <project name="dagpenger-journalforing-ruting" />
