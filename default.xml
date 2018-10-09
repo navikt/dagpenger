@@ -10,6 +10,7 @@
   <project name="dagpenger-joark-mottak" />
   <project name="dagpenger-journalforing-skanning" />
   <project name="dagpenger-journalforing-ruting" />
+  <project name="dagpenger-journalforing-arena" />
   <project name="dagpenger-secrets" />
   <project name="dagpenger-streams" />
 </manifest>
