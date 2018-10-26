@@ -1,6 +1,6 @@
 plugins {
     id("application")
-    kotlin("jvm") version "1.2.51"
+   kotlin("jvm") version "1.2.70"
     id("com.diffplug.gradle.spotless") version "3.13.0"
     id("com.palantir.docker") version "0.20.1"
     id("com.palantir.git-version") version "0.11.0"
