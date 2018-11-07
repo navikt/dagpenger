@@ -20,6 +20,14 @@ repo start --all master
 
 Nå kan git brukes som normalt for hvert repo.
 
+## IntellJ  og ktlint 
+
+Åpne prosjektet i IntelliJ 
+
+Vi bruker klint for å ha formatteringsregler på koden. Kjør:
+
+`./gradlew klintIdea` for å oppdatere IntelliJ med klint regler. Restart IntelliJ 
+
 ## Bygg
 
 Gradle brukes som byggverktøy og er bundlet inn. Composite build brukes for
