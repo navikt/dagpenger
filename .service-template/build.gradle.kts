@@ -1,15 +1,17 @@
 plugins {
     id("application")
-   kotlin("jvm") version "1.2.70"
+    kotlin("jvm") version "1.2.70"
     id("com.diffplug.gradle.spotless") version "3.13.0"
     id("com.palantir.docker") version "0.20.1"
     id("com.palantir.git-version") version "0.11.0"
     id("com.adarshr.test-logger") version "1.5.0"
+    id("info.solidsoft.pitest") version "1.3.0"
 }
 
 apply {
     plugin("com.diffplug.gradle.spotless")
     plugin("com.adarshr.test-logger")
+    plugin("info.solidsoft.pitest")
 }
 
 repositories {
@@ -29,10 +31,12 @@ application {
 
 docker {
     name = "repo.adeo.no:5443/navikt/${application.applicationName}"
-    buildArgs(mapOf(
-        "APP_NAME" to application.applicationName,
-        "DIST_TAR" to "${application.applicationName}-${project.version}"
-    ))
+    buildArgs(
+        mapOf(
+            "APP_NAME" to application.applicationName,
+            "DIST_TAR" to "${application.applicationName}-${project.version}"
+        )
+    )
     files(tasks.findByName("distTar")?.outputs)
     pull(true)
     tags(project.version.toString())
@@ -71,3 +75,11 @@ spotless {
         ktlint()
     }
 }
+
+pitest {
+    threads = 4
+    coverageThreshold = 80
+    avoidCallsTo = setOf("kotlin.jvm.internal")
+}
+
+tasks.getByName("check").dependsOn("pitest")
