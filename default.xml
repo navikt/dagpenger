@@ -11,6 +11,7 @@
   <project name="dagpenger-journalforing-skanning" />
   <project name="dagpenger-journalforing-ruting" />
   <project name="dagpenger-journalforing-arena" />
+  <project name="dagpenger-journalforing-manuell" />
   <project name="dagpenger-oppslag" />
   <project name="dagpenger-secrets" />
   <project name="dagpenger-streams" />
