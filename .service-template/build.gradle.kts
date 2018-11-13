@@ -79,7 +79,6 @@ pitest {
     threads = 4
     pitestVersion = "1.4.3"
     coverageThreshold = 80
-    outputFormats = setOf("XML")
     avoidCallsTo = setOf("kotlin.jvm.internal")
     timestampedReports = false
 }
