@@ -1,4 +1,4 @@
-FROM navikt/java:10
+FROM navikt/java:11
 ARG APP_NAME
 ARG DIST_TAR
 ADD ${DIST_TAR}.tar /app
