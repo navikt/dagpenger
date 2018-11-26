@@ -16,8 +16,8 @@ apply {
 
 repositories {
     jcenter()
+    maven("https://oss.sonatype.org/content/repositories/snapshots/")
     maven(url = "http://packages.confluent.io/maven/")
-    maven(url = "https://repo.adeo.no/repository/maven-releases/")
 }
 
 val gitVersion: groovy.lang.Closure<Any> by extra
@@ -49,8 +49,8 @@ val kafkaVersion = "2.0.0"
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("no.nav.dagpenger:streams:0.1.2")
-    implementation("no.nav.dagpenger:events:0.1.4")
+    implementation("no.nav.dagpenger:streams:0.2.2-SNAPSHOT")
+    implementation("no.nav.dagpenger:events:0.1.9-SNAPSHOT")
 
     implementation("io.github.microutils:kotlin-logging:$kotlinLoggingVersion")
     implementation("com.github.kittinunf.fuel:fuel:$fuelVersion")
