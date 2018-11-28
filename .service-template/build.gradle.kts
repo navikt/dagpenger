@@ -4,13 +4,11 @@ plugins {
     id("com.diffplug.gradle.spotless") version "3.13.0"
     id("com.palantir.docker") version "0.20.1"
     id("com.palantir.git-version") version "0.11.0"
-    id("com.adarshr.test-logger") version "1.5.0"
     id("info.solidsoft.pitest") version "1.3.0"
 }
 
 apply {
     plugin("com.diffplug.gradle.spotless")
-    plugin("com.adarshr.test-logger")
     plugin("info.solidsoft.pitest")
 }
 
