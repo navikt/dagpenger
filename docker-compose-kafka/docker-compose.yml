@@ -35,7 +35,7 @@ services:
       - "KAFKA_SASL_ENABLED_MECHANISMS=PLAIN"
       - "KAFKA_DEFAULT_REPLICATION_FACTOR=1"
       - "KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1"
-      #- "KAFKA_AUTO_CREATE_TOPICS_ENABLE=false"
+   #   - "KAFKA_AUTO_CREATE_TOPICS_ENABLE=false"
     ports:
       - "9092:9092"
     depends_on:
@@ -66,7 +66,6 @@ services:
       - "LDAP_PORT=636"
       - "LDAP_AUTH_USERBASE=ou=Users,ou=NAV,dc=test,dc=local"
       - "KAFKA_PASSWORD=itest"
-
   schema-registry:
     build: schema-registry
     container_name: schema-registry
@@ -76,10 +75,9 @@ services:
     ports:
       - "8081:8081"
     environment:
-      - "SCHEMA_REGISTRY_KAFKASTORE_CONNECTION_URL=zookeeper:2181"
-      - "SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS=SASL_PLAINTEXT://kafka:9092"
+      - "SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS=SASL_PLAINTEXT://kafka:9093"
       - "SCHEMA_REGISTRY_KAFKASTORE_SASL_MECHANISM=PLAIN"
       - "SCHEMA_REGISTRY_KAFKASTORE_SECURITY_PROTOCOL=SASL_PLAINTEXT"
+      - "SCHEMA_REGISTRY_KAFKASTORE_SASL_JAAS_CONFIG=org.apache.kafka.common.security.plain.PlainLoginModule required username=\"igroup\" password=\"itest\";"
       - "SCHEMA_REGISTRY_HOST_NAME=schema-registry"
       - "SCHEMA_REGISTRY_LISTENERS=http://0.0.0.0:8081"
-      #- "SCHEMA_REGISTRY_KAFKASTORE_SASL_KERBEROS_SERVICE_NAME=kafka"
