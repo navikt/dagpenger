@@ -67,8 +67,7 @@ services:
       - "LDAP_AUTH_USERBASE=ou=Users,ou=NAV,dc=test,dc=local"
       - "KAFKA_PASSWORD=itest"
   schema-registry:
-    build: schema-registry
-    container_name: schema-registry
+    image: "confluentinc/cp-schema-registry:5.0.1"
     depends_on:
       - "zookeeper"
       - "kafka"
