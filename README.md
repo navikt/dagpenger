@@ -52,23 +52,6 @@ Interne henvendelser kan sendes via Slack i kanalen #dagpenger.
 # HOWTO
 
 ## Teste lokalt
-I prosjektet finnes det en docke-compose.yml - kjør opp denne med `docker-compose up`
-
-NB 1: - legg til `kafka` som en host i hosts fila ca sånn (i `/etc/hosts` ) :
-
-```
-##
-# Host Database
-#
-# localhost is used to configure the loopback interface
-# when the system is booting.  Do not change this entry.
-##
-127.0.0.1	localhost kafka
-255.255.255.255	broadcasthost
-::1             localhost kafka
-xxxxx           <vpn ting>
-```
-
-NB 2: - BigIp driver på å overskriver `/etc/hosts` med ujevne mellomrom - det kan hende en må legge til det på nytt
+I prosjektet finnes det en docker-compose.yml under docker-compose-kafka katalogen - kjør opp denne med `docker-compose up`
 
 I dagpenger-joark-mottak katalogen finnes det en `DummyJoarkProducer` som en kan starte opp for å simulere journalpost hendelser - start deretter `JoarkMottak` i dagpenger-joark-mottak for å starte første ledd i innløpet.
