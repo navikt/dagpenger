@@ -1,6 +1,7 @@
 .repo
 # Ignore sub repos created by repo
 dagpenger-*
+dp-*
 
 # Created by https://www.gitignore.io/api/gradle,kotlin,intellij+all,macos
 
