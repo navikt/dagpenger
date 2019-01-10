@@ -7,7 +7,7 @@
   <project name="dagpenger" path="." />
   <project name="dagpenger-events" />
   <project name="dagpenger-funksjonelle-tester" />
-  <project name="dagpenger-inntekt-api" />
+  <project name="dp-inntekt-api" />
   <project name="dp-datalaster-inntekt" />
   <project name="dagpenger-joark-mottak" />
   <project name="dagpenger-journalforing-arena" />
