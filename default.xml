@@ -8,6 +8,7 @@
   <project name="dagpenger-events" />
   <project name="dagpenger-funksjonelle-tester" />
   <project name="dagpenger-inntekt-api" />
+  <project name="dagpenger-inntekt-datasamler" />
   <project name="dagpenger-joark-mottak" />
   <project name="dagpenger-journalforing-arena" />
   <project name="dagpenger-journalforing-ferdigstill" />
