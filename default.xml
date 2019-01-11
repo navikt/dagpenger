@@ -20,4 +20,5 @@
   <project name="dagpenger-regel-ui" />
   <project name="dagpenger-secrets" />
   <project name="dagpenger-streams" />
+  <project name="dp-regel-api" />
 </manifest>
