@@ -2,7 +2,7 @@
 <manifest>
   <remote name="github" fetch=".." alias="origin" />
 
-  <default remote="github" revision="master" />
+  <default remote="github" revision="master" sync-j="4" />
 
     <!-- list should be sorted alphabetically -->
   <project name="dagpenger" path="." />
