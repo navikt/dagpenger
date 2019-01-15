@@ -22,4 +22,5 @@
   <project name="dp-datalaster-inntekt" />
   <project name="dp-inntekt-api" />
   <project name="dp-regel-api" />
+  <project name="dp-regel-api-arena-adapter" />
 </manifest>
