@@ -34,7 +34,7 @@ java {
     targetCompatibility = JavaVersion.VERSION_11
 }
 
-val kotlinLoggingVersion = "1.4.9"
+val kotlinLoggingVersion = "1.6.22"
 val fuelVersion = "1.15.0"
 val confluentVersion = "4.1.2"
 val kafkaVersion = "2.0.0"
