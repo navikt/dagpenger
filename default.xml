@@ -6,7 +6,9 @@
 
     <!-- list should be sorted alphabetically -->
   <project name="dagpenger" path="." />
-  <project name="dagpenger-events" />
+  <project name="dagpenger-events">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-events/CODEOWNER" />
+  </project>
   <project name="dagpenger-funksjonelle-tester" />
   <project name="dagpenger-joark-mottak" />
   <project name="dagpenger-journalforing-arena" />
