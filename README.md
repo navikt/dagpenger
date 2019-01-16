@@ -55,3 +55,14 @@ Interne henvendelser kan sendes via Slack i kanalen #dagpenger.
 I prosjektet finnes det en docker-compose.yml under docker-compose-kafka katalogen - kjør opp denne med `docker-compose up`
 
 I dagpenger-joark-mottak katalogen finnes det en `DummyJoarkProducer` som en kan starte opp for å simulere journalpost hendelser - start deretter `JoarkMottak` i dagpenger-joark-mottak for å starte første ledd i innløpet.
+
+
+## Oppdatere Gradle for alle prosjekter i monorepeoet
+
+stå i rotkatalogen og kjør:
+
+```bash
+ export GRADLE_VERSION=xxxx && ./script/update-gradle.sh     
+```
+
+Sjekk inn og push filer som er endret. 
