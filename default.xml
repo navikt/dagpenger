@@ -18,7 +18,6 @@
   <project name="dagpenger-oppslag" />
   <project name="dagpenger-regel-ui" />
   <project name="dagpenger-secrets" />
-  <project name="dagpenger-metrics" />
   <project name="dagpenger-streams" />
   <project name="dp-datalaster-inntekt" />
   <project name="dp-inntekt-api" />
