@@ -7,23 +7,57 @@
     <!-- list should be sorted alphabetically -->
   <project name="dagpenger" path="." />
   <project name="dagpenger-events">
-    <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-events/CODEOWNER" />
+    <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-events/CODEOWNERS" />
   </project>
-  <project name="dagpenger-funksjonelle-tester" />
-  <project name="dagpenger-joark-mottak" />
-  <project name="dagpenger-journalforing-arena" />
-  <project name="dagpenger-journalforing-ferdigstill" />
-  <project name="dagpenger-journalforing-gsak" />
-  <project name="dagpenger-journalforing-manuell" />
-  <project name="dagpenger-journalforing-ruting" />
-  <project name="dagpenger-journalforing-skanning" />
-  <project name="dagpenger-oppslag" />
-  <project name="dagpenger-regel-ui" />
-  <project name="dagpenger-secrets" />
-  <project name="dagpenger-metrics" />
-  <project name="dagpenger-streams" />
-  <project name="dp-datalaster-inntekt" />
-  <project name="dp-inntekt-api" />
-  <project name="dp-regel-api" />
-  <project name="dp-regel-api-arena-adapter" />
+  <project name="dagpenger-funksjonelle-tester">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-funksjonelle-tester/CODEOWNERS" />
+  </project>
+  <project name="dagpenger-joark-mottak">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-joark-mottak/CODEOWNERS" />
+  </project>
+  <project name="dagpenger-journalforing-arena">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-arena/CODEOWNERS" />
+  </project>
+  <project name="dagpenger-journalforing-ferdigstill">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-ferdigstill/CODEOWNERS" />
+  </project>
+  <project name="dagpenger-journalforing-gsak">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-gsak/CODEOWNERS" />
+  </project>
+  <project name="dagpenger-journalforing-manuell">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-manuell/CODEOWNERS" />
+  </project>
+  <project name="dagpenger-journalforing-ruting">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-ruting/CODEOWNERS" />
+  </project>
+  <project name="dagpenger-journalforing-skanning">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-skanning/CODEOWNERS" />
+  </project>
+  <project name="dagpenger-oppslag">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-oppslag/CODEOWNERS" />
+  </project>
+  <project name="dagpenger-regel-ui">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-regel-ui/CODEOWNERS" />
+  </project>
+  <project name="dagpenger-secrets">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-regel-ui/CODEOWNERS" />
+  </project>
+  <project name="dagpenger-metrics">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-metrics/CODEOWNERS" />
+  </project>
+  <project name="dagpenger-streams">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-streams/CODEOWNERS" />
+  </project>
+  <project name="dp-datalaster-inntekt">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dp-datalaster-inntekt/CODEOWNERS" />
+  </project>
+  <project name="dp-inntekt-api">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dp-inntekt-api/CODEOWNERS" />
+  </project>
+  <project name="dp-regel-api">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-api/CODEOWNERS" />
+  </project>
+  <project name="dp-regel-api-arena-adapter">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-api-arena-adapter/CODEOWNERS" />
+  </project>
 </manifest>
