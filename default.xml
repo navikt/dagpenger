@@ -12,6 +12,9 @@
   <project name="dagpenger-funksjonelle-tester">
     <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-funksjonelle-tester/CODEOWNERS" />
   </project>
+  <project name="dagpenger-iac">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-iac/CODEOWNERS" />
+  </project>
   <project name="dagpenger-joark-mottak">
     <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-joark-mottak/CODEOWNERS" />
   </project>
