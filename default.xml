@@ -60,4 +60,7 @@
   <project name="dp-regel-api-arena-adapter">
     <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-api-arena-adapter/CODEOWNERS" />
   </project>
+  <project name="dp-regel-minsteinntekt">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-minsteinntekt/CODEOWNERS" />
+  </project>
 </manifest>
