@@ -17,6 +17,9 @@
   </project>
   <project name="dagpenger-joark-mottak">
     <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-joark-mottak/CODEOWNERS" />
+    <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dagpenger-joark-mottak/buildSrc/build.gradle.kts" />
+    <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dagpenger-joark-mottak/buildSrc/settings.gradle.kts" />
+    <copyfile src="../.service-template/buildSrc/src/main/java/Dependencies.kt" dest="dagpenger-joark-mottak/buildSrc/src/main/java/Dependencies.kt" />
   </project>
   <project name="dagpenger-journalforing-arena">
     <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-arena/CODEOWNERS" />
