@@ -22,8 +22,8 @@ Disse ID'ene kan være løpenummer eller UUID (eller GUID) eller ULID
 Valgt ID format er  "[ULID](https://github.com/ulid/spec)", fordi den kombinerer både løpenummer og unikhet på tvers av distribuerte systemer. 
 
 ### Positive Consequences 
-* leksikografisk rekkefølge
-* unkhet
+* Leksikografisk rekkefølge
+* Unikhet
 * See flere https://github.com/ulid/spec 
 
 ### Negative consequences 
