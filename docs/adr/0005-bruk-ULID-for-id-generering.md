@@ -24,7 +24,7 @@ Valgt ID format er  "[ULID](https://github.com/ulid/spec)", fordi den kombinerer
 ### Positive Consequences 
 * Leksikografisk rekkefølge
 * Unikhet
-* See flere https://github.com/ulid/spec 
+* Se flere https://github.com/ulid/spec 
 
 ### Negative consequences 
 
