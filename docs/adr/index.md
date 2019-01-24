@@ -1,10 +1,14 @@
 # Architectural Decision Log
 
-This log lists the architectural decisions for [project name].
+This log lists the architectural decisions for Digitale Dagpenger.
 
 <!-- adrlog -- Regenerate the content by using "adr-log -i". You can install it via "npm install -g adr-log" -->
 
-- [ADR-0000](0000-use-markdown-architectural-decision-records.md) - Use Markdown Architectural Decision Records
+- [ADR-0000](0000-adopt-architecture-decision-records.md) - Adopt Architecture Decision Records
+- [ADR-0001](0001-be-transparent.md) - Be transparent
+- [ADR-0002](0002-use-norwegian-for-domain-concepts.md) - Use Norwegian for Domain Specific Concepts
+- [ADR-0003](0003-use-markdown-architectural-decision-records.md) - Use Markdown Architectural Decision Records
+- [ADR-0005](0005-bruk-ULID-for-id-generering.md) - Bruk ULID (Universally Unique Lexicographically Sortable Identifier) som ID-generingsmekanisme
 
 <!-- adrlogstop -->
 

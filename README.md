@@ -38,6 +38,10 @@ automatisk av Gradle.
 
 ---
 
+# Architectural Decision Log
+
+Se [Architectural Decision Log](src/docs/index.md) for prosjektet
+
 # Henvendelser
 
 Spørsmål knyttet til koden eller prosjektet kan rettes mot:
