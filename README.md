@@ -40,7 +40,7 @@ automatisk av Gradle.
 
 # Architectural Decision Log
 
-Se [Architectural Decision Log](src/docs/index.md) for prosjektet
+Se [Architectural Decision Log](docs/index.md) for prosjektet
 
 # Henvendelser
 
