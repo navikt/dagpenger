@@ -1,6 +1,6 @@
 # Bruk ULID (Universally Unique Lexicographically Sortable Identifier) som ID-generingsmekanisme
 
-* Status: Proposed
+* Status: Accepted
 * Deciders: Team Digitale dagpenger
 * Date: 2019-01-23
 
