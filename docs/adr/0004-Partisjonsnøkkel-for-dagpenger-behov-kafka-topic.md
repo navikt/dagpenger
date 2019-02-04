@@ -7,7 +7,7 @@
 
 ## Context and Problem Statement
 
-Vi trenger å definere partisjonsnøkkel for Vilkår Kafka-topic for å kunne håndtere rekkefølge riktig i henhold til prosessering av eventet. 
+Vi trenger å definere partisjonsnøkkel for 'Dagpenger Behov' Kafka-topic for å kunne håndtere rekkefølge riktig i henhold til prosessering av eventet. 
 
 Hva skal partisjonsnøkkelen være? 
 
