@@ -1,4 +1,4 @@
-# Partisjonsnøkkel for Vilkår Kafka-topic
+# Partisjonsnøkkel for 'Dagpenger Behov'  Kafka-topic
 
 * Status: Pending
 * Deciders: Team Digitale Dagpenger
