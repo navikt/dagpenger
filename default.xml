@@ -72,4 +72,7 @@
   <project name="dp-regel-periode">
     <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-periode/CODEOWNERS" />
   </project>
+  <project name="dp-regel-grunnlag">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-grunnlag/CODEOWNERS" />
+  </project>
 </manifest>
