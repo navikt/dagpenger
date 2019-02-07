@@ -75,4 +75,7 @@
   <project name="dp-regel-grunnlag">
     <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-grunnlag/CODEOWNERS" />
   </project>
+  <project name="dp-regel-sats">
+    <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-grunnlag/CODEOWNERS" />
+  </project>
 </manifest>
