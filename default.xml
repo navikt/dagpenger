@@ -62,6 +62,7 @@
   </project>
   <project name="dp-regel-api">
     <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-api/CODEOWNERS" />
+    <copyfile src="../.service-template/Jenkinsfile" dest="dp-regel-api/Jenkinsfile" />
   </project>
   <project name="dp-regel-api-arena-adapter">
     <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-api-arena-adapter/CODEOWNERS" />
