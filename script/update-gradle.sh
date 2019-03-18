@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -eu
-
 
 ./gradlew wrapper --gradle-version=$GRADLE_VERSION --distribution-type=all && ./gradlew -v
 
