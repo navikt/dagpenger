@@ -6,10 +6,7 @@
 
 ## Context and Problem Statement
 
-
-Feilmeldinger er essensiell informasjon for et datasystem og vi burde ha en måte å tolke feilmeldinger på. 
-
-Feilemldinger bør håndteres strukturert. For å få til det bør vi ha en strukturell måte å beskrive feilmeldinger på. Feilmeldinger som kan tolkes både maskinellt og menneskelig. 
+Feilemldinger bør håndteres strukturert. For å få til det bør vi ha en strukturell måte å beskrive feilmeldinger på, der feilmeldinger som kan tolkes både maskinellt og menneskelig. 
 
 
 ## Decision Drivers <!-- optional -->
