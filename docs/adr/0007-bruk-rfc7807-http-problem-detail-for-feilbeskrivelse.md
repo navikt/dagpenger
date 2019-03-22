@@ -44,52 +44,14 @@ data class Error (
 )
 ```
 
-Tanken er at dette også kan brukes i Kafka meldinger (på "Packet")
+Tanken er at dette også kan brukes i Kafka meldinger (på "Packet" i River-strømmen)
 
 ## Decision Outcome
 
-Chosen option: "[option 1]", because [justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force force | … | comes out best (see below)].
+Valgt: "[RFC7807](https://tools.ietf.org/html/rfc7807) " fordi: 
 
-### Positive Consequences <!-- optional -->
+- den definerer en standard for å kommunisere feil på
+- kan kategorisere feil 
+- kan brukes som en kilde ikke bare til å kommunisere feilen, men også en kilde til å kommunisere mulige løsnigner til feil 
 
-* [e.g., improvement of quality attribute satisfaction, follow-up decisions required, …]
-* …
 
-### Negative consequences <!-- optional -->
-
-* [e.g., compromising quality attribute, follow-up decisions required, …]
-* …
-
-## Pros and Cons of the Options <!-- optional -->
-
-### [option 1]
-
-[example | description | pointer to more information | …] <!-- optional -->
-
-* Good, because [argument a]
-* Good, because [argument b]
-* Bad, because [argument c]
-* … <!-- numbers of pros and cons can vary -->
-
-### [option 2]
-
-[example | description | pointer to more information | …] <!-- optional -->
-
-* Good, because [argument a]
-* Good, because [argument b]
-* Bad, because [argument c]
-* … <!-- numbers of pros and cons can vary -->
-
-### [option 3]
-
-[example | description | pointer to more information | …] <!-- optional -->
-
-* Good, because [argument a]
-* Good, because [argument b]
-* Bad, because [argument c]
-* … <!-- numbers of pros and cons can vary -->
-
-## Links <!-- optional -->
-
-* [Link type] [Link to ADR] <!-- example: Refined by [ADR-0005](0005-example.md) -->
-* … <!-- numbers of links can vary -->
