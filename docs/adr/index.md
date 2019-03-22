@@ -11,6 +11,7 @@ This log lists the architectural decisions for Digitale Dagpenger.
 - [ADR-0004](0004-Partisjonsnøkkel-for-dagpenger-behov-kafka-topic.md) - Partisjonsnøkkel for 'Dagpenger Behov'  Kafka-topic
 - [ADR-0005](0005-bruk-ULID-for-id-generering.md) - Bruk ULID (Universally Unique Lexicographically Sortable Identifier) som ID-generingsmekanisme
 - [ADR-0006](0006-bruk-ren-json-for-regelbehov.md) - Bruk 'ren' json for regelbehov over avro eller serialisering/deserialisering til dataklasser
+- [ADR-0007](0007-bruk-rfc7807-http-problem-detail-for-feilbeskrivelse.md) - Bruk rfc7807 "http problem detail" spesifikasjon til å lage strukturelle feilbeskrivelser i HTTP APIer og KAFKA meldinger
 
 <!-- adrlogstop -->
 
