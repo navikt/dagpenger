@@ -81,4 +81,7 @@
   <project name="dp-seneste-inntektsmaaned">
     <copyfile src="../.service-template/CODEOWNERS" dest="dp-seneste-inntektsmaaned/CODEOWNERS" />
   </project>
+    <project name="dp-kafka-offset-monitor">
+        <copyfile src="../.service-template/CODEOWNERS" dest="dp-kafka-offset-monitor/CODEOWNERS"/>
+    </project>
 </manifest>
