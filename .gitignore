@@ -2,7 +2,7 @@
 # Ignore sub repos created by repo
 dagpenger-*
 dp-*
-
+.docker_tmp/
 # Created by https://www.gitignore.io/api/gradle,kotlin,intellij+all,macos
 
 ### Intellij+all ###
