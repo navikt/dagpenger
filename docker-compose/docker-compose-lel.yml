@@ -61,7 +61,7 @@ services:
     # See https://docs.docker.com/compose/startup-order/
     command: |
       bash -c 'echo Waiting for Kafka to be ready... && \
-      cub kafka-ready -b kafka:9093 1 20 -s SASL_PLAINTEXT -c kafka-client.properties && \
+      cub kafka-ready -b kafka:9093 1 40 -s SASL_PLAINTEXT -c kafka-client.properties && \
       kafka-topics --create --topic privat-dagpenger-behov-alpha --partitions 3 --replication-factor 1 --if-not-exists --zookeeper zookeeper:2181'
   postgres-db:
     build: ./postgresql
@@ -84,6 +84,22 @@ services:
       - create-topics
       - postgres-db
       - kafka
+  dp-regel-api-arena-adapter:
+    build: ./../dp-regel-api-arena-adapter
+    ports:
+      - "8093:8093"
+    volumes:
+      - ./mockkeys:/mockkeys
+    environment:
+      DP_REGEL_API_URL: http://dp-regel-api:8092/
+      DP_INNTEKT_API_URL: http://dp-inntekt-api:8099/
+      NAV_TRUSTSTORE_PATH: /mockkeys/truststore.jks
+      NAV_TRUSTSTORE_PASSWORD: changeit
+      JWKS_ISSUER: https://vtpmock.local:8063/isso/oauth2
+      JWKS_URL: https://vtpmock.local:8063/isso/oauth2/connect/jwk_uri
+    depends_on:
+      - dp-inntekt-api
+      - dp-regel-api
   dp-inntekt-api:
     build: ./../dp-inntekt-api
     ports:
@@ -140,3 +156,14 @@ services:
     depends_on:
       - create-topics
       - kafka
+  vtpmock:
+    image: navikt/spvtpmock:fd323ea # to get secure-token-service mock. todo: Create own project?
+    networks:
+      default:
+        aliases:
+          - vtpmock.local
+    ports:
+      - "8060:8060"
+      - "8063:8063"
+    volumes:
+      - ./mockkeys:/root/spsak

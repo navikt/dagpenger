@@ -2,7 +2,12 @@
 # Ignore sub repos created by repo
 dagpenger-*
 dp-*
+
+# Ignore docker compose stuff
 .docker_tmp/
+.cache/
+mockkeys/
+
 # Created by https://www.gitignore.io/api/gradle,kotlin,intellij+all,macos
 
 ### Intellij+all ###

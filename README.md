@@ -38,6 +38,10 @@ automatisk av Gradle.
 
 ---
 
+# Teste lokalt med docker-compose
+
+Se [Docker-compose](docker-compose/README.md) for prosjektet
+
 # Architectural Decision Log
 
 Se [Architectural Decision Log](docs/adr/index.md) for prosjektet
