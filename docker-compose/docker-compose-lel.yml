@@ -1,0 +1,169 @@
+version: '3.2'
+services:
+  openldap:
+    build: ldap
+    container_name: ldap
+    ports:
+      - "10636:636"
+      - "10389:389"
+    environment:
+      - "LDAP_TLS_VERIFY_CLIENT=try"
+  zookeeper:
+    #image: confluentinc/cp-zookeeper
+    build: zookeeper
+    container_name: zookeeper
+    environment:
+      - "ZOOKEEPER_CLIENT_PORT=2181"
+      - "ZOOKEEPER_AUTH_PROVIDER_1=org.apache.zookeeper.server.auth.SASLAuthenticationProvider"
+    ports:
+      - "2181:2181"
+    volumes:
+      - .docker_tmp/zk-single-kafka-single/zoo1/data:/data
+      - .docker_tmp/zk-single-kafka-single/zoo1/datalog:/datalog
+  kafka:
+    build: kafka
+    container_name: kafka
+    environment:
+      - "KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181"
+      - "KAFKA_LISTENERS=SASLPLAINTEXT://0.0.0.0:9092,SASLINTERNAL://kafka:9093"
+      - "KAFKA_LISTENER_SECURITY_PROTOCOL_MAP=SASLPLAINTEXT:SASL_PLAINTEXT,SASLINTERNAL:SASL_PLAINTEXT"
+      - "KAFKA_ADVERTISED_LISTENERS=SASLPLAINTEXT://localhost:9092,SASLINTERNAL://kafka:9093"
+      - "KAFKA_PROTOCOL_NAME=SASLPLAINTEXT,SASLINTERNAL"
+      - "KAFKA_LISTENER_NAME_SASLPLAINTEXT_PLAIN_SASL_SERVER_CALLBACK_HANDLER_CLASS=no.nav.common.security.authentication.SimpleLDAPAuthentication"
+      - "KAFKA_LISTENER_NAME_SASLINTERNAL_PLAIN_SASL_SERVER_CALLBACK_HANDLER_CLASS=no.nav.common.security.authentication.SimpleLDAPAuthentication"
+      - "KAFKA_AUTHORIZER_CLASS_NAME=no.nav.common.security.authorization.SimpleLDAPAuthorizer"
+      - "KAFKA_SUPER_USERS=User:igroup"
+      - "KAFKA_INTER_BROKER_LISTENER_NAME=SASLINTERNAL"
+      - "KAFKA_SASL_MECHANISM_INTER_BROKER_PROTOCOL=PLAIN"
+      - "KAFKA_SASL_ENABLED_MECHANISMS=PLAIN"
+      - "KAFKA_DEFAULT_REPLICATION_FACTOR=1"
+      - "KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR=1"
+      - "KAFKA_AUTO_CREATE_TOPICS_ENABLE=false"
+    ports:
+      - "9092:9092"
+    depends_on:
+      - "zookeeper"
+      - "openldap"
+    volumes:
+      - .docker_tmp/zk-single-kafka-single/kafka1/data:/var/lib/kafka/data
+  create-topics:
+    image: confluentinc/cp-kafka:5.1.2
+    depends_on:
+      - "kafka"
+    volumes:
+      - type: bind
+        source: ${PWD}/kafka-client.properties
+        target: /kafka-client.properties
+    # We defined a dependency on "kafka", but `depends_on` will NOT wait for the
+    # dependencies to be "ready" before starting the "kafka-create-topics"
+    # container;  it waits only until the dependencies have started.  Hence we
+    # must control startup order more explicitly.
+    # See https://docs.docker.com/compose/startup-order/
+    command: |
+      bash -c 'echo Waiting for Kafka to be ready... && \
+      cub kafka-ready -b kafka:9093 1 40 -s SASL_PLAINTEXT -c kafka-client.properties && \
+      kafka-topics --create --topic privat-dagpenger-behov-alpha --partitions 3 --replication-factor 1 --if-not-exists --zookeeper zookeeper:2181'
+  postgres-db:
+    build: ./postgresql
+    ports:
+      - "5432:5432"
+    environment:
+      - "POSTGRES_PASSWORD=postgres"
+      - "POSTGRES_MULTIPLE_DATABASES=dp-regel-api,docker: dp-inntekt-db,docker"
+  dp-regel-api:
+    build: ./../dp-regel-api
+    ports:
+      - "8092:8092"
+    environment:
+      DATABASE_HOST: postgres-db
+      DATABASE_NAME: dp-regel-api
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9093
+      SRVDP_REGEL_API_USERNAME: igroup
+      SRVDP_REGEL_API_PASSWORD: itest
+    depends_on:
+      - create-topics
+      - postgres-db
+      - kafka
+  dp-regel-api-arena-adapter:
+    build: ./../dp-regel-api-arena-adapter
+    ports:
+      - "8093:8093"
+    volumes:
+      - ./mockkeys:/mockkeys
+    environment:
+      DP_REGEL_API_URL: http://dp-regel-api:8092/
+      DP_INNTEKT_API_URL: http://dp-inntekt-api:8099/
+      NAV_TRUSTSTORE_PATH: /mockkeys/truststore.jks
+      NAV_TRUSTSTORE_PASSWORD: changeit
+      JWKS_ISSUER: https://vtpmock.local:8063/isso/oauth2
+      JWKS_URL: https://vtpmock.local:8063/isso/oauth2/connect/jwk_uri
+    depends_on:
+      - dp-inntekt-api
+      - dp-regel-api
+  dp-inntekt-api:
+    build: ./../dp-inntekt-api
+    ports:
+      - "8099:8099"
+    environment:
+      DATABASE_HOST: postgres-db
+      DATABASE_NAME: dp-inntekt-db
+    depends_on:
+      - postgres-db
+  dp-regel-minsteinntekt:
+    build: ./../dp-regel-minsteinntekt
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9093
+      SRVDP_REGEL_MINSTEINNTEKT_USERNAME: igroup
+      SRVDP_REGEL_MINSTEINNTEKT_PASSWORD: itest
+    depends_on:
+      - create-topics
+      - kafka
+  dp-regel-sats:
+    build: ./../dp-regel-sats
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9093
+      SRVDP_REGEL_SATS_USERNAME: igroup
+      SRVDP_REGEL_SATS_PASSWORD: itest
+    depends_on:
+      - create-topics
+      - kafka
+  dp-regel-grunnlag:
+    build: ./../dp-regel-grunnlag
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9093
+      SRVDP_REGEL_GRUNNLAG_USERNAME: igroup
+      SRVDP_REGEL_GRUNNLAG_PASSWORD: itest
+    depends_on:
+      - create-topics
+      - kafka
+  dp-regel-periode:
+    build: ./../dp-regel-periode
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9093
+      SRVDP_REGEL_PERIODE_USERNAME: igroup
+      SRVDP_REGEL_PERIODE_PASSWORD: itest
+    depends_on:
+      - create-topics
+      - kafka
+  dp-datalaster-inntekt:
+    build: ./../dp-datalaster-inntekt
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9093
+      SRVDP_DATALASTER_INNTEKT_USERNAME: igroup
+      SRVDP_DATALASTER_INNTEKT_PASSWORD: itest
+      OIDC_STS_ISSUERURL: http://localhost
+      DAGPENGER_INNTEKT_API_REST_URL: "http://dp-inntekt-api:8099/"
+    depends_on:
+      - create-topics
+      - kafka
+  vtpmock:
+    image: navikt/spvtpmock:fd323ea # to get secure-token-service mock. todo: Create own project?
+    networks:
+      default:
+        aliases:
+          - vtpmock.local
+    ports:
+      - "8060:8060"
+      - "8063:8063"
+    volumes:
+      - ./mockkeys:/root/spsak
