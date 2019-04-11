@@ -46,6 +46,8 @@ services:
       - "openldap"
     volumes:
       - .docker_tmp/zk-single-kafka-single/kafka1/data:/var/lib/kafka/data
+      - ${PWD}/wait-for-it.sh:/wait-for-it.sh
+    command: ["/wait-for-it.sh", "zookeeper:2181",  "-t", "60", "--", "/etc/confluent/docker/run"]
   create-topics:
     image: confluentinc/cp-kafka:5.1.2
     depends_on:

@@ -15,11 +15,14 @@ build_and_up() {
             exit 1
         fi
     done
-    cd ${COMPOSE_DIR}
+    up
+}
+
+up() {
+   cd ${COMPOSE_DIR}
     printf "\n***********************************  Start docker-compose ***********************************\n"
     docker-compose -f docker-compose-lel.yml up --remove-orphans  --build
 }
-
 
 down(){
    cd ${COMPOSE_DIR}
@@ -45,6 +48,10 @@ while [[ $# -gt 0 ]]
                 ;;
             "down")
                 down
+                break
+                ;;
+            "compose")
+                up
                 break
                 ;;
              *)
