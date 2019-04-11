@@ -12,7 +12,14 @@ End to End testing
 For at appene skal kunne kommunisere med vtpmock over SSL samt for å signere JWT´er med mock-STS må det genereres noen nøkler.
 Dette kan gjøres ved å kjøre `./makekeystore.sh`
 
-#### Bygging
+#### Bygging og start
+
+Fra docker-compose katalogen, kjør skriptet:
+ 
+ `./build-and-run-lel.sh up &`
+
+
+alternativt
 
 LEL 1 appenen må foreløpig bygges lokalt, ved å gå i hver enkelt prosjekt: `./gradlew assemble` eller 
 `for i in ./dp*/; do (print $i && cd $i && ./gradlew assemble); done`
@@ -20,6 +27,10 @@ LEL 1 appenen må foreløpig bygges lokalt, ved å gå i hver enkelt prosjekt: `
 Start docker-compose via: 
 
 `docker-compose -f docker-compose-lel.yml up -d  --remove-orphans --force-recreate --build`
+
+Stop docker-compose med: 
+
+`./build-and-run-lel.sh down`
 
 #### Test av dp-regel-api-arena-adapter
 
