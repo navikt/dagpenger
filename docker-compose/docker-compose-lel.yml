@@ -46,6 +46,8 @@ services:
       - "openldap"
     volumes:
       - .docker_tmp/zk-single-kafka-single/kafka1/data:/var/lib/kafka/data
+      - ${PWD}/wait-for-it.sh:/wait-for-it.sh
+    command: ["/wait-for-it.sh", "zookeeper:2181",  "-t", "60", "--", "/etc/confluent/docker/run"]
   create-topics:
     image: confluentinc/cp-kafka:5.1.2
     depends_on:
@@ -62,7 +64,8 @@ services:
     command: |
       bash -c 'echo Waiting for Kafka to be ready... && \
       cub kafka-ready -b kafka:9093 1 40 -s SASL_PLAINTEXT -c kafka-client.properties && \
-      kafka-topics --create --topic privat-dagpenger-behov-alpha --partitions 3 --replication-factor 1 --if-not-exists --zookeeper zookeeper:2181'
+      kafka-topics --create --topic privat-dagpenger-behov-alpha --partitions 3 --replication-factor 1 --if-not-exists --zookeeper zookeeper:2181 && \
+      python -m SimpleHTTPServer 9999'
   postgres-db:
     build: ./postgresql
     ports:
@@ -72,6 +75,8 @@ services:
       - "POSTGRES_MULTIPLE_DATABASES=dp-regel-api,docker: dp-inntekt-db,docker"
   dp-regel-api:
     build: ./../dp-regel-api
+    volumes:
+      - ${PWD}/wait-for-it.sh:/wait-for-it.sh
     ports:
       - "8092:8092"
     environment:
@@ -80,6 +85,7 @@ services:
       KAFKA_BOOTSTRAP_SERVERS: kafka:9093
       SRVDP_REGEL_API_USERNAME: igroup
       SRVDP_REGEL_API_PASSWORD: itest
+    entrypoint: ["/wait-for-it.sh", "create-topics:9999",  "-t", "60", "--", "/entrypoint.sh"]
     depends_on:
       - create-topics
       - postgres-db
@@ -111,48 +117,63 @@ services:
       - postgres-db
   dp-regel-minsteinntekt:
     build: ./../dp-regel-minsteinntekt
+    volumes:
+      - ${PWD}/wait-for-it.sh:/wait-for-it.sh
     environment:
       KAFKA_BOOTSTRAP_SERVERS: kafka:9093
       SRVDP_REGEL_MINSTEINNTEKT_USERNAME: igroup
       SRVDP_REGEL_MINSTEINNTEKT_PASSWORD: itest
+    entrypoint: ["/wait-for-it.sh", "create-topics:9999",  "-t", "60", "--", "/entrypoint.sh"]
     depends_on:
       - create-topics
       - kafka
   dp-regel-sats:
     build: ./../dp-regel-sats
+    volumes:
+      - ${PWD}/wait-for-it.sh:/wait-for-it.sh
     environment:
       KAFKA_BOOTSTRAP_SERVERS: kafka:9093
       SRVDP_REGEL_SATS_USERNAME: igroup
       SRVDP_REGEL_SATS_PASSWORD: itest
+    entrypoint: ["/wait-for-it.sh", "create-topics:9999",  "-t", "60", "--", "/entrypoint.sh"]
     depends_on:
       - create-topics
       - kafka
   dp-regel-grunnlag:
     build: ./../dp-regel-grunnlag
+    volumes:
+      - ${PWD}/wait-for-it.sh:/wait-for-it.sh
     environment:
       KAFKA_BOOTSTRAP_SERVERS: kafka:9093
       SRVDP_REGEL_GRUNNLAG_USERNAME: igroup
       SRVDP_REGEL_GRUNNLAG_PASSWORD: itest
+    entrypoint: ["/wait-for-it.sh", "create-topics:9999",  "-t", "60", "--", "/entrypoint.sh"]
     depends_on:
       - create-topics
       - kafka
   dp-regel-periode:
     build: ./../dp-regel-periode
+    volumes:
+      - ${PWD}/wait-for-it.sh:/wait-for-it.sh
     environment:
       KAFKA_BOOTSTRAP_SERVERS: kafka:9093
       SRVDP_REGEL_PERIODE_USERNAME: igroup
       SRVDP_REGEL_PERIODE_PASSWORD: itest
+    entrypoint: ["/wait-for-it.sh", "create-topics:9999",  "-t", "60", "--", "/entrypoint.sh"]
     depends_on:
       - create-topics
       - kafka
   dp-datalaster-inntekt:
     build: ./../dp-datalaster-inntekt
+    volumes:
+      - ${PWD}/wait-for-it.sh:/wait-for-it.sh
     environment:
       KAFKA_BOOTSTRAP_SERVERS: kafka:9093
       SRVDP_DATALASTER_INNTEKT_USERNAME: igroup
       SRVDP_DATALASTER_INNTEKT_PASSWORD: itest
       OIDC_STS_ISSUERURL: http://localhost
       DAGPENGER_INNTEKT_API_REST_URL: "http://dp-inntekt-api:8099/"
+    entrypoint: ["/wait-for-it.sh", "create-topics:9999",  "-t", "60", "--", "/entrypoint.sh"]
     depends_on:
       - create-topics
       - kafka
