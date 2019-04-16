@@ -19,7 +19,7 @@ Fra docker-compose katalogen, kjør skriptet:
  `./build-and-run-lel.sh up &`
 
 
-alternativt
+##### Alternativ bygging og start 
 
 LEL 1 appenen må foreløpig bygges lokalt, ved å gå i hver enkelt prosjekt: `./gradlew assemble` eller 
 `for i in ./dp*/; do (print $i && cd $i && ./gradlew assemble); done`
