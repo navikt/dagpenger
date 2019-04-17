@@ -2,6 +2,9 @@
 
 DOCKER_PROCESSES=$(docker ps -a -q)
 
+
+
+
 # Stop and delete all containers and their associated volumes.
 if [[ -n "$DOCKER_PROCESSES" ]]; then
     printf "Docker Processes: \n%s\n\n" "$DOCKER_PROCESSES"
@@ -13,4 +16,12 @@ if [[ -n "$DOCKER_PROCESSES" ]]; then
     printf "Deleted all Docker containers and their associated volumes.\n"
 else
     printf "There were no Docker containers to delete.\n"
+fi
+
+
+if [[ -d ./docker_tmp ]]; then
+    printf "Removing  docker_tmp folder"
+    rm -rf ./docker_tmp
+else
+    printf "There were no docker_tmp to delete.\n"
 fi
