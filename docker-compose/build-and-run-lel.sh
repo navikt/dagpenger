@@ -8,7 +8,7 @@ build_and_up() {
     do
         printf "\nBuilding %s\n" ${APP}
         cd ./../${APP}
-        if ./gradlew assemble ; then
+        if ./gradlew clean assemble ; then
             echo "Build succeeded"
         else
             echo "Build failed"

@@ -172,7 +172,7 @@ services:
       SRVDP_DATALASTER_INNTEKT_USERNAME: igroup
       SRVDP_DATALASTER_INNTEKT_PASSWORD: itest
       OIDC_STS_ISSUERURL: http://localhost
-      DAGPENGER_INNTEKT_API_REST_URL: "http://dp-inntekt-api:8099/"
+      DP_INNTEKT_API_URL: "http://dp-inntekt-api:8099/"
     entrypoint: ["/wait-for-it.sh", "create-topics:9999",  "-t", "60", "--", "/entrypoint.sh"]
     depends_on:
       - create-topics

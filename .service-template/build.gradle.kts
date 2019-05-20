@@ -18,6 +18,7 @@ repositories {
     jcenter()
     maven("https://oss.sonatype.org/content/repositories/snapshots/")
     maven(url = "http://packages.confluent.io/maven/")
+    maven("https://jitpack.io")
 }
 
 val gitVersion: groovy.lang.Closure<Any> by extra
@@ -41,8 +42,8 @@ val kafkaVersion = "2.0.0"
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("no.nav.dagpenger:streams:0.3.3-SNAPSHOT")
-    implementation("no.nav.dagpenger:events:0.3.11-SNAPSHOT")
+    implementation("com.github.navikt:dagpenger-streams:2019.05.20-12.02.83ff2b7cb7f6")
+    implementation("com.github.navikt:dagpenger-events:2019.05.20-11.56.33cd4c73a439")
 
     implementation("io.github.microutils:kotlin-logging:$kotlinLoggingVersion")
     implementation("com.github.kittinunf.fuel:fuel:$fuelVersion")
