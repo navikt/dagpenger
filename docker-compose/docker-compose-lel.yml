@@ -98,6 +98,7 @@ services:
       - ./mockkeys:/mockkeys
     environment:
       DP_REGEL_API_URL: http://dp-regel-api:8092/
+      DP_REGEL_API_V2_URL: http://dp-regel-api:8092/
       DP_INNTEKT_API_URL: http://dp-inntekt-api:8099/
       NAV_TRUSTSTORE_PATH: /mockkeys/truststore.jks
       NAV_TRUSTSTORE_PASSWORD: changeit
