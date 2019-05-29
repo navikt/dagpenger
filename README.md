@@ -20,6 +20,8 @@ repo start --all master
 
 Nå kan git brukes som normalt for hvert repo.
 
+Se https://source.android.com/setup/develop/repo for flere kommandoer.
+
 ## IntellJ  og ktlint 
 
 Åpne prosjektet i IntelliJ 
