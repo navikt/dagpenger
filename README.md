@@ -13,7 +13,7 @@ manuelt](https://source.android.com/setup/build/downloading) eller via homebrew
 Repositoriene settes opp med:
 
 ```
-repo init -u git@github.com:navikt/dagpenger.git
+repo init -u https://github.com/navikt/dagpenger.git
 repo sync
 repo start --all master
 ```
