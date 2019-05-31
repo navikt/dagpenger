@@ -10,6 +10,17 @@ manuelt](https://source.android.com/setup/build/downloading) eller via homebrew
 
 `brew install repo`
 
+NAVIKT github repositories krever SAML SSO, for å
+slippe å skrive inn bruker og passord kan man generere
+et [personlig access token](https://help.github.com/articles/creating-an-oauth-token-for-command-line-use)
+som legges inn i  
+```
+~/.netrc 
+
+machine github.com login <DITT_TOKEN>
+
+```
+
 Repositoriene settes opp med:
 
 ```
