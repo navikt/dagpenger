@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
-APPS=(dp-regel-api dp-inntekt-api dp-regel-api-arena-adapter dp-regel-periode dp-regel-grunnlag dp-regel-sats dp-regel-minsteinntekt)
+APPS=(dp-regel-api dp-inntekt-api dp-regel-api-arena-adapter dp-regel-periode dp-regel-grunnlag dp-regel-sats dp-regel-minsteinntekt dp-datalaster-inntekt)
 COMPOSE_DIR=${PWD}
 
 
 build_and_up() {
+
     for APP in ${APPS[*]}
     do
         printf "\nBuilding %s\n" ${APP}
