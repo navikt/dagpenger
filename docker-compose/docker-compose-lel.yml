@@ -65,6 +65,7 @@ services:
       bash -c 'echo Waiting for Kafka to be ready... && \
       cub kafka-ready -b kafka:9093 1 40 -s SASL_PLAINTEXT -c kafka-client.properties && \
       kafka-topics --create --topic privat-dagpenger-behov-alpha --partitions 3 --replication-factor 1 --if-not-exists --zookeeper zookeeper:2181 && \
+      kafka-topics --create --topic privat-dagpenger-behov-v1 --partitions 3 --replication-factor 1 --if-not-exists --zookeeper zookeeper:2181 && \
       python -m SimpleHTTPServer 9999'
   postgres-db:
     build: ./postgresql
