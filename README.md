@@ -35,11 +35,15 @@ Se https://source.android.com/setup/develop/repo for flere kommandoer.
 
 ## IntellJ  og ktlint 
 
-Åpne prosjektet i IntelliJ 
 
-Vi bruker klint for å ha formatteringsregler på koden. Kjør:
+
+Vi bruker klint for å ha formatteringsregler på koden. 
+
+Kjør:
 
 `./gradlew klintIdea` for å oppdatere IntelliJ med klint regler. Restart IntelliJ 
+
+Deretter åpner du prosjektet i IntelliJ 
 
 ## Bygg
 
