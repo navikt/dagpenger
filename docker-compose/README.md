@@ -56,6 +56,10 @@ eksempel mi.json:
 }
 ```
 
-NB - inntekt-api har ikke testscenarier enda.
-
-
+Inntekt-apiet er predefinert med følgende aktør id, vedtak id, beregningsdato:
+```
+'INGEN_INNTEKT', 12345, '2019-07-01'
+'1.5_G_INNTEKT', 12345, '2019-07-01'
+'3_G_INNTEKT', 12345, '2019-07-01'
+'FF_INNTEKT', 12345, '2019-07-01'
+```
