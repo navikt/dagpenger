@@ -85,6 +85,6 @@
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-biblioteker/CODEOWNERS"/>
       </project>
     <project name="dp-vedtakresultat-lytter">
-      <copyfile src="../.service-tempalte/CODEOWNERS" dest="dp-vedtakresultat-lytter/CODEOWNERS"/>
+      <copyfile src="../.service-template/CODEOWNERS" dest="dp-vedtakresultat-lytter/CODEOWNERS"/>
     </project>
 </manifest>
