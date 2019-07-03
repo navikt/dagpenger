@@ -34,8 +34,6 @@ mapping for.
 
 ### Hva gikk dårlig
 
-- Vi glemte å følge opp feilen som ble identifisert 29.05.
-
 ### Hvor hadde vi flaks
 
 - Det traff kun et subsett av brukerene.
