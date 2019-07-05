@@ -17,9 +17,6 @@
     </project>
     <project name="dagpenger-joark-mottak">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-joark-mottak/CODEOWNERS"/>
-        <!--<copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dagpenger-joark-mottak/buildSrc/build.gradle.kts" />-->
-        <!--<copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dagpenger-joark-mottak/buildSrc/settings.gradle.kts" />-->
-        <!--<copyfile src="../.service-template/buildSrc/src/main/java/Dependencies.kt" dest="dagpenger-joark-mottak/buildSrc/src/main/java/Dependencies.kt" />-->
     </project>
     <project name="dagpenger-journalforing-arena">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-arena/CODEOWNERS"/>
@@ -59,6 +56,9 @@
     </project>
     <project name="dp-inntekt-api">
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-inntekt-api/CODEOWNERS"/>
+        <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-inntekt-api/buildSrc/build.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-inntekt-api/buildSrc/settings.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/src/main/java/Constants.kt" dest="dp-inntekt-api/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dp-regel-api">
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-api/CODEOWNERS"/>
