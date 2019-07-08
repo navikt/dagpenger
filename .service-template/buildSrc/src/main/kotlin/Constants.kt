@@ -78,7 +78,13 @@ object Junit5 {
 object TestContainers {
     const val version = "1.10.6"
     const val postgresql = "org.testcontainers:postgresql:$version"
+    const val kakfa = "org.testcontainers:kafka:$version"
 }
+
+object Vault {
+    const val javaDriver = "com.bettercloud:vault-java-driver:3.1.0"
+}
+
 
 object Wiremock {
     const val version = "2.21.0"
@@ -145,6 +151,11 @@ object Log4j2 {
         private const val version = "0.15"
         const val logstashLayout = "com.vlkan.log4j2:log4j2-logstash-layout-fatjar:$version"
     }
+}
+
+object Slf4j {
+    const val version = "1.7.25"
+    const val api = "org.slf4j:slf4j-api:$version"
 }
 
 object JsonAssert {
