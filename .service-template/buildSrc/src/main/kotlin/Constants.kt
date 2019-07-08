@@ -6,7 +6,6 @@
  *
  */
 
-// Core dependencies
 object Kotlin  {
     const val version = "1.3.41"
     const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib:$version"
@@ -51,6 +50,13 @@ object Dagpenger {
     object Events {
         const val events = "com.github.navikt.dagpenger-events:2019.06.26-21.18.5669e6a90cf3"
     }
+}
+
+object Kafka {
+    const val version = "2.0.1"
+    const val clients = "org.apache.kafka:kafka-clients:$version"
+    const val streams = "org.apache.kafka:kafka-streams:$version"
+
 }
 
 object Database {
