@@ -6,6 +6,14 @@
  *
  */
 
+
+object Cucumber {
+    const val version = "4.0.0"
+    const val java8 = "io.cucumber:cucumber-java8:$version"
+    const val junit = "io.cucumber:cucumber-junit:$version"
+}
+
+
 object Kotlin  {
     const val version = "1.3.41"
     const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib:$version"
