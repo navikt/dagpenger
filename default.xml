@@ -65,6 +65,10 @@
     </project>
     <project name="dp-regel-api">
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-api/CODEOWNERS"/>
+        <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-regel-api/buildSrc/build.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-regel-api/buildSrc/settings.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-regel-api/buildSrc/src/main/kotlin/Constants.kt" />
+
     </project>
     <project name="dp-regel-api-arena-adapter">
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-api-arena-adapter/CODEOWNERS"/>
