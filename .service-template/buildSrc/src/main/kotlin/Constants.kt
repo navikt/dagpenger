@@ -1,12 +1,31 @@
-
-
+/***
+ *  Avhengigheter for Dapgenger jvm prosjekter.
+ *
+ *  Denne fila skal kun editeres i fra https://github.com/navikt/dagpenger monorepo. Sjekk inn ny versjon og kjør
+ *  repo sync
+ *
+ */
 
 // Core dependencies
 object Kotlin  {
     const val version = "1.3.41"
     const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib:$version"
+
+    object Logging {
+        const val version = "1.6.22"
+        const val kotlinLogging = "io.github.microutils:kotlin-logging:$version"
+    }
 }
 
+object Spotless {
+    const val version = "3.13.0"
+    const val spotless = "com.diffplug.gradle.spotless"
+}
+
+object Shadow {
+    const val version = "4.0.3"
+    const val shadow = "com.github.johnrengelman.shadow"
+}
 
 object Moshi {
     const val version = "1.8.0"
@@ -22,6 +41,7 @@ object Dagpenger {
         const val version = "2019.06.26-21.20.53508650ea49"
         const val stsKlient = "com.github.navikt.dp-biblioteker:sts-klient:$version"
         const val grunnbeløp = "com.github.navikt.dp-biblioteker:grunnbelop:$version"
+        const val ktorUtils = "com.github.navikt.dp-biblioteker:ktor-utils:$version"
     }
 
     object Streams {
@@ -38,6 +58,7 @@ object Database {
     const val Kotlinquery = "com.github.seratch:kotliquery:1.3.0"
     const val Flyway = "org.flywaydb:flyway-core:6.0.0-beta2"
     const val HikariCP = "com.zaxxer:HikariCP:3.3.1"
+    const val VaultJdbc = "no.nav:vault-jdbc:1.3.1"
 }
 
 object Junit5 {
@@ -45,6 +66,7 @@ object Junit5 {
     const val api = "org.junit.jupiter:junit-jupiter-api:$version"
     const val params = "org.junit.jupiter:junit-jupiter-params:$version"
     const val engine = "org.junit.jupiter:junit-jupiter-engine:$version"
+    const val vintageEngine = "org.junit.vintage:junit-vintage-engine:$version"
     const val kotlinRunner = "io.kotlintest:kotlintest-runner-junit5:3.3.0"
 }
 
@@ -55,7 +77,7 @@ object TestContainers {
 
 object Wiremock {
     const val version = "2.21.0"
-    const val wiremock = "com.github.tomakehurst:wiremock-standalone:$version"
+    const val standalone = "com.github.tomakehurst:wiremock-standalone:$version"
 }
 
 object Konfig {
@@ -69,7 +91,7 @@ object Mockk {
 
 object Fuel {
     const val version = "2.1.0"
-    const val fuel = "om.github.kittinunf.fuel:fuel:$version"
+    const val fuel = "com.github.kittinunf.fuel:fuel:$version"
     const val fuelMoshi = "com.github.kittinunf.fuel:fuel-moshi:$version"
 }
 
@@ -92,13 +114,21 @@ object Ktor {
     const val version = "1.2.2"
     const val server = "io.ktor:ktor-server:$version"
     const val serverNetty = "io.ktor:ktor-server-netty:$version"
-    const val auth = "io.ktor:ktor-server-auth:$version"
-    const val authJwt = "io.ktor:ktor-server-auth-jwt:$version"
+    const val auth = "io.ktor:ktor-auth:$version"
+    const val authJwt = "io.ktor:ktor-auth-jwt:$version"
     const val micrometerMetrics = "io.ktor:ktor-metrics-micrometer:$version"
-    const val ktorUtils = "com.github.navikt.dp-biblioteker:ktor-utils:${Dagpenger.Biblioteker.version}"
     const val ktorTest = "io.ktor:ktor-server-test-host:$version"
 }
 
+object Micrometer {
+    const val version = "1.1.5"
+    const val prometheusRegistry = "io.micrometer:micrometer-registry-prometheus:$version"
+}
+
+object Ulid {
+    const val version = "8.2.0"
+    const val ulid = "de.huxhorn.sulky:de.huxhorn.sulky.ulid:$version"
+}
 
 object Log4j2 {
     private const val version = "2.12.0"
@@ -110,6 +140,13 @@ object Log4j2 {
         private const val version = "0.15"
         const val logstashLayout = "com.vlkan.log4j2:log4j2-logstash-layout-fatjar:$version"
     }
+}
 
+object JsonAssert {
+    const val version = "1.5.0"
+    const val jsonassert = "org.skyscreamer:jsonassert:$version"
+}
 
+object Klint {
+    const val version = "0.31.0"
 }
