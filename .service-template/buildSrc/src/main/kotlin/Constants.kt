@@ -54,6 +54,10 @@ object Kafka {
 
 }
 
+object KafkaEmbedded {
+    const val env = "no.nav:kafka-embedded-env:2.0.2"
+}
+
 object Database {
     const val Postgres = "org.postgresql:postgresql:42.2.5"
     const val Kotlinquery = "com.github.seratch:kotliquery:1.3.0"
