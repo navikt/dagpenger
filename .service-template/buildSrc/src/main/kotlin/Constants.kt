@@ -78,7 +78,7 @@ object Junit5 {
 object TestContainers {
     const val version = "1.10.6"
     const val postgresql = "org.testcontainers:postgresql:$version"
-    const val kakfa = "org.testcontainers:kafka:$version"
+    const val kafka = "org.testcontainers:kafka:$version"
 }
 
 object Vault {
