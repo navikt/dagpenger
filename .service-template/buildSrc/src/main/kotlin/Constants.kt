@@ -42,8 +42,8 @@ object Dagpenger {
         const val grunnbeløp = "com.github.navikt.dp-biblioteker:grunnbelop:$version"
         const val ktorUtils = "com.github.navikt.dp-biblioteker:ktor-utils:$version"
     }
-    const val Streams = "com.github.navikt.dagpenger-streams:2019.07.02-10.26.6b16de2e090f"
-    const val Events = "com.github.navikt.dagpenger-events:2019.06.26-21.18.5669e6a90cf3"
+    const val Streams = "com.github.navikt:dagpenger-streams:2019.07.02-10.26.6b16de2e090f"
+    const val Events = "com.github.navikt:dagpenger-events:2019.06.26-21.18.5669e6a90cf3"
 }
 
 object Kafka {
