@@ -50,6 +50,7 @@ object Kafka {
     const val version = "2.0.1"
     const val clients = "org.apache.kafka:kafka-clients:$version"
     const val streams = "org.apache.kafka:kafka-streams:$version"
+    const val streamTestUtils = "org.apache.kafka:kafka-streams-test-utils:$version"
 
 }
 
