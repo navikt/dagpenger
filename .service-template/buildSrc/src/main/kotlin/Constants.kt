@@ -52,6 +52,11 @@ object Kafka {
     const val streams = "org.apache.kafka:kafka-streams:$version"
     const val streamTestUtils = "org.apache.kafka:kafka-streams-test-utils:$version"
 
+    object Confluent {
+        const val version = "5.0.2"
+        const val avroStreamSerdes = "io.confluent:kafka-streams-avro-serde:$version"
+    }
+
 }
 
 object KafkaEmbedded {
@@ -127,6 +132,7 @@ object Ktor {
     const val serverNetty = "io.ktor:ktor-server-netty:$version"
     const val auth = "io.ktor:ktor-auth:$version"
     const val authJwt = "io.ktor:ktor-auth-jwt:$version"
+    const val locations = "io.ktor:ktor-locations:$version"
     const val micrometerMetrics = "io.ktor:ktor-metrics-micrometer:$version"
     const val ktorTest = "io.ktor:ktor-server-test-host:$version"
 }
