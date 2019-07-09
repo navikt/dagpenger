@@ -96,7 +96,7 @@ object Kotlinx {
 }
 
 object Ktor {
-    const val version = "1.2.2"
+    const val version = "1.2.1"
     const val server = "io.ktor:ktor-server:$version"
     const val serverNetty = "io.ktor:ktor-server-netty:$version"
     const val auth = "io.ktor:ktor-auth:$version"
