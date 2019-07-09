@@ -138,7 +138,7 @@ object Mockk {
 
 object Nare {
     const val version = "768ae37"
-    const val nare = "no.nav:nare:$nare"
+    const val nare = "no.nav:nare:$version"
 }
 
 object Prometheus {
