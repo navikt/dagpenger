@@ -38,6 +38,9 @@
     </project>
     <project name="dagpenger-oppslag">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-oppslag/CODEOWNERS"/>
+        <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dagpenger-oppslag/buildSrc/build.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dagpenger-oppslag/buildSrc/settings.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dagpenger-oppslag/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dagpenger-regel-ui">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-regel-ui/CODEOWNERS"/>
@@ -47,9 +50,15 @@
     </project>
     <project name="dagpenger-metrics">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-metrics/CODEOWNERS"/>
+        <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dagpenger-streams/buildSrc/build.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dagpenger-streams/buildSrc/settings.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dagpenger-streams/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dagpenger-streams">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-streams/CODEOWNERS"/>
+        <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dagpenger-events/buildSrc/build.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dagpenger-events/buildSrc/settings.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dagpenger-events/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dp-datalaster-inntekt">
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-datalaster-inntekt/CODEOWNERS"/>
