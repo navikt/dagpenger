@@ -17,6 +17,9 @@
     </project>
     <project name="dagpenger-joark-mottak">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-joark-mottak/CODEOWNERS"/>
+        <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dagpenger-joark-mottak/buildSrc/build.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dagpenger-joark-mottak/buildSrc/settings.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dagpenger-joark-mottak/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dagpenger-journalforing-arena">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-arena/CODEOWNERS"/>
@@ -50,9 +53,6 @@
     </project>
     <project name="dagpenger-metrics">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-metrics/CODEOWNERS"/>
-        <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dagpenger-streams/buildSrc/build.gradle.kts" />
-        <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dagpenger-streams/buildSrc/settings.gradle.kts" />
-        <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dagpenger-streams/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dagpenger-streams">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-streams/CODEOWNERS"/>
@@ -115,6 +115,9 @@
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-biblioteker/CODEOWNERS"/>
       </project>
     <project name="dp-vedtakresultat-lytter">
-      <copyfile src="../.service-template/CODEOWNERS" dest="dp-vedtakresultat-lytter/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dp-vedtakresultat-lytter/CODEOWNERS"/>
+        <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-vedtakresultat-lytter/buildSrc/build.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-vedtakresultat-lytter/buildSrc/settings.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-vedtakresultat-lytter/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
 </manifest>
