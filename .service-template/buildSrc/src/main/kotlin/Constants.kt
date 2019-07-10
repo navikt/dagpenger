@@ -43,6 +43,10 @@ object Fuel {
     const val fuelMoshi = "com.github.kittinunf.fuel:fuel-moshi:$version"
 }
 
+object GradleWrapper {
+    const val version = "5.5"
+}
+
 object Junit5 {
     const val version = "5.4.1"
     const val api = "org.junit.jupiter:junit-jupiter-api:$version"
@@ -74,7 +78,7 @@ object KafkaEmbedded {
 }
 
 object Klint {
-    const val version = "0.31.0"
+    const val version = "0.33.0"
 }
 
 object Konfig {
@@ -159,7 +163,7 @@ object Slf4j {
 }
 
 object Spotless {
-    const val version = "3.13.0"
+    const val version = "3.23.0"
     const val spotless = "com.diffplug.gradle.spotless"
 }
 
