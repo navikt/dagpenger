@@ -5,7 +5,9 @@
  *  repo sync
  *
  */
-
+object Avro {
+    const val avro = "org.apache.avro:avro:1.9.0"
+}
 object Bekk {
     const val nocommons = "no.bekk.bekkopen:nocommons:0.8.2"
 }
@@ -41,6 +43,7 @@ object Fuel {
     const val version = "2.1.0"
     const val fuel = "com.github.kittinunf.fuel:fuel:$version"
     const val fuelMoshi = "com.github.kittinunf.fuel:fuel-moshi:$version"
+    fun library(name: String) = "com.github.kittinunf.fuel:fuel-$name:$version"
 }
 
 object GradleWrapper {
@@ -48,12 +51,13 @@ object GradleWrapper {
 }
 
 object Junit5 {
-    const val version = "5.4.1"
-    const val api = "org.junit.jupiter:junit-jupiter-api:$version"
-    const val params = "org.junit.jupiter:junit-jupiter-params:$version"
-    const val engine = "org.junit.jupiter:junit-jupiter-engine:$version"
+    const val version = "5.5.0"
+    const val api = library("api")
+    const val params = library("params")
+    const val engine = library("engine")
     const val vintageEngine = "org.junit.vintage:junit-vintage-engine:$version"
     const val kotlinRunner = "io.kotlintest:kotlintest-runner-junit5:3.3.0"
+    fun library(name: String) = "org.junit.jupiter:junit-jupiter-$name:$version"
 }
 
 object JsonAssert {
@@ -62,13 +66,13 @@ object JsonAssert {
 }
 
 object Kafka {
-    const val version = "2.0.1"
-    const val clients = "org.apache.kafka:kafka-clients:$version"
-    const val streams = "org.apache.kafka:kafka-streams:$version"
-    const val streamTestUtils = "org.apache.kafka:kafka-streams-test-utils:$version"
-
+    const val version = "2.2.1"
+    const val clients = library("clients")
+    const val streams = library("streams")
+    const val streamTestUtils = library("streams-test-utils")
+    fun library(name: String) = "org.apache.kafka:kafka-$name:$version"
     object Confluent {
-        const val version = "5.0.2"
+        const val version = "5.2.1"
         const val avroStreamSerdes = "io.confluent:kafka-streams-avro-serde:$version"
     }
 }
@@ -101,21 +105,23 @@ object Kotlinx {
 
 object Ktor {
     const val version = "1.2.1"
-    const val server = "io.ktor:ktor-server:$version"
-    const val serverNetty = "io.ktor:ktor-server-netty:$version"
-    const val auth = "io.ktor:ktor-auth:$version"
-    const val authJwt = "io.ktor:ktor-auth-jwt:$version"
-    const val locations = "io.ktor:ktor-locations:$version"
-    const val micrometerMetrics = "io.ktor:ktor-metrics-micrometer:$version"
-    const val ktorTest = "io.ktor:ktor-server-test-host:$version"
+    const val server = library("server")
+    const val serverNetty = library("server-netty")
+    const val auth = library("auth")
+    const val authJwt = library("auth-jwt")
+    const val locations = library("locations")
+    const val micrometerMetrics = library("metrics-micrometer")
+    const val ktorTest = library("server-test-host")
+    fun library(name: String) = "io.ktor:ktor-$name:$version"
 }
 
 object Log4j2 {
     private const val version = "2.12.0"
-    const val api = "org.apache.logging.log4j:log4j-api:$version"
-    const val core = "org.apache.logging.log4j:log4j-core:$version"
-    const val slf4j = "org.apache.logging.log4j:log4j-slf4j-impl:$version"
+    const val api = library("api")
+    const val core = library("core")
+    const val slf4j = library("slf4j-impl")
 
+    fun library(name: String) = "org.apache.logging.log4j:log4j-$name:$version"
     object Logstash {
         private const val version = "0.15"
         const val logstashLayout = "com.vlkan.log4j2:log4j2-logstash-layout-fatjar:$version"
@@ -130,9 +136,10 @@ object Micrometer {
 object Moshi {
     const val version = "1.8.0"
     const val moshi = "com.squareup.moshi:moshi:$version"
-    const val moshiKotlin = "com.squareup.moshi:moshi-kotlin:$version"
-    const val moshiAdapters = "com.squareup.moshi:moshi-adapters:$version"
+    const val moshiKotlin = library("kotlin")
+    const val moshiAdapters = library("adapters")
     const val moshiKtor = "com.ryanharter.ktor:ktor-moshi:1.0.1"
+    fun library(name: String) = "com.squareup.moshi:moshi-$name:$version"
 }
 
 object Mockk {
@@ -147,10 +154,10 @@ object Nare {
 
 object Prometheus {
     const val version = "0.6.0"
-    const val common = "io.prometheus:simpleclient_common:$version"
-    const val hotspot = "io.prometheus:simpleclient_hotspot:$version"
-    const val log4j2 = "io.prometheus:simpleclient_log4j2:$version"
-
+    const val common = library("common")
+    const val hotspot = library("hotspot")
+    const val log4j2 = library("log4j2")
+    fun library(name: String) = "io.prometheus:simpleclient_$name:$version"
     object Nare {
         const val version = "0b41ab4"
         const val prometheus = "no.nav:nare-prometheus:$version"
