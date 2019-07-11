@@ -54,9 +54,6 @@
     <project name="dagpenger-secrets">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-regel-ui/CODEOWNERS"/>
     </project>
-    <project name="dagpenger-metrics">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-metrics/CODEOWNERS"/>
-    </project>
     <project name="dagpenger-streams">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-streams/CODEOWNERS"/>
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dagpenger-streams/buildSrc/build.gradle.kts" />
