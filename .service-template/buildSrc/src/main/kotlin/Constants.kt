@@ -11,7 +11,7 @@ object Assertj {
     fun library(name: String) = "org.assertj:assertj-$name:$version"
 }
 object Avro {
-    const val avro = "org.apache.avro:avro:1.9.0"
+    const val avro = "org.apache.avro:avro:1.8.2"
 }
 
 object Bekk {
@@ -84,7 +84,7 @@ object Kafka {
     const val streamTestUtils = "org.apache.kafka:kafka-streams-test-utils:$version"
     fun library(name: String) = "org.apache.kafka:kafka-$name:$version"
     object Confluent {
-        const val version = "5.0.1"
+        const val version = "5.0.3"
         const val avroStreamSerdes = "io.confluent:kafka-streams-avro-serde:$version"
         fun library(name: String) = "io.confluent:$name:$version"
     }
