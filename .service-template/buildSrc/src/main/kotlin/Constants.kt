@@ -67,6 +67,11 @@ object Junit5 {
     fun library(name: String) = "org.junit.jupiter:junit-jupiter-$name:$version"
 }
 
+object Json {
+    const val version = "20180813"
+    const val library = "org.json:json:$version"
+}
+
 object JsonAssert {
     const val version = "1.5.0"
     const val jsonassert = "org.skyscreamer:jsonassert:$version"
