@@ -8,6 +8,9 @@
     <project name="dagpenger" path="."/>
     <project name="dagpenger-events">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-events/CODEOWNERS"/>
+        <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dagpenger-events/buildSrc/build.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dagpenger-events/buildSrc/settings.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dagpenger-events/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dagpenger-funksjonelle-tester">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-funksjonelle-tester/CODEOWNERS"/>
@@ -113,6 +116,9 @@
     </project>
     <project name="dp-biblioteker">
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-biblioteker/CODEOWNERS"/>
+        <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-biblioteker/buildSrc/build.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-biblioteker/buildSrc/settings.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-biblioteker/buildSrc/src/main/kotlin/Constants.kt" />
       </project>
     <project name="dp-vedtakresultat-lytter">
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-vedtakresultat-lytter/CODEOWNERS"/>
