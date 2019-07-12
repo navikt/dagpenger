@@ -24,24 +24,6 @@
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dagpenger-joark-mottak/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dagpenger-joark-mottak/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
-    <project name="dagpenger-journalforing-arena">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-arena/CODEOWNERS"/>
-    </project>
-    <project name="dagpenger-journalforing-ferdigstill">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-ferdigstill/CODEOWNERS"/>
-    </project>
-    <project name="dagpenger-journalforing-gsak">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-gsak/CODEOWNERS"/>
-    </project>
-    <project name="dagpenger-journalforing-manuell">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-manuell/CODEOWNERS"/>
-    </project>
-    <project name="dagpenger-journalforing-ruting">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-ruting/CODEOWNERS"/>
-    </project>
-    <project name="dagpenger-journalforing-skanning">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-skanning/CODEOWNERS"/>
-    </project>
     <project name="dagpenger-oppslag">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-oppslag/CODEOWNERS"/>
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dagpenger-oppslag/buildSrc/build.gradle.kts" />
