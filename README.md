@@ -31,10 +31,9 @@ repo start --all master
 
 Nå kan git brukes som normalt for hvert repo.
 
-Se https://source.android.com/setup/develop/repo for flere kommandoer.
+Se [repo siden](https://source.android.com/setup/develop/repo) for flere kommandoer.
 
-## IntellJ  og ktlint 
-
+## IntelliJ  og ktlint 
 
 
 Vi bruker klint for å ha formatteringsregler på koden. 
@@ -54,6 +53,29 @@ automatisk av Gradle.
 `./gradlew build`
 
 ---
+
+# Håndtering av gradle avhengigheter
+
+
+En del felles versjonerte avhengigheter for mikrotjenestene i monorepoet er definert i [.service-template/buildSrc/src/main/kotlin/Constants.kt](.service-template/buildSrc/src/main/kotlin/Constants.kt). 
+For å ta i bruk felles versjonerte avhengigheter for en ny mikrotjeneste må en legge til `copyfile` innslag i [default.xml](default.xml) for gitt mikrotjeneste, eksemplifisert:
+
+```xml
+ <project name="dp-inntekt-api">
+        <copyfile src="../.service-template/CODEOWNERS" dest="dp-inntekt-api/CODEOWNERS"/>
+        <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-inntekt-api/buildSrc/build.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-inntekt-api/buildSrc/settings.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-inntekt-api/buildSrc/src/main/kotlin/Constants.kt" />
+    </project>
+```
+
+## Oppdatere avhengigheter
+
+1. Oppdater/endre i  [.service-template/buildSrc/src/main/kotlin/Constants.kt](.service-template/buildSrc/src/main/kotlin/Constants.kt) 
+2. Sjekk inn og push endringen
+3. Kjør `repo sync` for synkronisere `buildSrc` filene til mikrotjenestene. 
+4. Bygg og sjekk inn `buildSrc` filene for mikrotjenestene.
+
 
 # Teste lokalt med docker-compose
 

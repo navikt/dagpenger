@@ -2,21 +2,15 @@ import org.gradle.api.tasks.testing.logging.TestExceptionFormat
 import org.gradle.api.tasks.testing.logging.TestLogEvent
 
 plugins {
-    id("application")
-    kotlin("jvm") version "1.3.21"
-    id("com.diffplug.gradle.spotless") version "3.13.0"
-    id("info.solidsoft.pitest") version "1.3.0"
-    id("com.github.johnrengelman.shadow") version "4.0.3"
+    application
+    kotlin("jvm") version Kotlin.version
+    id(Spotless.spotless) version Spotless.version
+    id(Shadow.shadow) version Shadow.version
 }
 
-apply {
-    plugin("com.diffplug.gradle.spotless")
-    plugin("info.solidsoft.pitest")
-}
 
 repositories {
     jcenter()
-    maven("https://oss.sonatype.org/content/repositories/snapshots/")
     maven(url = "http://packages.confluent.io/maven/")
     maven("https://jitpack.io")
 }
@@ -42,38 +36,20 @@ val kafkaVersion = "2.0.0"
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation("com.github.navikt:dagpenger-streams:2019.06.03-21.15.cf80ca7a33d5")
-    implementation("com.github.navikt:dagpenger-events:2019.05.20-11.56.33cd4c73a439")
 
-    implementation("io.github.microutils:kotlin-logging:$kotlinLoggingVersion")
-    implementation("com.github.kittinunf.fuel:fuel:$fuelVersion")
-    implementation("com.github.kittinunf.fuel:fuel-gson:$fuelVersion")
-
-    compile("org.apache.kafka:kafka-clients:$kafkaVersion")
-    compile("org.apache.kafka:kafka-streams:$kafkaVersion")
-    compile("io.confluent:kafka-streams-avro-serde:$confluentVersion")
-
-    testImplementation(kotlin("test"))
-    testImplementation(kotlin("test-junit"))
-    testImplementation("junit:junit:4.12")
+    testImplementation(kotlin("test-junit5"))
+    testImplementation(Junit5.api)
+    testRuntimeOnly(Junit5.engine)
 }
 
 spotless {
     kotlin {
-        ktlint("0.31.0")
+        ktlint(Klint.version)
     }
     kotlinGradle {
         target("*.gradle.kts", "additionalScripts/*.gradle.kts")
-        ktlint("0.31.0")
+        ktlint(Klint.version)
     }
-}
-
-pitest {
-    threads = 4
-    pitestVersion = "1.4.3"
-    coverageThreshold = 80
-    avoidCallsTo = setOf("kotlin.jvm.internal")
-    timestampedReports = false
 }
 
 tasks.getByName("test").finalizedBy("pitest")
