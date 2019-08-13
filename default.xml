@@ -132,4 +132,10 @@
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-datalaster-subsumsjonbrukt/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-datalaster-subsumsjonbrukt/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
+    <project name="dp-inntekt-klassifisering">
+        <copyfile src="../.service-template/CODEOWNERS" dest="dp-inntekt-klassifisering/CODEOWNERS"/>
+        <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-inntekt-klassifisering/buildSrc/build.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-inntekt-klassifisering/buildSrc/settings.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-inntekt-klassifisering/buildSrc/src/main/kotlin/Constants.kt" />
+    </project>
 </manifest>
