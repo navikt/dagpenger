@@ -211,6 +211,3 @@ object Wiremock {
     const val version = "2.21.0"
     const val standalone = "com.github.tomakehurst:wiremock-standalone:$version"
 }
-
-
-
