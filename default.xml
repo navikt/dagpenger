@@ -1,127 +1,130 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <manifest>
 
-    <remote name="github" fetch="https://github.com/navikt" alias="origin"/>
-    <default remote="github" revision="master" sync-j="4"/>
+    <remote name="github" fetch="https://github.com/navikt" alias="origin" />
+    <default remote="github" revision="master" sync-j="4" />
 
     <!-- list should be sorted alphabetically -->
-    <project name="dagpenger" path="."/>
+    <project name="dagpenger" path="." />
     <project name="dagpenger-events">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-events/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-events/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dagpenger-events/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dagpenger-events/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dagpenger-events/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dagpenger-funksjonelle-tester">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-funksjonelle-tester/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-funksjonelle-tester/CODEOWNERS" />
     </project>
     <project name="dagpenger-iac">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-iac/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-iac/CODEOWNERS" />
     </project>
     <project name="dagpenger-joark-mottak">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-joark-mottak/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-joark-mottak/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dagpenger-joark-mottak/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dagpenger-joark-mottak/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dagpenger-joark-mottak/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dagpenger-journalforing-arena">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-arena/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-arena/CODEOWNERS" />
     </project>
     <project name="dagpenger-journalforing-ferdigstill">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-ferdigstill/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-ferdigstill/CODEOWNERS" />
     </project>
     <project name="dagpenger-journalforing-gsak">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-gsak/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-gsak/CODEOWNERS" />
     </project>
     <project name="dagpenger-journalforing-manuell">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-manuell/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-manuell/CODEOWNERS" />
     </project>
     <project name="dagpenger-journalforing-ruting">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-ruting/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-ruting/CODEOWNERS" />
     </project>
     <project name="dagpenger-journalforing-skanning">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-skanning/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-skanning/CODEOWNERS" />
     </project>
     <project name="dagpenger-oppslag">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-oppslag/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-oppslag/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dagpenger-oppslag/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dagpenger-oppslag/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dagpenger-oppslag/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
+    <project name="dagpenger-raspberry-monitor">
+        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-raspberry-monitor/CODEOWNERS" />
+    </project>
     <project name="dagpenger-regel-ui">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-regel-ui/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-regel-ui/CODEOWNERS" />
     </project>
     <project name="dagpenger-secrets">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-regel-ui/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-regel-ui/CODEOWNERS" />
     </project>
     <project name="dagpenger-streams">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-streams/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-streams/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dagpenger-streams/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dagpenger-streams/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dagpenger-streams/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dp-datalaster-inntekt">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dp-datalaster-inntekt/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dp-datalaster-inntekt/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-datalaster-inntekt/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-datalaster-inntekt/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-datalaster-inntekt/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dp-inntekt-api">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dp-inntekt-api/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dp-inntekt-api/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-inntekt-api/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-inntekt-api/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-inntekt-api/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dp-regel-api">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-api/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-api/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-regel-api/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-regel-api/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-regel-api/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dp-regel-api-arena-adapter">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-api-arena-adapter/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-api-arena-adapter/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-regel-api-arena-adapter/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-regel-api-arena-adapter/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-regel-api-arena-adapter/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dp-regel-minsteinntekt">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-minsteinntekt/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-minsteinntekt/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-regel-minsteinntekt/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-regel-minsteinntekt/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-regel-minsteinntekt/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dp-regel-periode">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-periode/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-periode/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-regel-periode/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-regel-periode/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-regel-periode/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dp-regel-grunnlag">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-grunnlag/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-grunnlag/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-regel-grunnlag/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-regel-grunnlag/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-regel-grunnlag/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dp-regel-sats">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-sats/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-sats/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-regel-sats/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-regel-sats/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-regel-sats/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dp-kafka-offset-monitor">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dp-kafka-offset-monitor/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dp-kafka-offset-monitor/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-kafka-offset-monitor/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-kafka-offset-monitor/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-kafka-offset-monitor/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dp-biblioteker">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dp-biblioteker/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dp-biblioteker/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-biblioteker/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-biblioteker/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-biblioteker/buildSrc/src/main/kotlin/Constants.kt" />
-      </project>
+    </project>
     <project name="dp-vedtakresultat-lytter">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dp-vedtakresultat-lytter/CODEOWNERS"/>
+        <copyfile src="../.service-template/CODEOWNERS" dest="dp-vedtakresultat-lytter/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-vedtakresultat-lytter/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-vedtakresultat-lytter/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-vedtakresultat-lytter/buildSrc/src/main/kotlin/Constants.kt" />
