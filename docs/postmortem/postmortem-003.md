@@ -28,8 +28,8 @@ starting container process caused "process_linux.go:402: container init caused \
 
 | Aksjon | Type | Eier | Referanse |
 | ------ | ---- | ---- | --- |
-| Legge til alarm for `CrashLoopBackoff` | forhindre |  |  |
-| Lage alarm på SLA mot Arena  | forhindre | |  |
+| Legge til alarm for `CrashLoopBackoff` | forhindre | @geiralund | (Done)   |
+| Lage alarm på SLA mot Arena  | forhindre | @geiralund | https://github.com/navikt/dagpenger/issues/213  |
 
 
 ## Hva lærte vi?
