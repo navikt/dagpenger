@@ -18,7 +18,6 @@
 	<copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dagpenger-funksjonelle-tester/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dagpenger-funksjonelle-tester/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
-    </project>
     <project name="dagpenger-iac">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-iac/CODEOWNERS" />
     </project>
