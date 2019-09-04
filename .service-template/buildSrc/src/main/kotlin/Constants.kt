@@ -105,7 +105,7 @@ object Konfig {
 object Kotlin {
     const val version = "1.3.41"
     const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib:$version"
-    const val test-common = "org.jetbrains.kotlin:kotlin-test-common:$version"
+    const val testCommon = "org.jetbrains.kotlin:kotlin-test-common:$version"
 
     object Logging {
         const val version = "1.6.22"
