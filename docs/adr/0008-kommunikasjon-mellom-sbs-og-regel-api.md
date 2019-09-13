@@ -26,4 +26,23 @@ I fremtiden vil vi også få flere ting som lever i sbs, så vi må finne en for
 
 ### Deploye regel-api i begge soner
 
+### Cons
+- Mere å monitorere
+- Kobling til database må åpnes (er åpnet?)
+
+#### Pros:
+
+- Kan forholde seg til samme API
+
+
 ### Bruke kafka som regel-api-endepunkt 
+
+
+
+#### Cons
+
+- Må duplisere logikk som allerede er implementert i dp-regel-api
+"Dingsen" som leser til og fra kafka og returnerer resultater må ha state (ref over egentlig)
+
+#### Pros
+
