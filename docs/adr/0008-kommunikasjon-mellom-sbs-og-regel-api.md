@@ -26,11 +26,11 @@ I fremtiden vil vi også få flere ting som lever i sbs, så vi må finne en for
 
 ### Deploye regel-api i begge soner
 
-### Cons
+#### Cons
 - Mere å monitorere
 - Kobling til database må åpnes (er åpnet?)
 
-#### Pros:
+#### Pros
 
 - Kan forholde seg til samme API
 
