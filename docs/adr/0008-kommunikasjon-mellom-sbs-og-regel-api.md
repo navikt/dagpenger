@@ -16,7 +16,7 @@ I fremtiden vil vi også få flere ting som lever i sbs, så vi må finne en for
 * Bruke kafka som regel-api-endepunkt 
 * … 
 
-## Pros and Cons of the Options <!-- optional -->
+## Pros and Cons of the Options 
 
 ### Sonekryssing 
 
