@@ -28,7 +28,7 @@ I fremtiden vil vi også få flere ting som lever i sbs, så vi må finne en for
 
 #### Cons
 - Mere å monitorere
-- Kobling til database må åpnes (er åpnet?)
+- Credentials til DB må legges inn i Vault
 
 #### Pros
 
