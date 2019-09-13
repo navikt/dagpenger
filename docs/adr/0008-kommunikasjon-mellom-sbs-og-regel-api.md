@@ -20,6 +20,10 @@ I fremtiden vil vi også få flere ting som lever i sbs, så vi må finne en for
 
 ### Sonekryssing 
 
+#### Cons
+
+- Det er komplisert å sette opp. Riktignok en one time job: Se https://confluence.adeo.no/display/AR/Sonekrysning
+
 ### Deploye regel-api i begge soner
 
 ### Bruke kafka som regel-api-endepunkt 
