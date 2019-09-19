@@ -24,11 +24,16 @@ I fremtiden vil vi også få flere ting som lever i sbs, så vi må finne en for
 
 - Det er komplisert å sette opp. Riktignok en one time job: Se https://confluence.adeo.no/display/AR/Sonekrysning
 
+#### Pros
+
+- Har blitt gjort før av andre i nav
+
 ### Deploye regel-api i begge soner
 
 #### Cons
 - Mere å monitorere
 - Credentials til DB må legges inn i Vault
+- Upløyd mark
 
 #### Pros
 
@@ -38,7 +43,6 @@ I fremtiden vil vi også få flere ting som lever i sbs, så vi må finne en for
 ### Bruke kafka som regel-api-endepunkt 
 
 
-
 #### Cons
 
 - Må duplisere logikk som allerede er implementert i dp-regel-api
@@ -46,3 +50,7 @@ I fremtiden vil vi også få flere ting som lever i sbs, så vi må finne en for
 
 #### Pros
 
+## Decision Outcome
+
+Vi har valgt å sonekrysse, fordi dette allerede er gjort av blant annet helse i nav.
+Løsningen vi har valgt vil uansett bare vare frem til vi en gang kan benytte oss av service mesh.
