@@ -71,6 +71,7 @@
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-datalaster-inntekt/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-datalaster-inntekt/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-datalaster-inntekt/buildSrc/src/main/kotlin/Constants.kt" />
+	<copyfile src="../.service-template/scripts/test/uatJob" dest="dp-datalaster-inntekt/scripts/test/uatJob"/>
     </project>
     <project name="dp-inntekt-api">
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-inntekt-api/CODEOWNERS" />
@@ -84,36 +85,42 @@
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-regel-api/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-regel-api/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-regel-api/buildSrc/src/main/kotlin/Constants.kt" />
+	<copyfile src="../.service-template/scripts/test/uatJob" dest="dp-regel-api/scripts/test/uatJob"/>
     </project>
     <project name="dp-regel-api-arena-adapter">
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-api-arena-adapter/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-regel-api-arena-adapter/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-regel-api-arena-adapter/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-regel-api-arena-adapter/buildSrc/src/main/kotlin/Constants.kt" />
-    </project>
+	<copyfile src="../.service-template/scripts/test/uatJob" dest="dp-regel-api-arena-adapter/scripts/test/uatJob"/>
+    </project->
     <project name="dp-regel-minsteinntekt">
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-minsteinntekt/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-regel-minsteinntekt/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-regel-minsteinntekt/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-regel-minsteinntekt/buildSrc/src/main/kotlin/Constants.kt" />
+	<copyfile src="../.service-template/scripts/test/uatJob" dest="dp-regel-minsteinntekt/scripts/test/uatJob"/>
     </project>
     <project name="dp-regel-periode">
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-periode/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-regel-periode/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-regel-periode/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-regel-periode/buildSrc/src/main/kotlin/Constants.kt" />
+	<copyfile src="../.service-template/scripts/test/uatJob" dest="dp-regel-periode/scripts/test/uatJob"/>
     </project>
     <project name="dp-regel-grunnlag">
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-grunnlag/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-regel-grunnlag/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-regel-grunnlag/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-regel-grunnlag/buildSrc/src/main/kotlin/Constants.kt" />
+	<copyfile src="../.service-template/scripts/test/uatJob" dest="dp-regel-grunnlag/scripts/test/uatJob"/>
     </project>
     <project name="dp-regel-sats">
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-regel-sats/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-regel-sats/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-regel-sats/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-regel-sats/buildSrc/src/main/kotlin/Constants.kt" />
+	<copyfile src="../.service-template/scripts/test/uatJob" dest="dp-regel-sats/scripts/test/uatJob"/>
     </project>
     <project name="dp-kafka-offset-monitor">
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-kafka-offset-monitor/CODEOWNERS" />
@@ -144,5 +151,6 @@
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-inntekt-klassifiserer/buildSrc/build.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-inntekt-klassifiserer/buildSrc/settings.gradle.kts" />
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-inntekt-klassifiserer/buildSrc/src/main/kotlin/Constants.kt" />
+	<copyfile src="../.service-template/scripts/test/uatJob" dest="dp-inntekt-klassifiserer/scripts/test/uatJob"/>
     </project>
 </manifest>
