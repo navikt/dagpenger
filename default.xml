@@ -165,4 +165,7 @@
     <project name="dp-inntekt-innsyn-ui">
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-inntekt-innsyn-ui/CODEOWNERS" />
     </project>
+    <project name="dp-graphql">
+        <copyfile src="../.service-template/CODEOWNERS" dest="dp-graphql/CODEOWNERS" />
+    </project>
 </manifest>
