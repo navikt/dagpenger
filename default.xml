@@ -125,6 +125,8 @@
         <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-regel-sats/buildSrc/src/main/kotlin/Constants.kt" />
 	<copyfile src="../.service-template/scripts/test/uatJob" dest="dp-regel-sats/scripts/test/uatJob"/>
     </project>
+    <project name="dp-soknad-frontend">
+    </project>
     <project name="dp-kafka-offset-monitor">
         <copyfile src="../.service-template/CODEOWNERS" dest="dp-kafka-offset-monitor/CODEOWNERS" />
         <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-kafka-offset-monitor/buildSrc/build.gradle.kts" />
