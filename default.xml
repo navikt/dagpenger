@@ -32,6 +32,9 @@
     </project>
     <project name="dagpenger-journalforing-ferdigstill">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-ferdigstill/CODEOWNERS" />
+        <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dagpenger-journalforing-ferdigstill/buildSrc/build.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dagpenger-journalforing-ferdigstill/buildSrc/settings.gradle.kts" />
+        <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dagpenger-journalforing-ferdigstill/buildSrc/src/main/kotlin/Constants.kt" />
     </project>
     <project name="dagpenger-journalforing-gsak">
         <copyfile src="../.service-template/CODEOWNERS" dest="dagpenger-journalforing-gsak/CODEOWNERS" />
