@@ -14,6 +14,7 @@ This log lists the architectural decisions for Digitale Dagpenger.
 - [ADR-0007](0007-bruk-rfc7807-http-problem-detail-for-feilbeskrivelse.md) - Bruk rfc7807 "http problem detail" spesifikasjon til å lage strukturelle feilbeskrivelser i HTTP APIer og KAFKA meldinger
 - [ADR-0008](0008-kommunikasjon-mellom-sbs-og-regel-api.md) - Bruk sonekryssing for å løse kommunikasjon mellom appene
 - [ADR-0009](0009-sonekryssing-dagpenger.md) - Bruk helse-reverse-proxy som basis for sonekryssingen
+- [ADR-0010](0010-løsning-for-tokenbehandling-kalkulator-api.md) - Bruk graphql i stedet for oppslag slik at man kan bruke ktor-auth fremfor token-support
 
 <!-- adrlogstop -->
 
