@@ -24,3 +24,6 @@ includeBuild("dp-biblioteker")
 includeBuild("dp-vedtakresultat-lytter")
 includeBuild("dp-datalaster-subsumsjonbrukt")
 includeBuild("dp-inntekt-klassifiserer")
+includeBuild("dp-kalkulator-api")
+includeBuild("dp-inntekt-innsyn-ui")
+
