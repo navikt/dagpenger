@@ -108,7 +108,7 @@ object Kotlin {
     
     object Coroutines {
       const val version = "1.3.2"
-      fun module(name: String) =  "org.jetbrains.kotlinx.kotlinx-coroutines-$name:$version"
+      fun module(name: String) =  "org.jetbrains.kotlinx:kotlinx-coroutines-$name:$version"
     }
 
     object Logging {
