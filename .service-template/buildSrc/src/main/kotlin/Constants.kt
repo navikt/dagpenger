@@ -5,11 +5,7 @@
  *  repo sync
  *
  */
-object Assertj {
-    const val version = "3.12.2"
-    const val core = "org.assertj:assertj-core:$version"
-    fun library(name: String) = "org.assertj:assertj-$name:$version"
-}
+
 object Avro {
     const val avro = "org.apache.avro:avro:1.8.2"
 }
@@ -19,7 +15,7 @@ object Bekk {
 }
 
 object Cucumber {
-    const val version = "4.7.2"
+    const val version = "4.8.0"
     const val java8 = "io.cucumber:cucumber-java8:$version"
     const val junit = "io.cucumber:cucumber-junit:$version"
     fun library(name: String) = "io.cucumber:cucumber-$name:$version"
@@ -28,20 +24,20 @@ object Cucumber {
 object Dagpenger {
 
     object Biblioteker {
-        const val version = "2019.10.04-11.45.e5eff2e37bb7"
+        const val version = "2019.11.15-08.17.056900b17f09"
         const val stsKlient = "com.github.navikt.dp-biblioteker:sts-klient:$version"
         const val grunnbeløp = "com.github.navikt.dp-biblioteker:grunnbelop:$version"
         const val ktorUtils = "com.github.navikt.dp-biblioteker:ktor-utils:$version"
     }
 
-    const val Streams = "com.github.navikt:dagpenger-streams:2019.10.04-11.54.1af65bdd3862"
-    const val Events = "com.github.navikt:dagpenger-events:2019.08.06-10.38.92d9930cd257"
+    const val Streams = "com.github.navikt:dagpenger-streams:2019.11.15-08.16.6a7aaaf97980"
+    const val Events = "com.github.navikt:dagpenger-events:2019.09.18-14.06.017d68533202"
 }
 
 object Database {
     const val Postgres = "org.postgresql:postgresql:42.2.8"
     const val Kotlinquery = "com.github.seratch:kotliquery:1.3.1"
-    const val Flyway = "org.flywaydb:flyway-core:6.0.4"
+    const val Flyway = "org.flywaydb:flyway-core:6.0.8"
     const val HikariCP = "com.zaxxer:HikariCP:3.4.1"
     const val VaultJdbc = "no.nav:vault-jdbc:1.3.1"
 }
@@ -78,7 +74,7 @@ object JsonAssert {
 }
 
 object Kafka {
-    const val version = "2.0.1"
+    const val version = "2.3.1"
     const val clients = "org.apache.kafka:kafka-clients:$version"
     const val streams = "org.apache.kafka:kafka-streams:$version"
     const val streamTestUtils = "org.apache.kafka:kafka-streams-test-utils:$version"
@@ -91,7 +87,7 @@ object Kafka {
 }
 
 object KafkaEmbedded {
-    const val env = "no.nav:kafka-embedded-env:2.0.2"
+    const val env = "no.nav:kafka-embedded-env:2.2.3"
 }
 
 object Klint {
