@@ -24,6 +24,8 @@ machine github.com login <DITT_TOKEN>
 Repositoriene settes opp med:
 
 ```
+mkdir dagpenger
+cd dagpenger
 repo init -u https://github.com/navikt/dagpenger.git
 repo sync
 repo start --all master
