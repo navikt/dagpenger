@@ -35,7 +35,8 @@ Feilen ble ikke oppdaget av oss gjennom våre alarmer, men vi ble purret på gje
 ## Aksjonspunkter
 
 | Aksjon | Type | Eier | Referanse |
-| ------ | ---- | ---- | --- |
+| Alerts i Slack/epost/ må være reelle | Forbedring | Team dagpenger | https://github.com/navikt/dagpenger/issues/297 |
+| Vi må kunne håndtere stooore inntekter | Forbedring | Team dagpenger |  https://github.com/navikt/dagpenger/issues/298 |
 
 ## Hva lærte vi?
 
