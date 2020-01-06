@@ -26,7 +26,11 @@ Stor inntektsfil (> 1MB) hentet fra inntektskomponenten. Løsningen henter innte
 
 **Løsning:** [Hva ble løsningen?]
 
+En foreløpig løsning var å fjerne spesifisert inntekt fra pakken, da denne ikke ble brukt. Dette gjorde at pakken ble liten nok til å kunne legges på topic. Denne løsningen er ikke tilstrekkelig over tid, da problemet fortsatt kan oppstå. Rotårsaken er ikke løst.
+
 **Påvisning:** [Hvordan feilen ble oppdaget?]
+
+Feilen ble ikke oppdaget av oss gjennom våre alarmer, men vi ble purret på gjennom slack av arena-ansvarlige.
 
 ## Aksjonspunkter
 
@@ -36,11 +40,21 @@ Stor inntektsfil (> 1MB) hentet fra inntektskomponenten. Løsningen henter innte
 ## Hva lærte vi?
 
 ### Hva gikk bra
+* Vi hadde en midlertidig fiks før neste dag.
 
 ### Hva gikk dårlig
+* Noen andre oppdaget feilen før oss, selv om våre varslinger hadde gått.
 
 ### Hvor hadde vi flaks
 
+Vi hadde flaks at vi kunne slutte å legge på spesifisert inntekt.
+
 ## Tidslinje
+|Klokkeslett | Hendelse |
+|:--- |:---- |
+| 15.15 | Feil påvist avslack alerts, men dette ble ikke tatt hånd om. | 
+| 15.30 | Vi fikk melding på slack i #dagpenger-arena av en arena-person |
+| 15.55 | Kjartan forhører seg om det finnes noen utviklere som kan ta tak i dette. |
+| 21.30 |  Midlertidig fiks for denne feilen. |
 
 ## Linker
