@@ -23,9 +23,10 @@ Rapporterte inn liste med antatt påvirkede personer og første dato de kom i ko
 
 ## Aksjonspunkter
 
-| Aksjon | Type | Eier | Referanse |
-| ------ | ---- | ---- | --------- |
-
+| Aksjon                                                                                                     | Type       | Eier           | Referanse                                      |
+| ---------------------------------------------------------------------------------------------------------- | ---------- | -------------- | ---------------------------------------------- |
+| :---                                                                                                       | :---       | :---           | :---                                           |
+| Alerts må være reelle, endre errors til kun å være hendelser som forhindrer bruker i å fylle/levere søknad | Forbedring | Team dagpenger | https://github.com/navikt/dagpenger/issues/304 |
 
 ## Hva lærte vi?
 
@@ -52,3 +53,8 @@ Det ble rapportert inn at at bruker hadde problemer med søknaden
 04.02.2020 | Feil funnet, rettet kort tid etterpå
 
 ## Linker
+
+https://github.com/navikt/dagpenger/issues/304
+https://github.com/navikt/dp-soknad-innsending
+https://github.com/navikt/dp-soknad-server
+https://github.com/navikt/dp-soknad-frontend
