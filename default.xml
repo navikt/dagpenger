@@ -156,4 +156,5 @@
     <project name="dp-graphql">
         <!--        <copyfile src="../.service-template/CODEOWNERS" dest="dp-graphql/CODEOWNERS" />-->
     </project>
+    <project name="dp-vilkaar-tester"/>
 </manifest>
