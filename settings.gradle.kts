@@ -21,4 +21,5 @@ includeBuild("dp-datalaster-subsumsjonbrukt")
 includeBuild("dp-inntekt-klassifiserer")
 includeBuild("dp-kalkulator-api")
 includeBuild("dp-inntekt-innsyn-ui")
+includeBuild("dp-vilkaar-tester")
 
