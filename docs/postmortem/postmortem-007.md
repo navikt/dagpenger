@@ -44,7 +44,7 @@ Veldig ca. tidslinje
 |Klokkeslett | Hendelse |
 |:--- |:---- |
 | 27.01.20 - 07:00 | BRUTs siste batch på dagpenger går | 
-| 15.27.01.20 - 11:00 | Vi skrur av innløpet som har markert 182 søknader som "behandles av BRUT" |
+| 27.01.20 - 11:00 | Vi skrur av innløpet som har markert 182 søknader som "behandles av BRUT" |
 | 27.01.20 - 13:00 | BRUT blir faktisk skrudd av  |
 | 27.01.20 - 14:00 | Innløpet skrus av |
 | 12.02.20 - 14:00 | Fagsak opprettes, feilsøking starter |
