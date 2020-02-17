@@ -35,7 +35,7 @@
 
 ### Hvor hadde vi flaks
 
-Vi kunne spille av hendelsene som ikke ble behandlet
+Vi kunne spille av hendelsene på nytt.
 
 ## Tidslinje
 
