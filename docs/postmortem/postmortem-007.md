@@ -16,7 +16,7 @@
 
 **Utløsende faktor:**  Race condition rundt når vi slo av ruting.
 
-**Løsning:**  Spilte av joark-eventer på nytt for 29. janur
+**Løsning:**  Spilte av joark-eventer på nytt fra 27. januar 2020 
 
 **Påvisning:** Jira sak fra NAV kontor (https://jira.adeo.no/browse/FAGSYSTEM-95555)
 
