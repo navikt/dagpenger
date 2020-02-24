@@ -168,14 +168,14 @@ services:
     depends_on:
       - create-topics
       - kafka
-  dp-datalaster-inntekt:
-    build: ./../dp-datalaster-inntekt
+  dp-inntek-klassifiserer:
+    build: ./../dp-inntekt-klassifiserer
     volumes:
       - ${PWD}/wait-for-it.sh:/wait-for-it.sh
     environment:
       KAFKA_BOOTSTRAP_SERVERS: kafka:9093
-      SRVDP_DATALASTER_INNTEKT_USERNAME: igroup
-      SRVDP_DATALASTER_INNTEKT_PASSWORD: itest
+      SRVDP_INNTEKT_KLASSIFISERER_USERNAME: igroup
+      SRVDP_INNTEKT_KLASSIFISERER_PASSWORD: itest
       OIDC_STS_ISSUERURL: http://localhost
       DP_INNTEKT_API_URL: "http://dp-inntekt-api:8099/"
     entrypoint: ["/wait-for-it.sh", "create-topics:9999",  "-t", "60", "--", "/entrypoint.sh"]
