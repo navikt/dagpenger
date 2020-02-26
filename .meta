@@ -1,0 +1,5 @@
+{
+  "projects": {
+    "dp-graphql": "git@github.com:navikt/dp-graphql.git"
+  }
+}
