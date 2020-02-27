@@ -5,7 +5,7 @@ SHELL := bash
 MAKEFLAGS += --warn-undefined-variables
 MAKEFLAGS += --no-builtin-rules
 
-sync: meta-update copy-files
+sync: meta-update sync-template
 .PHONY: sync
 
 clean:
@@ -39,5 +39,16 @@ $(LICENSES): .service-template/LICENSE.md
 
 CONSTANTS := $(shell ls */buildSrc/src/main/kotlin/Constants.kt)
 $(CONSTANTS): .service-template/buildSrc/src/main/kotlin/Constants.kt
+	cp $< $@
 
-copy-files: $(CODEOWNERS) $(LICENSES) $(CONSTANTS)
+BUILD_GRADLE := $(shell ls */buildSrc/build.gradle.kts)
+$(BUILD_GRADLE): .service-template/buildSrc/build.gradle.kts
+	cp $< $@
+
+SETTINGS_GRADLE := $(shell ls */buildSrc/settings.gradle.kts)
+$(SETTINGS_GRADLE): .service-template/buildSrc/settings.gradle.kts
+	cp $< $@
+
+BUILD_SRC := $(CONSTANTS) $(BUILD_GRADLE) $(SETTINGS_GRADLE)
+
+sync-template: $(CODEOWNERS) $(LICENSES) $(BUILD_SRC)
