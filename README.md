@@ -10,17 +10,6 @@ manuelt](https://source.android.com/setup/build/downloading) eller via homebrew
 
 `brew install repo`
 
-NAVIKT github repositories krever SAML SSO, for å
-slippe å skrive inn bruker og passord kan man generere
-et [personlig access token](https://help.github.com/articles/creating-an-oauth-token-for-command-line-use)
-som legges inn i  
-```
-~/.netrc 
-
-machine github.com login <DITT_TOKEN>
-
-```
-
 Repositoriene settes opp med:
 
 ```
@@ -35,16 +24,16 @@ Nå kan git brukes som normalt for hvert repo.
 
 Se [repo siden](https://source.android.com/setup/develop/repo) for flere kommandoer.
 
-## IntelliJ  og ktlint 
+## IntelliJ  og ktlint
 
 
-Vi bruker klint for å ha formatteringsregler på koden. 
+Vi bruker klint for å ha formatteringsregler på koden.
 
 Kjør:
 
-`./gradlew klintIdea` for å oppdatere IntelliJ med klint regler. Restart IntelliJ 
+`./gradlew klintIdea` for å oppdatere IntelliJ med klint regler. Restart IntelliJ
 
-Deretter åpner du prosjektet i IntelliJ 
+Deretter åpner du prosjektet i IntelliJ
 
 ## Bygg
 
@@ -59,7 +48,7 @@ automatisk av Gradle.
 # Håndtering av gradle avhengigheter
 
 
-En del felles versjonerte avhengigheter for mikrotjenestene i monorepoet er definert i [.service-template/buildSrc/src/main/kotlin/Constants.kt](.service-template/buildSrc/src/main/kotlin/Constants.kt). 
+En del felles versjonerte avhengigheter for mikrotjenestene i monorepoet er definert i [.service-template/buildSrc/src/main/kotlin/Constants.kt](.service-template/buildSrc/src/main/kotlin/Constants.kt).
 For å ta i bruk felles versjonerte avhengigheter for en ny mikrotjeneste må en legge til `copyfile` innslag i [default.xml](default.xml) for gitt mikrotjeneste, eksemplifisert:
 
 ```xml
@@ -73,9 +62,9 @@ For å ta i bruk felles versjonerte avhengigheter for en ny mikrotjeneste må en
 
 ## Oppdatere avhengigheter
 
-1. Oppdater/endre i  [.service-template/buildSrc/src/main/kotlin/Constants.kt](.service-template/buildSrc/src/main/kotlin/Constants.kt) 
+1. Oppdater/endre i  [.service-template/buildSrc/src/main/kotlin/Constants.kt](.service-template/buildSrc/src/main/kotlin/Constants.kt)
 2. Sjekk inn og push endringen
-3. Kjør `repo sync` for synkronisere `buildSrc` filene til mikrotjenestene. 
+3. Kjør `repo sync` for synkronisere `buildSrc` filene til mikrotjenestene.
 4. Bygg og sjekk inn `buildSrc` filene for mikrotjenestene.
 
 
@@ -111,7 +100,7 @@ I dagpenger-joark-mottak katalogen finnes det en `DummyJoarkProducer` som en kan
 stå i rotkatalogen og kjør:
 
 ```bash
- export GRADLE_VERSION=xxxx && ./script/update-gradle.sh     
+ export GRADLE_VERSION=xxxx && ./script/update-gradle.sh
 ```
 
-Sjekk inn og push filer som er endret. 
+Sjekk inn og push filer som er endret.
