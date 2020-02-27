@@ -5,10 +5,7 @@ SHELL := bash
 MAKEFLAGS += --warn-undefined-variables
 MAKEFLAGS += --no-builtin-rules
 
-clone: meta-update
-.PHONY: clone
-
-sync: meta-update
+sync: meta-update copy-files
 .PHONY: sync
 
 clean:
