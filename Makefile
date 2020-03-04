@@ -13,15 +13,16 @@ clean:
 	rm -rf tmp
 .PHONY: clean
 
-tmp/.has-nvm.sentinel:
-	[ -s "/usr/local/opt/nvm/nvm.sh" ] || brew install nvm
-	mkdir -p $(@D) && touch $@
+# Disabled until I find a way to actually use nvm from Make
+#tmp/.has-nvm.sentinel:
+#	[ -s "/usr/local/opt/nvm/nvm.sh" ] || brew install nvm
+#	mkdir -p $(@D) && touch $@
+#
+#tmp/.nvm-set.sentinel: .nvmrc tmp/.has-nvm.sentinel
+#	nvm install
+#	mkdir -p $(@D) && touch $@
 
-tmp/.nvm-set.sentinel: .nvmrc tmp/.has-nvm.sentinel
-	nvm install && nvm use
-	mkdir -p $(@D) && touch $@
-
-tmp/.meta-installed.sentinel: tmp/.nvm-set.sentinel
+tmp/.meta-installed.sentinel: #tmp/.nvm-set.sentinel
 	npm install meta --no-save
 	mkdir -p $(@D) && touch $@
 

@@ -11,8 +11,11 @@ For å gjøre det litt enklere å komme i gang finnes det en [Makefile](Makefile
 som setter opp `meta` og automatiserer. Du kan også installere `meta` globalt
 med `npm install -g meta`.
 
+Enn så lenge må du sørge for å ha `nvm` installert (`brew install nvm`).
+
 ```
 git clone git@github.com:navikt/dagpenger.git
+nvm install
 make sync
 ```
 
