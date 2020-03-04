@@ -1,7 +1,11 @@
-.repo
+tmp/
+
 # Ignore sub repos created by repo
 dagpenger-*
 dp-*
+
+# Ignore node_modules
+node_modules/
 
 # Ignore docker compose stuff
 .docker_tmp/

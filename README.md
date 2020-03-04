@@ -4,47 +4,32 @@ En samling mikrotjenester for å behandle Dagpenger.
 
 # Komme i gang
 
-[repo](https://source.android.com/setup/develop/repo) brukes til å sette opp
-repositories for alle microservicene. Det kan [innstalleres
-manuelt](https://source.android.com/setup/build/downloading) eller via homebrew
+[meta](https://github.com/mateodelnorte/meta) brukes til å sette opp
+repositories for alle microservicene.
 
-`brew install repo`
+For å gjøre det litt enklere å komme i gang finnes det en [Makefile](Makefile)
+som setter opp `meta` og automatiserer. Du kan også installere `meta` globalt
+med `npm install -g meta`.
 
-NAVIKT github repositories krever SAML SSO, for å
-slippe å skrive inn bruker og passord kan man generere
-et [personlig access token](https://help.github.com/articles/creating-an-oauth-token-for-command-line-use)
-som legges inn i  
-```
-~/.netrc 
-
-machine github.com login <DITT_TOKEN>
+Enn så lenge må du sørge for å ha `nvm` installert (`brew install nvm`).
 
 ```
-
-Repositoriene settes opp med:
-
-```
-mkdir dagpenger
-cd dagpenger
-repo init -u https://github.com/navikt/dagpenger.git
-repo sync
-repo start --all master
+git clone git@github.com:navikt/dagpenger.git
+nvm install
+make sync
 ```
 
 Nå kan git brukes som normalt for hvert repo.
 
-Se [repo siden](https://source.android.com/setup/develop/repo) for flere kommandoer.
+Se [meta](https://github.com/mateodelnorte/meta) for flere kommandoer.
 
-## IntelliJ  og ktlint 
+## IntelliJ  og ktlint
 
 
-Vi bruker klint for å ha formatteringsregler på koden. 
+Vi bruker klint for å ha formatteringsregler på koden.
 
-Kjør:
-
-`./gradlew klintIdea` for å oppdatere IntelliJ med klint regler. Restart IntelliJ 
-
-Deretter åpner du prosjektet i IntelliJ 
+1. Kjør: `./gradlew klintIdea` for å oppdatere IntelliJ med klint regler.
+2. Restart IntelliJ
 
 ## Bygg
 
@@ -58,26 +43,16 @@ automatisk av Gradle.
 
 # Håndtering av gradle avhengigheter
 
+En del felles versjonerte avhengigheter for mikrotjenestene i monorepoet er definert i [.service-template/buildSrc/src/main/kotlin/Constants.kt](.service-template/buildSrc/src/main/kotlin/Constants.kt).
 
-En del felles versjonerte avhengigheter for mikrotjenestene i monorepoet er definert i [.service-template/buildSrc/src/main/kotlin/Constants.kt](.service-template/buildSrc/src/main/kotlin/Constants.kt). 
-For å ta i bruk felles versjonerte avhengigheter for en ny mikrotjeneste må en legge til `copyfile` innslag i [default.xml](default.xml) for gitt mikrotjeneste, eksemplifisert:
-
-```xml
- <project name="dp-inntekt-api">
-        <copyfile src="../.service-template/CODEOWNERS" dest="dp-inntekt-api/CODEOWNERS"/>
-        <copyfile src="../.service-template/buildSrc/build.gradle.kts" dest="dp-inntekt-api/buildSrc/build.gradle.kts" />
-        <copyfile src="../.service-template/buildSrc/settings.gradle.kts" dest="dp-inntekt-api/buildSrc/settings.gradle.kts" />
-        <copyfile src="../.service-template/buildSrc/src/main/kotlin/Constants.kt" dest="dp-inntekt-api/buildSrc/src/main/kotlin/Constants.kt" />
-    </project>
-```
+Make vil holde [enkelte filer](Makefile) i synk med tilsvarende filer i [.service-template](.service-template).
 
 ## Oppdatere avhengigheter
 
-1. Oppdater/endre i  [.service-template/buildSrc/src/main/kotlin/Constants.kt](.service-template/buildSrc/src/main/kotlin/Constants.kt) 
+1. Oppdater/endre i [.service-template/buildSrc/src/main/kotlin/Constants.kt](.service-template/buildSrc/src/main/kotlin/Constants.kt)
 2. Sjekk inn og push endringen
-3. Kjør `repo sync` for synkronisere `buildSrc` filene til mikrotjenestene. 
+3. Kjør `make sync-files` for synkronisere `buildSrc` filene til mikrotjenestene.
 4. Bygg og sjekk inn `buildSrc` filene for mikrotjenestene.
-
 
 # Teste lokalt med docker-compose
 
@@ -96,7 +71,7 @@ Spørsmål knyttet til koden eller prosjektet kan rettes mot:
 
 ## For NAV-ansatte
 
-Interne henvendelser kan sendes via Slack i kanalen #dagpenger.
+Interne henvendelser kan sendes via Slack i kanalen #team-dagpenger.
 
 # HOWTO
 
@@ -108,10 +83,10 @@ I dagpenger-joark-mottak katalogen finnes det en `DummyJoarkProducer` som en kan
 
 ## Oppdatere Gradle for alle prosjekter i monorepeoet
 
-stå i rotkatalogen og kjør:
+Stå i rotkatalogen og kjør:
 
 ```bash
- export GRADLE_VERSION=xxxx && ./script/update-gradle.sh     
+ export GRADLE_VERSION=xxxx && ./script/update-gradle.sh
 ```
 
-Sjekk inn og push filer som er endret. 
+Sjekk inn og push filer som er endret.
