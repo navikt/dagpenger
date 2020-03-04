@@ -16,3 +16,16 @@ commonLabels:
 # markers ("---").
 resources:
   - nais.yaml
+  - alerts.yaml
+
+vars:
+  - name: APP_NAME
+    objref:
+      kind: Application
+      name: dp
+      apiVersion: "nais.io/v1alpha1"
+    fieldref:
+      fieldpath: metadata.name
+
+configurations:
+  - variable-substition-alerts.yaml
