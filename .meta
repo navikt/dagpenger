@@ -28,7 +28,8 @@
     "dp-soknad-frontend": "git@github.com:navikt/dp-soknad-frontend.git",
     "dp-soknad-innsending": "git@github.com:navikt/dp-soknad-innsending.git",
     "dp-soknad-server": "git@github.com:navikt/dp-soknad-server.git",
-    "dp-vedtakresultat-lytter": "git@github.com:navikt/dp-vedtakresultat-lytter.git"
+    "dp-vedtakresultat-lytter": "git@github.com:navikt/dp-vedtakresultat-lytter.git",
+    "dp-vilkaar-tester": "git@github.com:navikt/dp-vilkaar-tester.git"
   }
 }
 
