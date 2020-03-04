@@ -22,11 +22,11 @@ clean:
 #	nvm install
 #	mkdir -p $(@D) && touch $@
 
-tmp/.meta-installed.sentinel: #tmp/.nvm-set.sentinel
+tmp/.meta-installed.sentinel: .nvmrc #tmp/.nvm-set.sentinel
 	npm install meta --no-save
 	mkdir -p $(@D) && touch $@
 
-meta-update: .nvmrc .meta tmp/.meta-installed.sentinel
+meta-update: .meta tmp/.meta-installed.sentinel
 	meta git update
 
 # Files to be kept in sync with template
