@@ -3,7 +3,4 @@ kind: Kustomization
 
 resources:
 - ../bases
-images:
-- name: busybox
-  newName: alpine
-  newTag: "3.6"
+
