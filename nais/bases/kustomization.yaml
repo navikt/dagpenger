@@ -29,3 +29,4 @@ vars:
 
 configurations:
   - variable-substition-alerts.yaml
+  - application-image.yaml
