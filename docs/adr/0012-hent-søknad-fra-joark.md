@@ -41,7 +41,7 @@ Chosen option: "[option 1]", because [justification. e.g., only option, which me
 
 Vi bygger en tjeneste som kan hente JSON direkte fra Joark og hente ut datapunktene vi trenger.
 
-![Illustrasjon av alternativ 1](docs/images/0012-alt1.png)
+![Illustrasjon av alternativ 1](images/0012-alt1.png)
 
 * Bra, fordi vår tjeneste stateless
 * Dårlig, fordi vi er avhenging av Joark i runtime
@@ -53,7 +53,7 @@ Vi henter JSON når det kommer inn nye journalposter og lagrer den i en database
 
 I tillegg bygger vi en tjeneste som eksponerer data via et API, eller svarer på Behov fra Kafka.
 
-![Illustrasjon av alternativ 1](docs/images/0012-alt2.png)
+![Illustrasjon av alternativ 1](images/0012-alt2.png)
 
 * Bra, fordi vi får vår egen kopi av søknaden 
 * Dårlig, fordi vi ikke kan reagere på data via Kafka
@@ -65,7 +65,7 @@ Vi henter JSON når det kommer inn nye journalposter og publiserer den på Kafka
 
 I tillegg lager vi en tjeneste som konsumerer topicen og eksponerer data via et API, eller svarer på Behov fra Kafka.
 
-![Illustrasjon av alternativ 1](docs/images/0012-alt3.png)
+![Illustrasjon av alternativ 1](images/0012-alt3.png)
 
 * Bra, fordi vi får vår egen kopi av søknaden
 * Bra, fordi vi kan reagere direkte på nye søknader
