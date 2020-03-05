@@ -39,7 +39,14 @@ automatisk av Gradle.
 
 `./gradlew build`
 
----
+# Hvordan lage en ny app
+
+1. `meta project create dp-app-name git@github.com:navikt/dp-app-name.git`
+2. `cp -r .service-template/* app-name`
+3. Bytt ut navn i alle nødvendige filer (`ack SERVICENAME`)
+4. Legg til navnet på appen i [settings.gradle.kts](settings.gradle.kts)
+5. Sett opp [docs/NAIS.md](NAIS konfigurasjon)
+5. Commit og push alt
 
 # Håndtering av gradle avhengigheter
 

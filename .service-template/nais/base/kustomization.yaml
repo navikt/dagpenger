@@ -1,0 +1,23 @@
+# Adds namespace to all resources.
+namespace: default
+
+# Name the app (will be prefixed with `dp`)
+nameSuffix: -app-name
+
+# Labels to add to all resources and selectors for this app.
+commonLabels:
+  app: dp-app-name
+
+# Annotations to add for all resources and selectors for this app.
+commonAnnotations:
+  zone: fss
+
+resources:
+  # The base configuration for Java apps
+  - github.com/navikt/dagpenger/nais/java
+
+patchesStrategicMerge:
+  # Overlay the base configuration with what is custom for this app. The minimum
+  # is image.
+  - nais.yaml
+

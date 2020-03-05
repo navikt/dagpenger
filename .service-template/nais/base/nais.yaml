@@ -1,0 +1,10 @@
+apiVersion: "nais.io/v1alpha1"
+kind: "Application"
+metadata:
+  name: dp
+spec:
+  # Image must be set
+  # Our Jenkinsfile will replace latest with the built SHA
+  image: repo.adeo.no:5443/dp-app-name:latest
+  # Optional: Set the port the app exposes
+  #port: 8096

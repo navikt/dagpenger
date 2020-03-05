@@ -1,0 +1,9 @@
+apiVersion: "nais.io/v1alpha1"
+kind: "Alert"
+metadata:
+  name: dp-alert
+spec:
+  receivers:
+    slack:
+      channel: '#team-dagpenger-alert'
+      prependText: '<!here> | '
