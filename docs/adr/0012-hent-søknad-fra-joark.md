@@ -53,7 +53,7 @@ Vi henter JSON når det kommer inn nye journalposter og lagrer den i en database
 
 I tillegg bygger vi en tjeneste som eksponerer data via et API, eller svarer på Behov fra Kafka.
 
-![Illustrasjon av alternativ 1](images/0012-alt2.png)
+![Illustrasjon av alternativ 2](images/0012-alt2.png)
 
 * Bra, fordi vi får vår egen kopi av søknaden 
 * Dårlig, fordi vi ikke kan reagere på data via Kafka
