@@ -21,5 +21,4 @@ includeBuild("dp-regel-periode")
 includeBuild("dp-regel-sats")
 includeBuild("dp-saksbehandling")
 includeBuild("dp-vedtakresultat-lytter")
-includeBuild("dp-vilkaar-tester")
 
