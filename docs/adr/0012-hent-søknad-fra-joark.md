@@ -1,8 +1,8 @@
 # Hent søknad fra Joark
 
-* Status: [accepted | superseeded by [ADR-0005](0005-example.md) | deprecated | …] <!-- optional -->
-* Deciders: [list everyone involved in the decision] <!-- optional -->
-* Date: [YYYY-MM-DD when the decision was last updated] <!-- optional -->
+* Status: [accepted]
+* Deciders: @teamdagpenger
+* Date: 12.03.2020
 
 ## Context and Problem Statement
 
@@ -23,19 +23,10 @@ For å kunne begynne automatisk saksbehandling må vi ha tilgang til dataen i et
 
 ## Decision Outcome
 
-Chosen option: "[option 1]", because [justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force force | … | comes out best (see below)].
+Valgt [Hente JSON fra Joark på ny journalpost og publisere på Kafka] da dette gir oss frakobling fra Joark nedstrøms. Det vil også gjøre det mulig å transformere dataene ved å spille eventene på nytt. 
 
-### Positive Consequences <!-- optional -->
 
-* [e.g., improvement of quality attribute satisfaction, follow-up decisions required, …]
-* …
-
-### Negative consequences <!-- optional -->
-
-* [e.g., compromising quality attribute, follow-up decisions required, …]
-* …
-
-## Pros and Cons of the Options <!-- optional -->
+## Pros and Cons of the Options 
 
 ### Hente JSON fra Joark ved behov
 
@@ -70,3 +61,4 @@ I tillegg lager vi en tjeneste som konsumerer topicen og eksponerer data via et 
 * Bra, fordi vi får vår egen kopi av søknaden
 * Bra, fordi vi kan reagere direkte på nye søknader
 * Bra, fordi vi ikke har noen runtime avhengighet på Joark
+* Bra, fordi vi kan spille av kafka kø på nytt og transformere ved behov
