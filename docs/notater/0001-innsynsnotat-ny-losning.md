@@ -54,23 +54,33 @@ Hva kan vi lese fra egne systemer?
 Hvor skal vi lenke til? "dine saker", "saksoversikt/tema/DAG", eller "/saksoversikt/ettersending"??
 Ferdigstilltarena og ferdigbehandlet: NaturligIdent = Fnr
 Spørsmålet er om vi greier å pinne det til selve søknaden eller om dette er nok til å sende en notifikasjon til "mine saker" generelt sett
-Producing packet with key 471070668 and value: {
-"system_read_count":1,
-"system_started":"2020-03-10T10:24:22.876349",
-"system_correlation_id":"01E31W4T6WJW6KM3NACX2ED0ND",
-"toggleBehandleNySøknad":"<REDACTED>",
-"journalpostId":"<REDACTED>",
-"hovedskjemaId":"<REDACTED>",
-"dokumenter":"<REDACTED>",
-"henvendelsestype":"<REDACTED>",
-"datoRegistrert":"<REDACTED>",
-"aktørId":"<REDACTED>",
-"naturligIdent":"<REDACTED>",
-"avsenderNavn":"<REDACTED>",
-"behandlendeEnhet":"<REDACTED>",
-"system_breadcrumbs":[
-{"appId":"dagpenger-joark-mottak","dateTime":"2020-03-10T10:24:22.876367","instance":"about:blank"},
-{"appId":"dagpenger-journalforing-ferdigstill","dateTime":"2020-03-10T10:24:23.196252","instance":"about:blank"}],
-"ferdigstiltIArena":"<REDACTED>",
-"ferdigBehandlet":"<REDACTED>"
-}
+
+Plan:
+Skrive ett domene for innsyn
+Adapter som leser inn "ting" som er verdifult for innsyn: Hva? (liste)
+Liste over hva som er verdifult for innsyn:
+
+- Søknad er sendt
+- Søknad er mottatt
+- Søknad mangler informasjon fra deg (vedlegg)
+- Søknad mangler informasjon fra arbeidsgiver
+- Søknad er ikke klar til behandling
+- Søknad er klar til behandling
+- Søknad er #x i kø til behandling
+- Søknad venter på saksbehandler
+- Vedlegg er ikke godkjent
+- Vedlegg er godkjent
+- Søknad trenger mer informasjon etter at saksbehandler har sett på den
+- Søknad har fått avslag
+- Søknad har fått innvilgelse
+- Søknad har en pågående klagesak
+- Søknad har en ytelse knyttet til seg
+  Søknad vil være mer rettet mot den "nye" prosess/saksbehandlingsflyten, Hva er minimum for ny søknad?
+- Identitet på søker
+- Hvilke andre pågående saker har personen i NAV (automagisk)
+- Når søkes det fra
+- Inntekt (automagisk)
+- Arbeidsforhold?
+- Fangst og fiske (kun hvis inntekt tilsier det)
+- Verneplikt (Burde ikke dette være automagisk?, hva hvis inntekten er såpass høy at man får mer uansett?)
+-
