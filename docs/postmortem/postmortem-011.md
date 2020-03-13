@@ -30,22 +30,34 @@ Filtrerte ut journalpostid som stanget slik at den ble behandlet videre.
 
 **Påvisning:** 
 
-
-Alarm i #team-dagpenger-alert kanalen 
+Oppdaget det tilfeldigvis gjennom å se på grafana-boardet vårt (https://grafana.adeo.no/d/cpFY0XiWz/digitale-dagpenger-drift-dashboard?orgId=1).   
 
 ## Aksjonspunkter
 
 | Aksjon | Type | Eier | Referanse |
 | ------ | ---- | ---- | --- |
-
+|  Håndtere at Arena er nede i innløpet |  oppgave |  teamdagpenger | https://github.com/navikt/dagpenger-journalforing-ferdigstill/issues/27 | 
+|  Undersøke hvorfor ikke en alarm gikk i #team-dagpenger-alerts | oppgave | teamdagpenger  | | 
 ## Hva lærte vi?
+
 
 ### Hva gikk bra
 
+Lett å fikse (https://github.com/navikt/dagpenger-journalforing-ferdigstill/commit/d318de13b417f7589f65e622f24e89a1362db736)
+
 ### Hva gikk dårlig
+
+Varsling - det gikk ikke en automatisk 
 
 ### Hvor hadde vi flaks
 
+Det var bare 1 hendelse som gikk i stå.
+
+
 ## Tidslinje
+
+- 23:06ish - Arena tas ned for vedlikehold
+- 23:15 - Så loggfeil på dagpenger-journalforing-ferdigstill i driftdashboardet 
+- 23:30 - La inn fiks på hendelse som gikk i stå (https://github.com/navikt/dagpenger-journalforing-ferdigstill/commit/d318de13b417f7589f65e622f24e89a1362db736)
 
 ## Linker
