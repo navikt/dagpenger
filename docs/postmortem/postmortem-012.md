@@ -29,6 +29,7 @@ Koden som gjør dette kjører i en alt for vid try/catch(Exception e) og lagde e
 | Endre feilmelding fra warning til error | Forbedring | André Roaldseth | [Utført](https://github.com/navikt/dp-soknad-server/commit/81103ba9d909a1062466c3236e05108dbdee2b42) |
 | Overvåke antall søknader siste time | Forbedring ||
 | Overvåke connection pool i Hikari | Forbedring ||
+| Lage smartere isAlive sjekk som sjekker db tilkobling | Geir André Lund|  |    
 
 ## Hva lærte vi?
 
