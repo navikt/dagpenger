@@ -14,7 +14,7 @@
     "dp-datalaster-subsumsjonbrukt": "git@github.com:navikt/dp-datalaster-subsumsjonbrukt.git",
     "dp-graphql": "git@github.com:navikt/dp-graphql.git",
     "dp-inntekt-api": "git@github.com:navikt/dp-inntekt-api.git",
-    "dp-inntekt-innsyn-ui": "git@github.com:navikt/dp-inntekt-innsyn-ui.git"
+    "dp-inntekt-innsyn-ui": "git@github.com:navikt/dp-inntekt-innsyn-ui.git",
     "dagpenger-regel-ui": "git@github.com:navikt/dagpenger-regel-ui.git",
     "dp-inntekt-klassifiserer": "git@github.com:navikt/dp-inntekt-klassifiserer.git",
     "dp-kafka-offset-monitor": "git@github.com:navikt/dp-kafka-offset-monitor.git",
