@@ -11,6 +11,8 @@
     "dagpenger-regel-ui": "git@github.com:navikt/dagpenger-regel-ui.git",
     "dagpenger-secrets": "git@github.com:navikt/dagpenger-secrets.git",
     "dagpenger-streams": "git@github.com:navikt/dagpenger-streams.git",
+    "dp-arbeidsforhold-oppslag": "git@github.com:navikt/dp-arbeidsforhold-oppslag.git",
+    "dp-arbeidssoker-oppslag": "git@github.com:navikt/dp-arbeidssoker-oppslag.git",
     "dp-biblioteker": "git@github.com:navikt/dp-biblioteker.git",
     "dp-datalaster-subsumsjonbrukt": "git@github.com:navikt/dp-datalaster-subsumsjonbrukt.git",
     "dp-graphql": "git@github.com:navikt/dp-graphql.git",
@@ -22,6 +24,7 @@
     "dp-map": "git@github.com:navikt/dp-map.git",
     "dp-oppslag-arbeidsforhold": "git@github.com:navikt/dp-oppslag-arbeidsforhold.git",
     "dp-oppslag-soknadfakta": "git@github.com:navikt/dp-oppslag-soknadfakta.git",
+    "dp-person-oppslag" : "git@github.com:navikt/dp-person-oppslag.git",
     "dp-regel-api": "git@github.com:navikt/dp-regel-api.git",
     "dp-regel-api-arena-adapter": "git@github.com:navikt/dp-regel-api-arena-adapter.git",
     "dp-regel-grunnlag": "git@github.com:navikt/dp-regel-grunnlag.git",
@@ -29,12 +32,15 @@
     "dp-regel-periode": "git@github.com:navikt/dp-regel-periode.git",
     "dp-regel-sats": "git@github.com:navikt/dp-regel-sats.git",
     "dp-regel-tap-arbeidstid": "git@github.com:navikt/dp-regel-tap-arbeidstid.git",
+    "dp-vedtak-oppslag": "git@github.com:navikt/dp-vedtak-oppslag.git",
+    "dp-regel-virkningstidspunkt": "git@github.com:navikt/dp-regel-virkningstidspunkt.git",
     "dp-saksbehandling": "git@github.com:navikt/dp-saksbehandling.git",
     "dp-soknad-frontend": "git@github.com:navikt/dp-soknad-frontend.git",
     "dp-soknad-innsending": "git@github.com:navikt/dp-soknad-innsending.git",
     "dp-soknad-mottak": "git@github.com:navikt/dp-soknad-mottak.git",
     "dp-soknad-server": "git@github.com:navikt/dp-soknad-server.git",
-    "dp-vedtakresultat-lytter": "git@github.com:navikt/dp-vedtakresultat-lytter.git"
+    "dp-vedtakresultat-lytter": "git@github.com:navikt/dp-vedtakresultat-lytter.git",
+    "dp-ytelser-oppslag": "git@github.com:navikt/dp-ytelser-oppslag.git"
   }
 }
 
