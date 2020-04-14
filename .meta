@@ -10,7 +10,7 @@
     "dagpenger-regel-ui": "git@github.com:navikt/dagpenger-regel-ui.git",
     "dagpenger-secrets": "git@github.com:navikt/dagpenger-secrets.git",
     "dagpenger-streams": "git@github.com:navikt/dagpenger-streams.git",
-    "dp-arbeidssoker-oppslag": "git@github.com:navikt/dp-arbeidssoker-oppslag.git",
+    "dp-oppslag-arbeidssoker": "git@github.com:navikt/dp-oppslag-arbeidssoker.git",
     "dp-behovsakkumulator": "git@github.com:navikt/dp-behovsakkumulator.git",
     "dp-biblioteker": "git@github.com:navikt/dp-biblioteker.git",
     "dp-datalaster-subsumsjonbrukt": "git@github.com:navikt/dp-datalaster-subsumsjonbrukt.git",
