@@ -22,9 +22,9 @@
     "dp-kalkulator-api": "git@github.com:navikt/dp-kalkulator-api.git",
     "dp-map": "git@github.com:navikt/dp-map.git",
     "dp-oppslag-arbeidsforhold": "git@github.com:navikt/dp-oppslag-arbeidsforhold.git",
+    "dp-oppslag-person" : "git@github.com:navikt/dp-oppslag-person.git",
     "dp-oppslag-soknadfakta": "git@github.com:navikt/dp-oppslag-soknadfakta.git",
     "dp-oppslag-vedtak": "git@github.com:navikt/dp-oppslag-vedtak.git",
-    "dp-person-oppslag" : "git@github.com:navikt/dp-person-oppslag.git",
     "dp-regel-api": "git@github.com:navikt/dp-regel-api.git",
     "dp-regel-api-arena-adapter": "git@github.com:navikt/dp-regel-api-arena-adapter.git",
     "dp-regel-grunnlag": "git@github.com:navikt/dp-regel-grunnlag.git",
@@ -38,6 +38,7 @@
     "dp-soknad-innsending": "git@github.com:navikt/dp-soknad-innsending.git",
     "dp-soknad-mottak": "git@github.com:navikt/dp-soknad-mottak.git",
     "dp-soknad-server": "git@github.com:navikt/dp-soknad-server.git",
+    "dp-vedtak-oppslag": "git@github.com:navikt/dp-vedtak-oppslag.git",
     "dp-vedtakresultat-lytter": "git@github.com:navikt/dp-vedtakresultat-lytter.git",
     "dp-ytelser-oppslag": "git@github.com:navikt/dp-ytelser-oppslag.git"
   }
