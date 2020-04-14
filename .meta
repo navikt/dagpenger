@@ -22,6 +22,7 @@
     "dp-kalkulator-api": "git@github.com:navikt/dp-kalkulator-api.git",
     "dp-map": "git@github.com:navikt/dp-map.git",
     "dp-oppslag-arbeidsforhold": "git@github.com:navikt/dp-oppslag-arbeidsforhold.git",
+    "dp-oppslag-ytelser": "git@github.com:navikt/dp-oppslag-ytelser.git"
     "dp-oppslag-person" : "git@github.com:navikt/dp-oppslag-person.git",
     "dp-oppslag-soknadfakta": "git@github.com:navikt/dp-oppslag-soknadfakta.git",
     "dp-oppslag-vedtak": "git@github.com:navikt/dp-oppslag-vedtak.git",
@@ -40,7 +41,6 @@
     "dp-soknad-server": "git@github.com:navikt/dp-soknad-server.git",
     "dp-vedtak-oppslag": "git@github.com:navikt/dp-vedtak-oppslag.git",
     "dp-vedtakresultat-lytter": "git@github.com:navikt/dp-vedtakresultat-lytter.git",
-    "dp-ytelser-oppslag": "git@github.com:navikt/dp-ytelser-oppslag.git"
   }
 }
 
