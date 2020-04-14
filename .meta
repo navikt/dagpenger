@@ -31,7 +31,7 @@
     "dp-regel-minsteinntekt": "git@github.com:navikt/dp-regel-minsteinntekt.git",
     "dp-regel-periode": "git@github.com:navikt/dp-regel-periode.git",
     "dp-regel-sats": "git@github.com:navikt/dp-regel-sats.git",
-    "dp-regel-tap-arbeidstid": "git@github.com:navikt/dp-regel-tap-arbeidstid.git",
+    "dp-regel-tapt-arbeidstid": "git@github.com:navikt/dp-regel-tapt-arbeidstid.git",
     "dp-vedtak-oppslag": "git@github.com:navikt/dp-vedtak-oppslag.git",
     "dp-regel-virkningstidspunkt": "git@github.com:navikt/dp-regel-virkningstidspunkt.git",
     "dp-saksbehandling": "git@github.com:navikt/dp-saksbehandling.git",
