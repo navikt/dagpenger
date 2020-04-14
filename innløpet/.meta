@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "dagpenger-joark-mottak": "git@github.com:navikt/dagpenger-joark-mottak.git",
+    "dagpenger-journalforing-ferdigstill": "git@github.com:navikt/dagpenger-journalforing-ferdigstill.git"
+ }
+}
+

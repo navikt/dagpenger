@@ -1,0 +1,27 @@
+{
+  "projects": {
+    "dagpenger-regel-ui": "git@github.com:navikt/dagpenger-regel-ui.git",
+    "dp-behovsakkumulator": "git@github.com:navikt/dp-behovsakkumulator.git",
+    "dp-datalaster-subsumsjonbrukt": "git@github.com:navikt/dp-datalaster-subsumsjonbrukt.git",
+    "dp-inntekt-api": "git@github.com:navikt/dp-inntekt-api.git",
+    "dp-inntekt-klassifiserer": "git@github.com:navikt/dp-inntekt-klassifiserer.git",
+    "dp-oppslag-arbeidsforhold": "git@github.com:navikt/dp-oppslag-arbeidsforhold.git",
+    "dp-oppslag-arbeidssoker": "git@github.com:navikt/dp-oppslag-arbeidssoker.git",
+    "dp-oppslag-person" : "git@github.com:navikt/dp-oppslag-person.git",
+    "dp-oppslag-soknadfakta": "git@github.com:navikt/dp-oppslag-soknadfakta.git",
+    "dp-oppslag-vedtak": "git@github.com:navikt/dp-oppslag-vedtak.git",
+    "dp-oppslag-ytelser": "git@github.com:navikt/dp-oppslag-ytelser.git",
+    "dp-regel-api": "git@github.com:navikt/dp-regel-api.git",
+    "dp-regel-api-arena-adapter": "git@github.com:navikt/dp-regel-api-arena-adapter.git",
+    "dp-regel-grunnlag": "git@github.com:navikt/dp-regel-grunnlag.git",
+    "dp-regel-minsteinntekt": "git@github.com:navikt/dp-regel-minsteinntekt.git",
+    "dp-regel-periode": "git@github.com:navikt/dp-regel-periode.git",
+    "dp-regel-sats": "git@github.com:navikt/dp-regel-sats.git",
+    "dp-regel-tapt-arbeidstid": "git@github.com:navikt/dp-regel-tapt-arbeidstid.git",
+    "dp-regel-virkningstidspunkt": "git@github.com:navikt/dp-regel-virkningstidspunkt.git",
+    "dp-saksbehandling": "git@github.com:navikt/dp-saksbehandling.git",
+    "dp-soknad-mottak": "git@github.com:navikt/dp-soknad-mottak.git",
+    "dp-vedtakresultat-lytter": "git@github.com:navikt/dp-vedtakresultat-lytter.git"
+  }
+}
+

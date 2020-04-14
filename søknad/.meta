@@ -1,0 +1,10 @@
+{
+  "projects": {
+    "dp-inntekt-innsyn-ui": "git@github.com:navikt/dp-inntekt-innsyn-ui.git",
+    "dp-kalkulator-api": "git@github.com:navikt/dp-kalkulator-api.git",
+    "dp-soknad-frontend": "git@github.com:navikt/dp-soknad-frontend.git",
+    "dp-soknad-innsending": "git@github.com:navikt/dp-soknad-innsending.git",
+    "dp-soknad-server": "git@github.com:navikt/dp-soknad-server.git"
+  }
+}
+
