@@ -44,11 +44,11 @@ dependencies {
 
 spotless {
     kotlin {
-        ktlint(Klint.version)
+        ktlint()
     }
     kotlinGradle {
-        target("*.gradle.kts", "additionalScripts/*.gradle.kts")
-        ktlint(Klint.version)
+        target("*.gradle.kts", "buildSrc/**/*.kts")
+        ktlint()
     }
 }
 
