@@ -1,6 +1,7 @@
 tmp/
 
 # Ignore sub repos created by repo
+.service-template
 dagpenger-*
 dp-*
 
