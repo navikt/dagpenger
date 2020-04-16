@@ -38,6 +38,10 @@ LICENSES := $(shell ls */LICENSE.md)
 $(LICENSES): .service-template/LICENSE.md
 	cp $< $@
 
+REVIEWDOG := $(shell ls */.github/workflows/reviewdog.yml)
+$(REVIEWDOG): .service-template/.github/workflows/reviewdog.yml
+	cp $< $@
+
 CONSTANTS := $(shell ls */buildSrc/src/main/kotlin/Constants.kt)
 $(CONSTANTS): .service-template/buildSrc/src/main/kotlin/Constants.kt
 	cp $< $@
