@@ -1,5 +1,6 @@
 {
   "projects": {
+    ".service-template": "git@github.com:navikt/dp-service-template",
     "dagpenger-events": "git@github.com:navikt/dagpenger-events",
     "dagpenger-funksjonelle-tester": "git@github.com:navikt/dagpenger-funksjonelle-tester.git",
     "dagpenger-iac": "git@github.com:navikt/dagpenger-iac.git",
@@ -10,7 +11,6 @@
     "dagpenger-regel-ui": "git@github.com:navikt/dagpenger-regel-ui.git",
     "dagpenger-secrets": "git@github.com:navikt/dagpenger-secrets.git",
     "dagpenger-streams": "git@github.com:navikt/dagpenger-streams.git",
-    "dp-oppslag-arbeidssoker": "git@github.com:navikt/dp-oppslag-arbeidssoker.git",
     "dp-behovsakkumulator": "git@github.com:navikt/dp-behovsakkumulator.git",
     "dp-biblioteker": "git@github.com:navikt/dp-biblioteker.git",
     "dp-datalaster-subsumsjonbrukt": "git@github.com:navikt/dp-datalaster-subsumsjonbrukt.git",
@@ -22,10 +22,11 @@
     "dp-kalkulator-api": "git@github.com:navikt/dp-kalkulator-api.git",
     "dp-map": "git@github.com:navikt/dp-map.git",
     "dp-oppslag-arbeidsforhold": "git@github.com:navikt/dp-oppslag-arbeidsforhold.git",
-    "dp-oppslag-ytelser": "git@github.com:navikt/dp-oppslag-ytelser.git",
+    "dp-oppslag-arbeidssoker": "git@github.com:navikt/dp-oppslag-arbeidssoker.git",
     "dp-oppslag-person" : "git@github.com:navikt/dp-oppslag-person.git",
     "dp-oppslag-soknadfakta": "git@github.com:navikt/dp-oppslag-soknadfakta.git",
     "dp-oppslag-vedtak": "git@github.com:navikt/dp-oppslag-vedtak.git",
+    "dp-oppslag-ytelser": "git@github.com:navikt/dp-oppslag-ytelser.git",
     "dp-regel-api": "git@github.com:navikt/dp-regel-api.git",
     "dp-regel-api-arena-adapter": "git@github.com:navikt/dp-regel-api-arena-adapter.git",
     "dp-regel-grunnlag": "git@github.com:navikt/dp-regel-grunnlag.git",
