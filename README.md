@@ -52,7 +52,7 @@ Make vil holde [enkelte filer](Makefile) i synk med tilsvarende filer i [.servic
 
 1. Oppdater/endre i [.service-template/buildSrc/src/main/kotlin/Constants.kt](.service-template/buildSrc/src/main/kotlin/Constants.kt)
 2. Sjekk inn og push endringen
-3. Kjør `make sync-files` for synkronisere `buildSrc` filene til mikrotjenestene.
+3. Kjør `make sync` for synkronisere `buildSrc` filene til mikrotjenestene.
 4. Bygg og sjekk inn `buildSrc` filene for mikrotjenestene.
 
 # Teste lokalt med docker-compose
