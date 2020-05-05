@@ -39,16 +39,22 @@ Forskuddteamet gjorde dagpengerteamet på at det var unormale antall minstearbei
 | Aksjon | Type | Eier | Referanse |
 | ------ | ---- | ---- | --- |
 | Fiks av SQL-spørring | Bugfix | Team dagpenger | [#401](https://github.com/navikt/dagpenger/issues/401)
-
-
+| Manglende logger i Kibana fra dp-inntekt-api | Bugfix | Team dagpenger | [#403](https://github.com/navikt/dagpenger/issues/403)
+| Legge inn sikkerlogg i gamle apps | Bugfix | Team dagpenger | [#404](https://github.com/navikt/dagpenger/issues/404)
 
 ## Hva lærte vi?
 
-
+Enhetstester og integrasjontester burde funnet ut at dette var en feil under utvikling. Vi ser nå at mange av testene våre bruker fastsatte parametre og har dermed liten variasjon. Vi burde lære mer om property-testing for å kunne kjøre flere permutasjoner i koden. 
 
 ### Hva gikk bra
 
+Fiksen var forholdsvis enkel å fikse
+
+
 ### Hva gikk dårlig
+
+Vi lagret feil data for inntekt i beregning av Forskudd og Dagpengekalkulatorspørringer. 
+
 
 ### Hvor hadde vi flaks
 
@@ -72,3 +78,4 @@ Det var "bare" forkuddsløsning og Dagpengekalkulatoren som var skadelidende. Sa
 
 
 ## Linker
+
