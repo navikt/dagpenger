@@ -32,7 +32,7 @@ Fiks av SQL-spørring https://github.com/navikt/dp-inntekt-api/commit/8b92c8e1b3
 
 **Påvisning:** 
 
-Forskuddteamet gjorde dagpengerteamet på at det var unormale antall minstearbeidsinntekt som ble avslått. Det synes også i våre [grafanadashboards](https://grafana.adeo.no/dashboard/snapshot/fNMNpbOFEfBqVkUpgHT64Jq9zGtw4kOd)
+Forskuddteamet gjorde dagpengerteamet på at det var unormale antall minstearbeidsinntekt som ble avslått. Det synes også i våre [Grafanadashboards](https://grafana.adeo.no/dashboard/snapshot/fNMNpbOFEfBqVkUpgHT64Jq9zGtw4kOd)
 
 ## Aksjonspunkter
 
@@ -52,6 +52,23 @@ Forskuddteamet gjorde dagpengerteamet på at det var unormale antall minstearbei
 
 ### Hvor hadde vi flaks
 
+Det var "bare" forkuddsløsning og Dagpengekalkulatoren som var skadelidende. Saksbehandling i Arena har ikke blitt påvirket av feilen, selvom saksbehandling av dagpenger i Arena ble stoppet ca 10:10 til ca. 12.  
+
 ## Tidslinje
+
+- 09:50 - Forkuddsteamet gjorde Team dagpenger oppmerksomme på at det var mange som ble sjaltet ut fordi minstearbeidsinntekt svarte Nei. Ble påvist i [Grafanadashboard](https://grafana.adeo.no/dashboard/snapshot/fNMNpbOFEfBqVkUpgHT64Jq9zGtw4kOd) 
+- 09:50 -> feilsøking, kontaktet Team inntekt, verifiserte med Skatteetaten
+- 10:10 ca - Stoppe saksbehandling av dagpenger i Arena 
+- 
+
+- 11:58 ca - Saksbehandling av dapgenger i Arena ble starte opp igjen
+
+
+....
+
+- 
+- 12:05 - Produksjonssetting av feilfiks
+- 12:12 - Skrudde på Dapengekalkulator. Verifisert OK innhenting av inntekt igjen
+
 
 ## Linker
