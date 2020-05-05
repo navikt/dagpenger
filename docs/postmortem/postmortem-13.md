@@ -70,14 +70,10 @@ Det var "bare" forkuddsløsning og Dagpengekalkulatoren som var skadelidende. Sa
 - 09:50 - Forkuddsteamet gjorde Team dagpenger oppmerksomme på at det var mange som ble sjaltet ut fordi minstearbeidsinntekt svarte Nei. Ble påvist i [Grafanadashboard](https://grafana.adeo.no/dashboard/snapshot/fNMNpbOFEfBqVkUpgHT64Jq9zGtw4kOd) 
 - 09:50 -> feilsøking, kontaktet Team inntekt, verifiserte med Skatteetaten
 - 10:10 ca - Stoppe saksbehandling av dagpenger i Arena 
-- 
-
-- 11:58 ca - Saksbehandling av dapgenger i Arena ble starte opp igjen
-
-
-....
-
-- 
+- 10:10 -> Feilsøking. Kunne ikke verifisere feilen i test/preprod
+- 10:40 - [Melding på Navet om feil](https://navno.sharepoint.com/sites/intranett-driftsmeldinger/SitePages/Dagpenger-%E2%80%93-Minsteinntekt-og-Grunnlag.aspx)
+- 11:45 ca -> Påvisning av feil, skrev en feilende integrasjontest for å verifisere. Fikset SQL-spørring som var feilkilden. 
+- 11:58 ca - Saksbehandling av dapgenger i Arena ble starte opp igjen 
 - 12:05 - Produksjonssetting av feilfiks
 - 12:12 - Skrudde på Dapengekalkulator. Verifisert OK innhenting av inntekt igjen
 
