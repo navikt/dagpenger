@@ -9,23 +9,42 @@
 **Sammendrag:** 
 
 
+Kombinert med en feil i hvordan vi slår opp inntekter og hacket vi har gjort i kalkulator/forskudd og innløpet (hvor vi har brukt samme vedtakId; -1337, -12345) fått samme inntekter. 
+En spørring som skal hente inntekter basert på person + vedtaksid + beregningsdato så rett og slett bort fra person, så det ble kun vedtaksid + beregningsdato som ble brukt/unik. For vedtak i Arena så stemmer jo det, men kalkulator, forskudd og innløpet som bruker -1337 eller -12345 som vedtaksid ble det alltid den samme inntekten (for samme dato)
 
-**Konsekvens:** [Hvilke konsekvenser fikk feilen?]
 
-**Rotårsaker:** [Rotårsak(er) til hvorfor feilen oppstod]
+**Konsekvens:** 
 
-**Utløsende faktor:** [Hva gjorde at feilen oppstod?]
+- Forskudd ble beregnet på feil inntektsgrunnlag og gav feil svar for minstearbeidsinntekt, grunnlag og sats
+- Dagpengekalkulatoren ble beregnet på feil inntektsgrunnlag og gav feil svar for minstearbeidsinntekt, grunnlag og sats
 
-**Løsning:** [Hva ble løsningen?]
+**Rotårsaker:** 
 
-**Påvisning:** [Hvordan feilen ble oppdaget?]
+En spørring som skal hente inntekter basert på person + vedtaksid + beregningsdato så rett og slett bort fra person, så det ble kun vedtaksid + beregningsdato som ble brukt/unik.
+
+**Utløsende faktor:**
+
+Opprettelse av en ny tabell for å ta vare på inntekt basert på  person + vedtaksid + beregningsdato + fødselsnummer for å klargjøre automatisk saksbehandling av dagpenger. Denne endringen ble produksjonsatt ca 14:20
+
+**Løsning:** 
+
+Fiks av SQL-spørring https://github.com/navikt/dp-inntekt-api/commit/8b92c8e1b35a4ef8abe025fa4b240ef8ae5a818e 
+
+**Påvisning:** 
+
+Forskuddteamet gjorde dagpengerteamet på at det var unormale antall minstearbeidsinntekt som ble avslått. Det synes også i våre [grafanadashboards](https://grafana.adeo.no/dashboard/snapshot/fNMNpbOFEfBqVkUpgHT64Jq9zGtw4kOd)
 
 ## Aksjonspunkter
 
 | Aksjon | Type | Eier | Referanse |
 | ------ | ---- | ---- | --- |
+| Fiks av SQL-spørring | Bugfix | Team dagpenger | [#401](https://github.com/navikt/dagpenger/issues/401)
+
+
 
 ## Hva lærte vi?
+
+
 
 ### Hva gikk bra
 
