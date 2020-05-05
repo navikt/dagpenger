@@ -9,8 +9,8 @@
 **Sammendrag:** 
 
 
-Kombinert med en feil i hvordan vi slår opp inntekter og hacket vi har gjort i kalkulator/forskudd og innløpet (hvor vi har brukt samme vedtakId; -1337, -12345) fått samme inntekter. 
-En spørring som skal hente inntekter basert på person + vedtaksid + beregningsdato så rett og slett bort fra person, så det ble kun vedtaksid + beregningsdato som ble brukt/unik. For vedtak i Arena så stemmer jo det, men kalkulator, forskudd og innløpet som bruker -1337 eller -12345 som vedtaksid ble det alltid den samme inntekten (for samme dato)
+En feil i hvordan vi slår opp inntekter kombinert med hacket vi har gjort i kalkulator, forskudd og innløpet(bruk av felles vedtakID, -1337 og -12345) har ført til at ulike personer har fått samme inntekter.
+En spørring som skal hente inntekter basert på person + vedtaksid + beregningsdato så rett og slett bort fra person, så det ble kun vedtaksid + beregningsdato som ble brukt/unik. For vedtak i Arena så stemmer jo det men for kalkulator, forskudd og innløpet som bruker -1337 eller -12345 som vedtaksid ble det alltid den samme inntekten (for samme dato)
 
 
 **Konsekvens:** 
