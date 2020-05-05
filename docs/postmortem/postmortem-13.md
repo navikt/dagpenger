@@ -1,4 +1,4 @@
-# Tittel
+# Brukere av kalkulator/forskuddsløsning har fått samme beregningsresultat
 
 **Dato:** [05.05.2020]
 
@@ -24,7 +24,7 @@ En spørring som skal hente inntekter basert på person + vedtaksid + beregnings
 
 **Utløsende faktor:**
 
-Opprettelse av en ny tabell for å ta vare på inntekt basert på  person + vedtaksid + beregningsdato + fødselsnummer for å klargjøre automatisk saksbehandling av dagpenger. Denne endringen ble produksjonsatt ca 14:20
+Opprettelse av en ny tabell for å ta vare på inntekt basert på  person + vedtaksid + beregningsdato + fødselsnummer for å klargjøre automatisk saksbehandling av dagpenger. Denne endringen ble produksjonsatt 04.05.2020 ca kl 14:20 
 
 **Løsning:** 
 
