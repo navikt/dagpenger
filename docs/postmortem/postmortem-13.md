@@ -24,7 +24,7 @@ En spørring som skal hente inntekter basert på person + vedtaksid + beregnings
 
 **Utløsende faktor:**
 
-Opprettelse av en ny tabell for å ta vare på inntekt basert på  person + vedtaksid + beregningsdato + fødselsnummer for å klargjøre automatisk saksbehandling av dagpenger. Denne endringen ble produksjonsatt 04.05.2020 ca kl 14:20 
+Opprettelse av en ny tabell for å ta vare på inntekt basert på  person + vedtaksid + beregningsdato + fødselsnummer for å klargjøre automatisk saksbehandling av dagpenger. Denne endringen ble produksjonsatt 04.05.2020 kl 14:34:42 
 
 **Løsning:** 
 
@@ -62,6 +62,11 @@ Det var "bare" forkuddsløsning og Dagpengekalkulatoren som var skadelidende. Sa
 
 ## Tidslinje
 
+
+### 04.05.2020
+- 14:34:42 ble feilen produksjonssatt
+
+### 05.05.2020
 - 09:50 - Forkuddsteamet gjorde Team dagpenger oppmerksomme på at det var mange som ble sjaltet ut fordi minstearbeidsinntekt svarte Nei. Ble påvist i [Grafanadashboard](https://grafana.adeo.no/dashboard/snapshot/fNMNpbOFEfBqVkUpgHT64Jq9zGtw4kOd) 
 - 09:50 -> feilsøking, kontaktet Team inntekt, verifiserte med Skatteetaten
 - 10:10 ca - Stoppe saksbehandling av dagpenger i Arena 
