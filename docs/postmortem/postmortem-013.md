@@ -73,7 +73,7 @@ Det var "bare" forkuddsløsning og Dagpengekalkulatoren som var skadelidende. Sa
 - 10:10 -> Feilsøking. Kunne ikke verifisere feilen i test/preprod
 - 10:40 - [Melding på Navet om feil](https://navno.sharepoint.com/sites/intranett-driftsmeldinger/SitePages/Dagpenger-%E2%80%93-Minsteinntekt-og-Grunnlag.aspx)
 - 11:45 ca -> Påvisning av feil, skrev en feilende integrasjontest for å verifisere. Fikset SQL-spørring som var feilkilden. 
-- 11:58 ca - Saksbehandling av dapgenger i Arena ble starte opp igjen 
+- 11:58 ca - Saksbehandling av dagpenger i Arena ble starte opp igjen 
 - 12:05 - Produksjonssetting av feilfiks
 - 12:12 - Skrudde på Dapengekalkulator. Verifisert OK innhenting av inntekt igjen
 
