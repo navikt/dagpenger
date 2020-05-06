@@ -24,7 +24,7 @@ En spørring som skal hente inntekter basert på person + vedtaksid + beregnings
 
 **Utløsende faktor:**
 
-Opprettelse av en ny tabell for å ta vare på inntekt basert på  person + vedtaksid + beregningsdato + fødselsnummer for å klargjøre automatisk saksbehandling av dagpenger. Denne endringen ble produksjonsatt 04.05.2020 kl 14:34:42 
+Opprettelse av en ny tabell for å ta vare på inntekt basert på aktørid + vedtaksid + beregningsdato + fødselsnummer for å klargjøre automatisk saksbehandling av dagpenger. Denne endringen ble produksjonsatt 04.05.2020 kl 14:34:42 
 
 **Løsning:** 
 
