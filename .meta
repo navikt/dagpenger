@@ -23,6 +23,7 @@
     "dp-map": "git@github.com:navikt/dp-map.git",
     "dp-oppslag-arbeidsforhold": "git@github.com:navikt/dp-oppslag-arbeidsforhold.git",
     "dp-oppslag-arbeidssoker": "git@github.com:navikt/dp-oppslag-arbeidssoker.git",
+    "dp-oppslag-henvendelse": "git@github.com:navikt/dp-oppslag-henvendelse.git",
     "dp-oppslag-medlemskap":  "git@github.com:navikt/dp-oppslag-medlemskap.git",
     "dp-oppslag-person" : "git@github.com:navikt/dp-oppslag-person.git",
     "dp-oppslag-soknadfakta": "git@github.com:navikt/dp-oppslag-soknadfakta.git",
