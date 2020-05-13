@@ -42,6 +42,10 @@ REVIEWDOG := $(shell ls */.github/workflows/reviewdog.yml)
 $(REVIEWDOG): .service-template/.github/workflows/reviewdog.yml
 	cp $< $@
 
+SNYK := $(shell ls */.github/workflows/snyk.yml)
+$(SNYK): .service-template/.github/workflows/snyk.yml
+	cp $< $@
+
 CONSTANTS := $(shell ls */buildSrc/src/main/kotlin/Constants.kt)
 $(CONSTANTS): .service-template/buildSrc/src/main/kotlin/Constants.kt
 	cp $< $@
@@ -60,4 +64,4 @@ $(UAT_SCRIPT): .service-template/scripts/test/uatJob
 
 BUILD_SRC := $(CONSTANTS) $(BUILD_GRADLE) $(SETTINGS_GRADLE)
 
-sync-template: $(CODEOWNERS) $(LICENSES) $(BUILD_SRC) $(UAT_SCRIPT)
+sync-template: $(CODEOWNERS) $(LICENSES) $(BUILD_SRC) $(UAT_SCRIPT) $(SNYK) $(REVIEWDOG)
