@@ -15,6 +15,7 @@ Enn så lenge må du sørge for å ha `nvm` installert (`brew install nvm`).
 
 ```
 git clone git@github.com:navikt/dagpenger.git
+cd dagpenger
 nvm install
 make sync
 ```
