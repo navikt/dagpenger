@@ -1,4 +1,4 @@
-{
+@{
   "projects": {
     ".service-template": "git@github.com:navikt/dp-service-template",
     "dagpenger-events": "git@github.com:navikt/dagpenger-events",
@@ -44,6 +44,7 @@
     "dp-soknad-innsending": "git@github.com:navikt/dp-soknad-innsending.git",
     "dp-soknad-mottak": "git@github.com:navikt/dp-soknad-mottak.git",
     "dp-soknad-server": "git@github.com:navikt/dp-soknad-server.git",
+    "dp-speider": "git@github.com:navikt/dp-speider.git",
     "dp-vedtakresultat-lytter": "git@github.com:navikt/dp-vedtakresultat-lytter.git"
   }
 }
