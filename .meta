@@ -1,4 +1,4 @@
-@{
+{
   "projects": {
     ".service-template": "git@github.com:navikt/dp-service-template",
     "dagpenger-events": "git@github.com:navikt/dagpenger-events",
