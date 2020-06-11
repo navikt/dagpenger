@@ -28,6 +28,7 @@
     "dp-oppslag-henvendelse": "git@github.com:navikt/dp-oppslag-henvendelse.git",
     "dp-oppslag-medlemskap":  "git@github.com:navikt/dp-oppslag-medlemskap.git",
     "dp-oppslag-person" : "git@github.com:navikt/dp-oppslag-person.git",
+    "dp-oppslag-refusjon" : "git@github.com:navikt/dp-oppslag-refusjon.git",
     "dp-oppslag-soknadfakta": "git@github.com:navikt/dp-oppslag-soknadfakta.git",
     "dp-oppslag-vedtak": "git@github.com:navikt/dp-oppslag-vedtak.git",
     "dp-oppslag-ytelser": "git@github.com:navikt/dp-oppslag-ytelser.git",
