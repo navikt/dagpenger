@@ -6,7 +6,6 @@
     "dagpenger-iac": "git@github.com:navikt/dagpenger-iac.git",
     "dagpenger-joark-mottak": "git@github.com:navikt/dagpenger-joark-mottak.git",
     "dagpenger-journalforing-ferdigstill": "git@github.com:navikt/dagpenger-journalforing-ferdigstill.git",
-    "dagpenger-oppslag": "git@github.com:navikt/dagpenger-oppslag.git",
     "dagpenger-raspberry-monitor": "git@github.com:navikt/dagpenger-raspberry-monitor.git",
     "dagpenger-regel-ui": "git@github.com:navikt/dagpenger-regel-ui.git",
     "dagpenger-secrets": "git@github.com:navikt/dagpenger-secrets.git",
