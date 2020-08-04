@@ -3,7 +3,7 @@
 echo Gradle version to upgrade to?
 read GRADLE_VERSION
 
-./gradlew wrapper --gradle-version=$GRADLE_VERSION --distribution-type=all && ./gradlew -v
+./gradlew wrapper --gradle-version=$GRADLE_VERSION --distribution-type=bin && ./gradlew -v
 
 for i in ./*/; do (
         echo $i &&  \
