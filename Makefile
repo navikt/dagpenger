@@ -26,6 +26,10 @@ tmp/.meta-installed.sentinel: .nvmrc #tmp/.nvm-set.sentinel
 	npm install meta --no-save
 	mkdir -p $(@D) && touch $@
 
+
+gradle-update:
+	./script/update-gradle.sh
+
 meta-update: .meta tmp/.meta-installed.sentinel
 	meta git update
 

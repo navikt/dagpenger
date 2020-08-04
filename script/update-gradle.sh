@@ -11,6 +11,6 @@ for i in ./*/; do (
         test -f ./gradlew && \
         ./gradlew wrapper \
                 --gradle-version=$GRADLE_VERSION \
-                --distribution-type=all \
+                --distribution-type=bin \
         && ./gradlew -v | grep "Gradle");
 done
