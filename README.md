@@ -65,9 +65,9 @@ Se [Docker-compose](docker-compose/README.md) for prosjektet
 Se [Architectural Decision Log](docs/adr/index.md) for prosjektet
 
 # Hvordan vi jobber
-Nevne commits og PR i GitHub Issues
-Skrive postmortems
-Oppdatere diagrammet ved større endringer
+* Nevne commits og PR i GitHub Issues
+* Skrive postmortems
+* Oppdatere diagrammet ved større endringer
 
 # Henvendelser
 
