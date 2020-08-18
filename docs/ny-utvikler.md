@@ -4,10 +4,9 @@
 
 - [Legg til i Teams](https://teams.microsoft.com/l/channel/19%3a78080dcbfa6d4d449642aa7c64f02a72%40thread.tacv2/General?groupId=4edb2ce5-4f0e-4f6f-9b82-b8e75e9dd09e&tenantId=62366534-1ec3-4962-8869-9b5535279d0b)
 - [Sett opp 2-faktor auth](https://myaccount.microsoft.com/)
+- [naisdevice](https://doc.nais.io/device/) - For diverse tilganger fra NAV eid laptop.
 
 ## Managed Software Center
-
-- NavTunnel
 - VMware Horizon Client
 - Zoom
 
