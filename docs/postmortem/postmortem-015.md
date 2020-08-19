@@ -22,7 +22,7 @@
 
 | Aksjon | Type | Eier | Referanse |
 | ------ | ---- | ---- | --- |
-|        |      |      |     |
+|  Oppdage error rate i http apiet til  dp-regel-api-arena-adapter via alerts    |   Oppgave   |   Team dagpenger   |   https://github.com/navikt/dagpenger/issues/553  |
 
 ## Hva lærte vi?
 
@@ -41,6 +41,7 @@ Vi burde blitt oppmerksomme på dette selv – grafanaboardene lyste rødt, men 
 
 ### Hvor hadde vi flaks
 
+Feilen var lett å fikse
 
 
 ## Tidslinje
@@ -60,3 +61,6 @@ Vi burde blitt oppmerksomme på dette selv – grafanaboardene lyste rødt, men 
 11:34 – Fiks ute i produksjon
 
 ## Linker
+
+
+Commit med fiks https://github.com/navikt/dp-regel-api-arena-adapter/commit/5c51f5572c491ee415ad88bd209403b29a0549eb
