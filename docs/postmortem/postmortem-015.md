@@ -1,4 +1,4 @@
-# Tittel
+# Konfigurasjonsfeil i dp-regel-api-arena-adapter som førte til at vurdering av minsteinntekt og beregning av dagpengegrunnlag var utilgjengelig for Arena
 
 **Dato:** 19.08.2020
 
