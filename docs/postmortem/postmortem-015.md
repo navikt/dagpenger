@@ -2,7 +2,7 @@
 
 **Dato:** 19.08.2020
 
-**Av:** Andreas Bergh
+**Av:** Andreas Bergh og Geir André Lund
 
 **Status:** Løst
 
