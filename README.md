@@ -26,10 +26,9 @@ Se [meta](https://github.com/mateodelnorte/meta) for flere kommandoer.
 
 ## IntelliJ  og ktlint
 
-
 Vi bruker klint for å ha formatteringsregler på koden.
 
-1. Installer ktlint `brew install ktlint` (sørg for at den er siste versjon, pt 0.37.2)
+1. Installer ktlint `brew install ktlint` (sørg for at den er siste versjon, pt 0.38.1)
 2. Kjør: `ktlint applyToIDEAProject ` i dagpenger katalogen for å oppdatere IntelliJ med klint regler. Restart InntelliJ etter dette
 3. Legg til pre-commit hook for alle repoene ` meta exec "ktlint installGitPreCommitHook"`
 
