@@ -32,6 +32,11 @@ Vi bruker klint for å ha formatteringsregler på koden.
 2. Kjør: `ktlint applyToIDEAProject ` i dagpenger katalogen for å oppdatere IntelliJ med klint regler. Restart InntelliJ etter dette
 3. Legg til pre-commit hook for alle repoene ` meta exec "ktlint installGitPreCommitHook"`
 
+## GCP
+
+- Installer gcloud
+- Legg til gcp som app i 
+
 ## Bygg
 
 Gradle brukes som byggverktøy og er bundlet inn. Composite build brukes for
