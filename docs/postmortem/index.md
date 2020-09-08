@@ -1,0 +1,173 @@
+
+
+### [postmortem-001](./postmortem-001.md)
+
+- [Manglende inntekter for LEL1 2019](./postmortem-001.md#manglende-inntekter-for-lel1-2019)
+  * [Aksjonspunkter](./postmortem-001.md#aksjonspunkter)
+  * [Hva lærte vi?](./postmortem-001.md#hva-lærte-vi)
+    + [Hva gikk bra](./postmortem-001.md#hva-gikk-bra)
+    + [Hva gikk dårlig](./postmortem-001.md#hva-gikk-dårlig)
+    + [Hvor hadde vi flaks](./postmortem-001.md#hvor-hadde-vi-flaks)
+  * [Tidslinje](./postmortem-001.md#tidslinje)
+  * [Linker](./postmortem-001.md#linker)
+
+### [postmortem-002](./postmortem-002.md)
+
+- [Manglende mapping av inntektstype Tips](./postmortem-002.md#manglende-mapping-av-inntektstype-tips)
+  * [Aksjonspunkter](./postmortem-002.md#aksjonspunkter)
+  * [Hva lærte vi?](./postmortem-002.md#hva-lærte-vi)
+    + [Hva gikk bra](./postmortem-002.md#hva-gikk-bra)
+    + [Hva gikk dårlig](./postmortem-002.md#hva-gikk-dårlig)
+    + [Hvor hadde vi flaks](./postmortem-002.md#hvor-hadde-vi-flaks)
+  * [Tidslinje](./postmortem-002.md#tidslinje)
+  * [Linker](./postmortem-002.md#linker)
+
+### [postmortem-003](./postmortem-003.md)
+
+- [Tjenestekall for vurdering av minsteinntekt feilet](./postmortem-003.md#tjenestekall-for-vurdering-av-minsteinntekt-feilet)
+  * [Aksjonspunkter](./postmortem-003.md#aksjonspunkter)
+  * [Hva lærte vi?](./postmortem-003.md#hva-lærte-vi)
+    + [Hva gikk bra](./postmortem-003.md#hva-gikk-bra)
+    + [Hva gikk dårlig](./postmortem-003.md#hva-gikk-dårlig)
+    + [Hvor hadde vi flaks](./postmortem-003.md#hvor-hadde-vi-flaks)
+  * [Tidslinje](./postmortem-003.md#tidslinje)
+  * [Linker](./postmortem-003.md#linker)
+
+### [postmortem-004](./postmortem-004.md)
+
+- [Kafka consumere for privat-dagpenger-subsumsjon-brukt og privat-dagpenger-subsumsjon-brukt-data har lag (meldinger i kø)](./postmortem-004.md#kafka-consumere-for-privat-dagpenger-subsumsjon-brukt-og-privat-dagpenger-subsumsjon-brukt-data-har-lag-meldinger-i-kø)
+  * [Aksjonspunkter](./postmortem-004.md#aksjonspunkter)
+  * [Hva lærte vi?](./postmortem-004.md#hva-lærte-vi)
+    + [Hva gikk bra](./postmortem-004.md#hva-gikk-bra)
+    + [Hva gikk dårlig](./postmortem-004.md#hva-gikk-dårlig)
+    + [Hvor hadde vi flaks](./postmortem-004.md#hvor-hadde-vi-flaks)
+  * [Tidslinje](./postmortem-004.md#tidslinje)
+  * [Linker](./postmortem-004.md#linker)
+
+### [postmortem-005](./postmortem-005.md)
+
+- [Tidsavbrudd ved beregning av inngangsvilkår, sats og grunnlag for Dagpenger](./postmortem-005.md#tidsavbrudd-ved-beregning-av-inngangsvilkår-sats-og-grunnlag-for-dagpenger)
+  * [Aksjonspunkter](./postmortem-005.md#aksjonspunkter)
+  * [Hva lærte vi?](./postmortem-005.md#hva-lærte-vi)
+    + [Hva gikk bra](./postmortem-005.md#hva-gikk-bra)
+    + [Hva gikk dårlig](./postmortem-005.md#hva-gikk-dårlig)
+    + [Hvor hadde vi flaks](./postmortem-005.md#hvor-hadde-vi-flaks)
+  * [Tidslinje](./postmortem-005.md#tidslinje)
+  * [Linker](./postmortem-005.md#linker)
+
+### [postmortem-006](./postmortem-006.md)
+
+- [Søkere som velger engelsk språk på dagpenger-søknadsdialogen får ikke levert dagpengesøknad](./postmortem-006.md#søkere-som-velger-engelsk-språk-på-dagpenger-søknadsdialogen-får-ikke-levert-dagpengesøknad)
+  * [Aksjonspunkter](./postmortem-006.md#aksjonspunkter)
+  * [Hva lærte vi?](./postmortem-006.md#hva-lærte-vi)
+    + [Hva gikk bra](./postmortem-006.md#hva-gikk-bra)
+    + [Hva gikk dårlig](./postmortem-006.md#hva-gikk-dårlig)
+    + [Hvor hadde vi flaks](./postmortem-006.md#hvor-hadde-vi-flaks)
+  * [Tidslinje](./postmortem-006.md#tidslinje)
+  * [Linker](./postmortem-006.md#linker)
+
+### [postmortem-007](./postmortem-007.md)
+
+- [Søknad om dagpenger har ikke generert noen oppgave til fordeling](./postmortem-007.md#søknad-om-dagpenger-har-ikke-generert-noen-oppgave-til-fordeling)
+  * [Aksjonspunkter](./postmortem-007.md#aksjonspunkter)
+  * [Hva lærte vi?´](./postmortem-007.md#hva-lærte-vi´)
+    + [Hva gikk bra](./postmortem-007.md#hva-gikk-bra)
+    + [Hva gikk dårlig](./postmortem-007.md#hva-gikk-dårlig)
+    + [Hvor hadde vi flaks](./postmortem-007.md#hvor-hadde-vi-flaks)
+  * [Tidslinje](./postmortem-007.md#tidslinje)
+  * [Tidslinje](./postmortem-007.md#tidslinje-1)
+  * [Linker](./postmortem-007.md#linker)
+
+### [postmortem-008](./postmortem-008.md)
+
+- [Innløp stoppet opp og gikk i automatisk restart](./postmortem-008.md#innløp-stoppet-opp-og-gikk-i-automatisk-restart)
+  * [Aksjonspunkter](./postmortem-008.md#aksjonspunkter)
+  * [Hva lærte vi?](./postmortem-008.md#hva-lærte-vi)
+    + [Hva gikk bra](./postmortem-008.md#hva-gikk-bra)
+    + [Hva gikk dårlig](./postmortem-008.md#hva-gikk-dårlig)
+    + [Hvor hadde vi flaks](./postmortem-008.md#hvor-hadde-vi-flaks)
+  * [Tidslinje](./postmortem-008.md#tidslinje)
+  * [Linker](./postmortem-008.md#linker)
+
+### [postmortem-009](./postmortem-009.md)
+
+- [Tittel](./postmortem-009.md#tittel)
+  * [Hva lærte vi?](./postmortem-009.md#hva-lærte-vi)
+    + [Hva gikk bra](./postmortem-009.md#hva-gikk-bra)
+  * [Tidslinje](./postmortem-009.md#tidslinje)
+
+### [postmortem-010](./postmortem-010.md)
+
+- [Beregninger for vedtak som er brukt er fjernet](./postmortem-010.md#beregninger-for-vedtak-som-er-brukt-er-fjernet)
+  * [Aksjonspunkter](./postmortem-010.md#aksjonspunkter)
+  * [Hva lærte vi?](./postmortem-010.md#hva-lærte-vi)
+    + [Hva gikk bra](./postmortem-010.md#hva-gikk-bra)
+    + [Hva gikk dårlig](./postmortem-010.md#hva-gikk-dårlig)
+
+### [postmortem-011](./postmortem-011.md)
+
+- [Innløpet stoppet da Arena var nede for vedlikehold](./postmortem-011.md#innløpet-stoppet-da-arena-var-nede-for-vedlikehold)
+  * [Aksjonspunkter](./postmortem-011.md#aksjonspunkter)
+  * [Hva lærte vi?](./postmortem-011.md#hva-lærte-vi)
+    + [Hva gikk bra](./postmortem-011.md#hva-gikk-bra)
+    + [Hva gikk dårlig](./postmortem-011.md#hva-gikk-dårlig)
+    + [Hvor hadde vi flaks](./postmortem-011.md#hvor-hadde-vi-flaks)
+  * [Tidslinje](./postmortem-011.md#tidslinje)
+  * [Linker](./postmortem-011.md#linker)
+
+### [postmortem-012](./postmortem-012.md)
+
+- [Tittel](./postmortem-012.md#tittel)
+  * [Aksjonspunkter](./postmortem-012.md#aksjonspunkter)
+  * [Hva lærte vi?](./postmortem-012.md#hva-lærte-vi)
+    + [Hva gikk bra](./postmortem-012.md#hva-gikk-bra)
+    + [Hva gikk dårlig](./postmortem-012.md#hva-gikk-dårlig)
+    + [Hvor hadde vi flaks](./postmortem-012.md#hvor-hadde-vi-flaks)
+  * [Tidslinje](./postmortem-012.md#tidslinje)
+  * [Linker](./postmortem-012.md#linker)
+
+### [postmortem-013](./postmortem-013.md)
+
+- [Brukere av kalkulator/forskuddsløsning har fått samme beregningsresultat](./postmortem-013.md#brukere-av-kalkulatorforskuddsløsning-har-fått-samme-beregningsresultat)
+  * [Aksjonspunkter](./postmortem-013.md#aksjonspunkter)
+  * [Hva lærte vi?](./postmortem-013.md#hva-lærte-vi)
+    + [Hva gikk bra](./postmortem-013.md#hva-gikk-bra)
+    + [Hva gikk dårlig](./postmortem-013.md#hva-gikk-dårlig)
+    + [Hvor hadde vi flaks](./postmortem-013.md#hvor-hadde-vi-flaks)
+  * [Tidslinje](./postmortem-013.md#tidslinje)
+    + [04.05.2020](./postmortem-013.md#04052020)
+    + [05.05.2020](./postmortem-013.md#05052020)
+  * [Linker](./postmortem-013.md#linker)
+
+### [postmortem-014](./postmortem-014.md)
+
+- [Allerede innsendte søknader ble forsøkt migrert til nyere versjon da bruker prøvde å ettersende dokumenter](./postmortem-014.md#allerede-innsendte-søknader-ble-forsøkt-migrert-til-nyere-versjon-da-bruker-prøvde-å-ettersende-dokumenter)
+  * [Aksjonspunkter](./postmortem-014.md#aksjonspunkter)
+  * [Hva lærte vi?](./postmortem-014.md#hva-lærte-vi)
+    + [Hva gikk bra](./postmortem-014.md#hva-gikk-bra)
+    + [Hva gikk dårlig](./postmortem-014.md#hva-gikk-dårlig)
+    + [Hvor hadde vi flaks](./postmortem-014.md#hvor-hadde-vi-flaks)
+  * [Tidslinje](./postmortem-014.md#tidslinje)
+  * [Linker](./postmortem-014.md#linker)
+
+### [postmortem-015](./postmortem-015.md)
+
+- [Konfigurasjonsfeil i dp-regel-api-arena-adapter som førte til at vurdering av minsteinntekt og beregning av dagpengegrunnlag var utilgjengelig for Arena](./postmortem-015.md#konfigurasjonsfeil-i-dp-regel-api-arena-adapter-som-førte-til-at-vurdering-av-minsteinntekt-og-beregning-av-dagpengegrunnlag-var-utilgjengelig-for-arena)
+  * [Aksjonspunkter](./postmortem-015.md#aksjonspunkter)
+  * [Hva lærte vi?](./postmortem-015.md#hva-lærte-vi)
+    + [Hva gikk bra](./postmortem-015.md#hva-gikk-bra)
+    + [Hva gikk dårlig](./postmortem-015.md#hva-gikk-dårlig)
+    + [Hvor hadde vi flaks](./postmortem-015.md#hvor-hadde-vi-flaks)
+  * [Tidslinje](./postmortem-015.md#tidslinje)
+  * [Linker](./postmortem-015.md#linker)
+
+### [postmortem-template](./postmortem-template.md)
+
+- [Tittel](./postmortem-template.md#tittel)
+  * [Aksjonspunkter](./postmortem-template.md#aksjonspunkter)
+  * [Hva lærte vi?](./postmortem-template.md#hva-lærte-vi)
+    + [Hva gikk bra](./postmortem-template.md#hva-gikk-bra)
+    + [Hva gikk dårlig](./postmortem-template.md#hva-gikk-dårlig)
+    + [Hvor hadde vi flaks](./postmortem-template.md#hvor-hadde-vi-flaks)
+  * [Tidslinje](./postmortem-template.md#tidslinje)
+  * [Linker](./postmortem-template.md#linker)
