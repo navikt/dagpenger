@@ -38,8 +38,6 @@
     "dp-regel-sats": "git@github.com:navikt/dp-regel-sats.git",
     "dp-regel-virkningstidspunkt": "git@github.com:navikt/dp-regel-virkningstidspunkt.git",
     "dp-reverse-proxy": "git@github.com:navikt/dp-reverse-proxy.git",
-    "dp-saksbehandling": "git@github.com:navikt/dp-saksbehandling.git",
-    "dp-saksbehandling-funksjonelle-tester": "git@github.com:navikt/dp-saksbehandling-funksjonelle-tester.git",
     "dp-soknad-frontend": "git@github.com:navikt/dp-soknad-frontend.git",
     "dp-soknad-innsending": "git@github.com:navikt/dp-soknad-innsending.git",
     "dp-soknad-mottak": "git@github.com:navikt/dp-soknad-mottak.git",
