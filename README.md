@@ -8,8 +8,7 @@ En samling mikrotjenester for å behandle Dagpenger.
 repositories for alle microservicene.
 
 For å gjøre det litt enklere å komme i gang finnes det en [Makefile](Makefile)
-som setter opp `meta` og automatiserer. Du kan også installere `meta` globalt
-med `npm install -g meta`.
+som setter opp `meta` og automatiserer. Du kan også installere `meta` globalt med `npm install -g meta`.
 
 Enn så lenge må du sørge for å ha `nvm` installert (`brew install nvm`).
 
@@ -96,3 +95,24 @@ Stå i rotkatalogen og kjør:
 ```
 
 Sjekk inn og push filer som er endret.
+
+## Koble til on prem databaser
+
+For å koble på en dev-database via naisdevice, skal man bruke hostname dev-pg.intern.nav.no (må ikke brukes for applikasjoner, det er kun for naisdevice-tilgang). 
+For produksjon, må man i naisdevice aktivere gatewayen "postgres-prod", og så koble seg på basen via host prod-pg.intern.nav.no.
+
+For å få tilgang til databasen fra naisdevice, må man whiteliste den i database-iac, og det gjør man ved å legge til
+```
+  naisdevice:
+    enabled: true
+```
+
+(Se https://github.com/navikt/database-iac/blob/master/config/preprod-fss4-this-cluster-is-full-use-nr-5.yml#L22)
+Før man legger til det på databasen sin, må man kjøre en liten risikovurdering sammen med @leif.tore.lovmo.
+
+```
+psql -d dp-arena-sink -h prod-pg.intern.nav.no -U <POSTGRES_READ_BRUKER_FRA_VAULt>  
+
+```
+
+
