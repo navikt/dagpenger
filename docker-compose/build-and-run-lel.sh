@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-APPS=(dp-regel-api dp-inntekt-api dp-regel-api-arena-adapter dp-regel-periode dp-regel-grunnlag dp-regel-sats dp-regel-minsteinntekt dp-datalaster-inntekt)
+APPS=(dp-regel-api dp-inntekt dp-regel-api-arena-adapter dp-regel-periode dp-regel-grunnlag dp-regel-sats dp-regel-minsteinntekt dp-datalaster-inntekt)
 COMPOSE_DIR=${PWD}
 
 

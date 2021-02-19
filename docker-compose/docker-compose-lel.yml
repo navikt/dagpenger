@@ -110,7 +110,7 @@ services:
       - dp-inntekt-api
       - dp-regel-api
   dp-inntekt-api:
-    build: ./../dp-inntekt-api
+    build: ./../dp-inntekt
     ports:
       - "8099:8099"
     environment:
