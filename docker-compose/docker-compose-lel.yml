@@ -97,6 +97,7 @@ services:
       - create-topics
       - postgres-db
       - kafka
+      - mock-oauth2-server
   dp-regel-api-arena-adapter:
     build: ./../dp-regel-api-arena-adapter
     ports:
