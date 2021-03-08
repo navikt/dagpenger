@@ -75,6 +75,10 @@ services:
     environment:
       - "POSTGRES_PASSWORD=postgres"
       - "POSTGRES_MULTIPLE_DATABASES=dp-regel-api,docker: dp-inntekt-db,docker"
+  mock-oauth2-server:
+    image: docker.pkg.github.com/navikt/mock-oauth2-server/mock-oauth2-server:0.3.1
+    ports:
+    - 9080:8080
   dp-regel-api:
     build: ./../dp-regel-api
     volumes:
@@ -87,6 +91,7 @@ services:
       KAFKA_BOOTSTRAP_SERVERS: kafka:9093
       SRVDP_REGEL_API_USERNAME: igroup
       SRVDP_REGEL_API_PASSWORD: itest
+      AZURE_APP_WELL_KNOWN_URL: http://mock-oauth2-server:9080/default/.well-known/openid-configuration
     entrypoint: ["/wait-for-it.sh", "create-topics:9999",  "-t", "60", "--", "/entrypoint.sh"]
     depends_on:
       - create-topics
