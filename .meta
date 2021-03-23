@@ -20,7 +20,6 @@
     "dp-inntekt-klassifiserer": "git@github.com:navikt/dp-inntekt-klassifiserer.git",
     "dp-kalkulator-api": "git@github.com:navikt/dp-kalkulator-api.git",
     "dp-oppslag-arbeidssoker": "git@github.com:navikt/dp-oppslag-arbeidssoker.git",
-    "dp-oppslag-person" : "git@github.com:navikt/dp-oppslag-person.git",
     "dp-oppslag-soknadfakta": "git@github.com:navikt/dp-oppslag-soknadfakta.git",
     "dp-oppslag-vedtak": "git@github.com:navikt/dp-oppslag-vedtak.git",
     "dp-regel-api": "git@github.com:navikt/dp-regel-api.git",
