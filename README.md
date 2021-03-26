@@ -110,7 +110,7 @@ For å få tilgang til databasen fra naisdevice, må man whiteliste den i databa
 ```
   naisdevice:
     enabled: true
-```
+``` 
 
 (Se https://github.com/navikt/database-iac/blob/master/config/preprod-fss4-this-cluster-is-full-use-nr-5.yml#L22)
 Før man legger til det på databasen sin, må man kjøre en liten risikovurdering sammen med @leif.tore.lovmo.
