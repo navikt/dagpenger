@@ -3,7 +3,6 @@ rootProject.name = "dagpenger-monorepo"
 includeBuild("dagpenger-events")
 includeBuild("dagpenger-funksjonelle-tester")
 includeBuild("dagpenger-joark-mottak")
-includeBuild("dagpenger-journalforing-ferdigstill")
 includeBuild("dagpenger-streams")
 includeBuild("dp-arena-sink")
 includeBuild("dp-biblioteker")
