@@ -29,7 +29,6 @@
     "dp-reverse-proxy": "git@github.com:navikt/dp-reverse-proxy.git",
     "dp-soknad-frontend": "git@github.com:navikt/dp-soknad-frontend.git",
     "dp-soknad-innsending": "git@github.com:navikt/dp-soknad-innsending.git",
-    "dp-soknad-mottak": "git@github.com:navikt/dp-soknad-mottak.git",
     "dp-soknad-server": "git@github.com:navikt/dp-soknad-server.git",
     "dp-speider": "git@github.com:navikt/dp-speider.git",
     "dp-spill-av": "git@github.com:navikt/dp-spill-av.git",
