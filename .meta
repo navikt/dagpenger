@@ -18,7 +18,6 @@
     "dp-inntekt-klassifiserer": "git@github.com:navikt/dp-inntekt-klassifiserer.git",
     "dp-kalkulator-api": "git@github.com:navikt/dp-kalkulator-api.git",
     "dp-oppslag-arbeidssoker": "git@github.com:navikt/dp-oppslag-arbeidssoker.git",
-    "dp-oppslag-soknadfakta": "git@github.com:navikt/dp-oppslag-soknadfakta.git",
     "dp-oppslag-vedtak": "git@github.com:navikt/dp-oppslag-vedtak.git",
     "dp-regel-api": "git@github.com:navikt/dp-regel-api.git",
     "dp-regel-api-arena-adapter": "git@github.com:navikt/dp-regel-api-arena-adapter.git",
@@ -31,7 +30,6 @@
     "dp-soknad-innsending": "git@github.com:navikt/dp-soknad-innsending.git",
     "dp-soknad-server": "git@github.com:navikt/dp-soknad-server.git",
     "dp-speider": "git@github.com:navikt/dp-speider.git",
-    "dp-spill-av": "git@github.com:navikt/dp-spill-av.git",
     "dp-vedtakresultat-lytter": "git@github.com:navikt/dp-vedtakresultat-lytter.git"
   }
 }
