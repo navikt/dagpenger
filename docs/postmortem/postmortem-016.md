@@ -1,4 +1,4 @@
-# Innløpet: Dagpenger innsendinger (Nye søknader, Gjenopptak, Ettersendelser) rutes til feil benk
+# Innløpet: Dagpenger innsendinger (Nye søknader, Gjenopptak, Ettersendelser) rutes til feil behandlende enhet/benk
 
 **Dato:** 20.05.2021
 
@@ -27,6 +27,8 @@ Innsendinger ble sendt til feil behandlende enhet
 Overgang til AzureAd sikkerhetsmekanisme mot PDL-apiet
 
 **Løsning:** 
+
+Skrudde av innløpet til vi hadde kontroll og gjorde nødvendige feilrettinger
 
 Feilrettinger: 
 
