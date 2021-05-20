@@ -37,7 +37,7 @@ Feilrettinger:
 
 **Påvisning:** 
 
-Sak til dapenger-vaktkanalen (#team-dagpenger-vakt) via porten.
+Sak til dagpenger-vaktkanalen (#team-dagpenger-vakt) via porten.
 
 
 ## Hva lærte vi?
