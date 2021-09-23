@@ -1,4 +1,4 @@
-# Dagpenger utvikler dokumentasjon
+# Dagpenger utviklerdokumentasjon
 
 * TOC
   {:toc}
