@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Vakt, logger og diverse
-parent: Dagpenger utviklerdokumentasjo
+parent: Dagpenger utviklerdokumentasjon
 nav_order: 3
 has_children: false
 ---

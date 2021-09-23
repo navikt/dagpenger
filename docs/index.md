@@ -7,8 +7,7 @@ has_children: true
 
 # Dagpenger utviklerdokumentasjon
 
-1. TOC
-   {:toc}
+{:toc}
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ny utvikler
-parent: Dagpenger utviklerdokumentasjo
+parent: Dagpenger utviklerdokumentasjon
 nav_order: 2
 has_children: false
 ---
