@@ -1,3 +1,11 @@
+---
+layout: page
+title: Innløpet: Dagpenger innsendinger (Nye søknader, Gjenopptak, Ettersendelser) rutes til feil behandlende enhet/benk
+parent: Postmortems
+nav_order: 3
+has_children: false
+---
+
 # Innløpet: Dagpenger innsendinger (Nye søknader, Gjenopptak, Ettersendelser) rutes til feil behandlende enhet/benk
 
 **Dato:** 20.05.2021

@@ -1,4 +1,10 @@
-
+---
+layout: page
+title: Manglende inntekter for LEL1 2019
+parent: Postmortems
+nav_order: 3
+has_children: false
+---
 
 # Manglende inntekter for LEL1 2019
 

@@ -1,3 +1,11 @@
+---
+layout: page
+title: Innløp stoppet opp og gikk i automatisk restart
+parent: Postmortems
+nav_order: 3
+has_children: false
+---
+
 # Innløp stoppet opp og gikk i automatisk restart 
 
 **Dato:** 14.02.2020

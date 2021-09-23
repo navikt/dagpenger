@@ -1,3 +1,11 @@
+---
+layout: page
+title: Søkere som velger engelsk språk på dagpenger-søknadsdialogen får ikke levert dagpengesøknad
+parent: Postmortems
+nav_order: 3
+has_children: false
+---
+
 # Søkere som velger engelsk språk på dagpenger-søknadsdialogen får ikke levert dagpengesøknad
 
 **Dato:** 04.02.2020

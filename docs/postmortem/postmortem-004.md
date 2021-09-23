@@ -1,3 +1,11 @@
+---
+layout: page
+title:  Kafka consumere for privat-dagpenger-subsumsjon-brukt og privat-dagpenger-subsumsjon-brukt-data har lag (meldinger i kø)
+parent: Postmortems
+nav_order: 3
+has_children: false
+---
+
 # Kafka consumere for privat-dagpenger-subsumsjon-brukt og privat-dagpenger-subsumsjon-brukt-data har lag (meldinger i kø)
 
 **Dato:** 23.08.2019

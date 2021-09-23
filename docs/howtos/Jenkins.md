@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Jenkins
-parent: howtos
+parent: Howtos
 nav_order: 3
 has_children: false
 ---

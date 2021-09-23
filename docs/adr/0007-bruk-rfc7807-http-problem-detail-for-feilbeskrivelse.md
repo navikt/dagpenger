@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bruk rfc7807 "http problem detail" spesifikasjon til å lage strukturelle feilbeskrivelser i HTTP APIer og KAFKA meldinger
-parent: adr
+parent: ADR
 nav_order: 3
 has_children: false
 ---

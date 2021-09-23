@@ -1,3 +1,11 @@
+---
+layout: page
+title: VAKT
+parent: ops
+nav_order: 3
+has_children: false
+---
+
 # Dashboards
 
 [Status]

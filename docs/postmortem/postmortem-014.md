@@ -1,3 +1,11 @@
+---
+layout: page
+title: Allerede innsendte søknader ble forsøkt migrert til nyere versjon da bruker prøvde å ettersende dokumenter
+parent: Postmortems
+nav_order: 3
+has_children: false
+---
+
 # Allerede innsendte søknader ble forsøkt migrert til nyere versjon da bruker prøvde å ettersende dokumenter
 
 **Dato:** [15.05.2020]

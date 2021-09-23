@@ -1,3 +1,12 @@
+---
+layout: page
+title: Consumer offset reset
+parent: Postmortems
+nav_order: 3
+has_children: false
+---
+
+
 # Tittel
 
 **Dato:** 17.02.2020

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Use Norwegian for Domain Specific Concepts
-parent: adr
+parent: ADR
 nav_order: 3
 has_children: false
 ---

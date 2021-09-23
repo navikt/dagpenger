@@ -1,3 +1,11 @@
+---
+layout: page
+title:  Tidsavbrudd ved beregning av inngangsvilkår, sats og grunnlag for Dagpenger
+parent: Postmortems
+nav_order: 3
+has_children: false
+---
+
 # Tidsavbrudd ved beregning av inngangsvilkår, sats og grunnlag for Dagpenger
 
 **Dato:** 02.01.2020

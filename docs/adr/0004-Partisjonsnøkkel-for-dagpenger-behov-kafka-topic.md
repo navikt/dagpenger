@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Partisjonsnøkkel for 'Dagpenger Behov'  Kafka-topic
-parent: adr
+parent: ADR
 nav_order: 3
 has_children: false
 ---

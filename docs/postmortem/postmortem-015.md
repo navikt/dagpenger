@@ -1,3 +1,11 @@
+---
+layout: page
+title: Konfigurasjonsfeil i dp-regel-api-arena-adapter som førte til at vurdering av minsteinntekt og beregning av dagpengegrunnlag var utilgjengelig for Arena
+parent: Postmortems
+nav_order: 3
+has_children: false
+---
+
 # Konfigurasjonsfeil i dp-regel-api-arena-adapter som førte til at vurdering av minsteinntekt og beregning av dagpengegrunnlag var utilgjengelig for Arena
 
 **Dato:** 19.08.2020
