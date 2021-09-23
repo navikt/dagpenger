@@ -1,13 +1,6 @@
 # Dagpenger utviklerdokumentasjon
 
-* TOC
-  {:toc}
-
-
 
 ## Postmortem
-
-
-## Adr 
-
+## Adr
 ## Jenkins
