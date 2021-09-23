@@ -1,3 +1,11 @@
+---
+layout: page
+title: Use Norwegian for Domain Specific Concepts
+parent: ADR
+nav_order: 3
+has_children: false
+---
+
 # Use Norwegian for Domain Specific Concepts
 
 Status: Accepted

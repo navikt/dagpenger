@@ -1,3 +1,11 @@
+---
+layout: page
+title: Hvordan skal vi fjerne lokalt kodeverk i soknaddagpenger-server
+parent: ADR
+nav_order: 3
+has_children: false
+---
+
 # Hvordan skal vi fjerne lokalt kodeverk i soknaddagpenger-server
 
 * Status: pending

@@ -1,3 +1,11 @@
+---
+layout: page
+title: Hent søknad fra Joark
+parent: ADR
+nav_order: 3
+has_children: false
+---
+
 # Hent søknad fra Joark
 
 * Status: [accepted]

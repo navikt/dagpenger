@@ -1,3 +1,12 @@
+---
+layout: page
+title: Kommunikasjon mellom applikasjon i sbs og regel-api
+parent: ADR
+nav_order: 3
+has_children: false
+---
+
+
 # Kommunikasjon mellom applikasjon i sbs og regel-api 
 
 * Status: pending

@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Architectural Decision Log
+title: ADR
 has_children: true
+nav_order: 2
 ---
 
 # Architectural Decision Log

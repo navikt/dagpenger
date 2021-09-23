@@ -1,3 +1,12 @@
+---
+layout: page
+title: Use Markdown Architectural Decision Records
+parent: ADR
+nav_order: 3
+has_children: false
+---
+
+
 # Use Markdown Architectural Decision Records
 
 ## Context and Problem Statement

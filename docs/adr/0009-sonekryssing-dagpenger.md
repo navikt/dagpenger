@@ -1,3 +1,11 @@
+---
+layout: page
+title: Sonekryssing for dagpengeapplikasjoner
+parent: ADR
+nav_order: 3
+has_children: false
+---
+
 # Sonekryssing for dagpengeapplikasjoner
 
 * Status: [accepted]

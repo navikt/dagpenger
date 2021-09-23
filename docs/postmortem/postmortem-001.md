@@ -1,3 +1,5 @@
+
+
 # Manglende inntekter for LEL1 2019
 
 **Dato:** 01.07.2019

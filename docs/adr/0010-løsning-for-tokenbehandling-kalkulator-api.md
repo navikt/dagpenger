@@ -1,3 +1,11 @@
+---
+layout: page
+title: Velger å autentisere idporten-tokens selv via ktor sin innebygde auth mekanisme
+parent: ADR
+nav_order: 3
+has_children: false
+---
+
 # Velger å autentisere idporten-tokens selv via ktor sin innebygde auth mekanisme
 
 * Status: [accepted] <!-- optional -->

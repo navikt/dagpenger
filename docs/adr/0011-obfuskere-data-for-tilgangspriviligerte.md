@@ -1,3 +1,11 @@
+---
+layout: page
+title: Obfuskere data for tilgangspriviligerte
+parent: ADR
+nav_order: 3
+has_children: false
+---
+
 # Obfuskere data for tilgangspriviligerte
 
 * Status: [accepted]

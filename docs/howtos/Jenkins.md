@@ -1,5 +1,9 @@
 ---
+layout: page
 title: Jenkins
+parent: howtos
+nav_order: 2
+has_children: false
 ---
 
 # Jenkins

@@ -1,3 +1,11 @@
+---
+layout: page
+title: Template
+parent: ADR
+nav_order: 3
+has_children: false
+---
+
 # [short title of solved problem and solution]
 
 * Status: [accepted | superseeded by [ADR-0005](0005-example.md) | deprecated | …] <!-- optional -->

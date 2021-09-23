@@ -1,3 +1,11 @@
+---
+layout: page
+title: Adopt Architecture Decision Records
+parent: ADR
+nav_order: 3
+has_children: false
+---
+
 # Adopt Architecture Decision Records
 
 Status: Proposed
