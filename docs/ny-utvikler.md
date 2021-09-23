@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Ting en trenger når en skal utvikle på Dagpenger prosjekter
-parent: Howtos
-nav_order: 3
+title: Ny utvikler
+parent: Dagpenger utviklerdokumentasjo
+nav_order: 2
 has_children: false
 ---
 
