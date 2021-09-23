@@ -1,5 +1,5 @@
 ---
-title: Jenkins howto
+title: Jenkins
 ---
 
 # Jenkins

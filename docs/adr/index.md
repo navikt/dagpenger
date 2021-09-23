@@ -1,3 +1,9 @@
+---
+layout: page
+title: Architectural Decision Log
+has_children: true
+---
+
 # Architectural Decision Log
 
 This log lists the architectural decisions for Digitale Dagpenger.
