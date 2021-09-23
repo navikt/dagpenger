@@ -6,4 +6,5 @@ has_children: true
 
 # Dagpenger utviklerdokumentasjon
 
-[Howtos]({{ site.baseurl }}{% link howtos.md %}) 
+
+Samlet dokumentasjon - se navigering til venstre
