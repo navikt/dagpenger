@@ -3,10 +3,13 @@ markdown: kramdown
 collections:
   adr:
     output: true
+    permalink: /:collection/:name
   jenkins:
     output: true
+    permalink: /:collection/:name
   postmorten:
     output: true
+    permalink: /:collection/:name
 kramdown:
   input: GFM
   auto_ids: true
