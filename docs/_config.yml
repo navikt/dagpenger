@@ -4,3 +4,8 @@ kramdown:
   input: GFM
   auto_ids: true
   highlighter: rouge
+  include:
+    - ops
+    - postmorten
+    - jenkins
+    - adr
