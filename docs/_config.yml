@@ -1,21 +1,3 @@
 remote_theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-feed
-markdown: kramdown
-collections:
-  adr:
-    output: true
-    permalink: /:collection/:name
-  jenkins:
-    output: true
-    permalink: /:collection/:name
-  postmorten:
-    output: true
-    permalink: /:collection/:name
-  howtos:
-    output: true
-    permalink: /:collection/:name
-kramdown:
-  input: GFM
-  auto_ids: true
-  highlighter: rouge

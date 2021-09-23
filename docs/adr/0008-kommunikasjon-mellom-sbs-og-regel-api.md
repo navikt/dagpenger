@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Kommunikasjon mellom applikasjon i sbs og regel-api
-parent: ADR
+parent: adr
 nav_order: 3
 has_children: false
 ---

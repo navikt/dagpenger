@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Use Markdown Architectural Decision Records
-parent: ADR
+parent: adr
 nav_order: 3
 has_children: false
 ---

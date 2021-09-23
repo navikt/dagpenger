@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bruk 'ren' json for regelbehov over avro eller serialisering/deserialisering til dataklasser
-parent: ADR
+parent: adr
 nav_order: 3
 has_children: false
 ---

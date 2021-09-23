@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hent søknad fra Joark
-parent: ADR
+parent: adr
 nav_order: 3
 has_children: false
 ---

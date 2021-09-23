@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Obfuskere data for tilgangspriviligerte
-parent: ADR
+parent: adr
 nav_order: 3
 has_children: false
 ---

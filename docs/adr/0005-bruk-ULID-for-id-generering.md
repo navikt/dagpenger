@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bruk ULID (Universally Unique Lexicographically Sortable Identifier) som ID-generingsmekanisme
-parent: ADR
+parent: adr
 nav_order: 3
 has_children: false
 ---
