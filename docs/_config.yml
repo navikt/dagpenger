@@ -1,11 +1,13 @@
 theme: jekyll-theme-cayman
 markdown: kramdown
+collections:
+  adr:
+    output: true
+  jenkins:
+    output: true
+  postmorten:
+    output: true
 kramdown:
   input: GFM
   auto_ids: true
   highlighter: rouge
-  include:
-    - ops
-    - postmorten
-    - jenkins
-    - adr
