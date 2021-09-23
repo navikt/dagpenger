@@ -1,7 +1,7 @@
 ---
 layout: page
-title: VAKT
-parent: ops
+title: Logger og vakt
+parent: Operations
 nav_order: 3
 has_children: false
 ---

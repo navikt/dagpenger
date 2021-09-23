@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Innløpet: Dagpenger innsendinger (Nye søknader, Gjenopptak, Ettersendelser) rutes til feil behandlende enhet/benk
+title: Dagpenger innsendinger rutes til feil behandlende benk
 parent: Postmortems
 nav_order: 3
 has_children: false
