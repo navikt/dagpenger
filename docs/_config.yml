@@ -10,6 +10,9 @@ collections:
   postmorten:
     output: true
     permalink: /:collection/:name
+  howtos:
+    output: true
+    permalink: /:collection/:name
 kramdown:
   input: GFM
   auto_ids: true
