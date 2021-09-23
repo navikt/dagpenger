@@ -6,4 +6,4 @@
 
 
 # Howtos
-[Howtos]({{ site.baseurl }}{% link howtos/Jenkins.md %}) 
+[Howtos]({{ site.baseurl }}{% link howtos.md %}) 
