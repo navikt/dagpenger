@@ -12,7 +12,6 @@
     "dp-arena-sink": "git@github.com:navikt/dp-arena-sink.git",
     "dp-biblioteker": "git@github.com:navikt/dp-biblioteker.git",
     "dp-doh": "git@github.com:navikt/dp-doh.git",
-    "dp-graphql": "git@github.com:navikt/dp-graphql.git",
     "dp-grunnbelop": "git@github.com:navikt/dp-grunnbelop.git",
     "dp-inntekt": "git@github.com:navikt/dp-inntekt.git",
     "dp-kalkulator-frontend": "git@github.com:navikt/dp-kalkulator-frontend.git",
