@@ -1,0 +1,17 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Domain
+metadata:
+  name: dagpenger
+  description: Alt om dagpegner
+spec:
+  owner: teamdagpenger
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: dp-soknadsdialog
+  description: Alt som framstår som en del av søknaden
+spec:
+  owner: teamdagpenger
+  domain: dagpenger
