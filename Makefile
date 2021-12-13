@@ -10,28 +10,14 @@ sync: meta-update sync-template
 
 clean:
 	rm -rf node_modules
-	rm -rf tmp
+	rm -rf repos/ .meta
 .PHONY: clean
-
-# Disabled until I find a way to actually use nvm from Make
-#tmp/.has-nvm.sentinel:
-#	[ -s "/usr/local/opt/nvm/nvm.sh" ] || brew install nvm
-#	mkdir -p $(@D) && touch $@
-#
-#tmp/.nvm-set.sentinel: .nvmrc tmp/.has-nvm.sentinel
-#	nvm install
-#	mkdir -p $(@D) && touch $@
-
-tmp/.meta-installed.sentinel: .nvmrc #tmp/.nvm-set.sentinel
-	npm install meta --no-save
-	mkdir -p $(@D) && touch $@
-
 
 gradle-update:
 	./script/update-gradle.sh
 
-meta-update: .meta tmp/.meta-installed.sentinel
-	meta git update
+meta-update: .meta
+	npx -y meta git update
 
 # Files to be kept in sync with template
 CODEOWNERS := $(shell ls */CODEOWNERS)
@@ -69,3 +55,26 @@ $(UAT_SCRIPT): .service-template/scripts/test/uatJob
 BUILD_SRC := $(CONSTANTS) $(BUILD_GRADLE) $(SETTINGS_GRADLE)
 
 sync-template: $(CODEOWNERS) $(LICENSES) $(BUILD_SRC) $(UAT_SCRIPT) $(SNYK) $(REVIEWDOG)
+
+#
+# Oppdatere repos
+#
+MAX_REPOS=4000
+REPO_SELECTOR=^(dp|dagpenger)-.+
+
+.repos: .repos/active .repos/archived
+.PHONY: repos
+
+.repos/all:
+	mkdir -p .repos
+	gh repo list navikt --limit=${MAX_REPOS} --json name,isArchived,sshUrl --jq '[.[] | select(.name | test("${REPO_SELECTOR}"))]' > $@
+
+.repos/active: .repos/all
+	cat $< | jq -rS "[.[] | select(.isArchived==false)]" > $@
+
+.repos/archived: .repos/all
+	cat $< | jq -rS "[.[] | select(.isArchived==true)]" > $@
+
+.meta: .repos/active
+	npx -y meta init
+	cat .meta | jq -S --slurpfile repo $< '.projects += ([$$repo[][] | { "key": .name, "value": .sshUrl }] | from_entries)' | tee $@
