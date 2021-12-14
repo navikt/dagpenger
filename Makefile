@@ -21,35 +21,35 @@ meta-update: .meta
 
 # Files to be kept in sync with template
 CODEOWNERS := $(shell ls */CODEOWNERS)
-$(CODEOWNERS): .service-template/CODEOWNERS
+$(CODEOWNERS): dp-service-template/CODEOWNERS
 	cp $< $@
 
 LICENSES := $(shell ls */LICENSE.md)
-$(LICENSES): .service-template/LICENSE.md
+$(LICENSES): dp-service-template/LICENSE.md
 	cp $< $@
 
 REVIEWDOG := $(shell ls */.github/workflows/reviewdog.yml)
-$(REVIEWDOG): .service-template/.github/workflows/reviewdog.yml
+$(REVIEWDOG): dp-service-template/.github/workflows/reviewdog.yml
 	cp $< $@
 
 SNYK := $(shell ls */.github/workflows/snyk.yml)
-$(SNYK): .service-template/.github/workflows/snyk.yml
+$(SNYK): dp-service-template/.github/workflows/snyk.yml
 	cp $< $@
 
 CONSTANTS := $(shell ls */buildSrc/src/main/kotlin/Constants.kt)
-$(CONSTANTS): .service-template/buildSrc/src/main/kotlin/Constants.kt
+$(CONSTANTS): dp-service-template/buildSrc/src/main/kotlin/Constants.kt
 	cp $< $@
 
 BUILD_GRADLE := $(shell ls */buildSrc/build.gradle.kts)
-$(BUILD_GRADLE): .service-template/buildSrc/build.gradle.kts
+$(BUILD_GRADLE): dp-service-template/buildSrc/build.gradle.kts
 	cp $< $@
 
 SETTINGS_GRADLE := $(shell ls */buildSrc/settings.gradle.kts)
-$(SETTINGS_GRADLE): .service-template/buildSrc/settings.gradle.kts
+$(SETTINGS_GRADLE): dp-service-template/buildSrc/settings.gradle.kts
 	cp $< $@
 
 UAT_SCRIPT := $(shell ls */scripts/test/uatJob)
-$(UAT_SCRIPT): .service-template/scripts/test/uatJob
+$(UAT_SCRIPT): dp-service-template/scripts/test/uatJob
 	cp $< $@
 
 BUILD_SRC := $(CONSTANTS) $(BUILD_GRADLE) $(SETTINGS_GRADLE)
