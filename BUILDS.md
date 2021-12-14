@@ -4,7 +4,7 @@
 * Build status: ![dagpenger-joark-mottak](https://github.com/navikt/dagpenger-joark-mottak/actions/workflows/deploy.yml/badge.svg)
 
 ## [dagpenger-journalforing-ferdigstill](/navikt/dagpenger-journalforing-ferdigstill/actions)
-* Build status: ![dagpenger-journalforing-ferdigstill](https://github.com/navikt/REPO/actions/workflows/deploy.yml/badge.svg)
+* Build status: ![dagpenger-journalforing-ferdigstill](https://github.com/navikt/dagpenger-journalforing-ferdigstill/actions/workflows/deploy.yml/badge.svg)
 
 ## [dp-dagpenger](/navikt/dp-dagpenger/actions)
 * Build status: ![dp-dagpenger](https://github.com/navikt/dp-dagpenger/actions/workflows/deploy.yml/badge.svg)
