@@ -79,7 +79,12 @@ REPO_SELECTOR=^(dp|dagpenger)-.+
 	npx -y meta init
 	cat .meta | jq -S --slurpfile repo $< '.projects += ([$$repo[][] | { "key": .name, "value": .sshUrl }] | from_entries)' | tee $@
 
-BUILDS.md:
+slett-archived: .repos/archived
+	cat $< | jq -r '.[].name' | xargs rm -rf
+.PHONY: slett-archived
+
+
+BUILDS.md: .repos/active
 	printf "# Build dashboard\n\n\
 	| Repository | Status |\n\
 	| --- | --- |\n" > BUILDS.md

@@ -3,7 +3,7 @@
 | Repository | Status |
 | --- | --- |
 | [dagpenger-joark-mottak](https://github.com/navikt/dagpenger-joark-mottak/actions) | ![dagpenger-joark-mottak](https://github.com/navikt/dagpenger-joark-mottak/actions/workflows/deploy.yml/badge.svg) |
-| [dagpenger-journalforing-ferdigstill](https://github.com/navikt/dagpenger-journalforing-ferdigstill/actions) | ![dagpenger-journalforing-ferdigstill](https://github.com/navikt/dagpenger-journalforing-ferdigstill/actions/workflows/deploy.yml/badge.svg) |
+| [dagpenger-journalforing-ferdigstill](https://github.com/navikt/dagpenger-journalforing-ferdigstill/actions) | ![dagpenger-journalforing-ferdigstill](https://github.com/navikt/REPO/actions/workflows/deploy.yml/badge.svg) |
 | [dp-dagpenger](https://github.com/navikt/dp-dagpenger/actions) | ![dp-dagpenger](https://github.com/navikt/dp-dagpenger/actions/workflows/deploy.yml/badge.svg) |
 | [dp-datalaster-subsumsjonbrukt](https://github.com/navikt/dp-datalaster-subsumsjonbrukt/actions) | ![dp-datalaster-subsumsjonbrukt](https://github.com/navikt/dp-datalaster-subsumsjonbrukt/actions/workflows/deploy.yml/badge.svg) |
 | [dp-debug](https://github.com/navikt/dp-debug/actions) | ![dp-debug](https://github.com/navikt/dp-debug/actions/workflows/deploy.yml/badge.svg) |
