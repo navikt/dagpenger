@@ -78,3 +78,8 @@ REPO_SELECTOR=^(dp|dagpenger)-.+
 .meta: .repos/active
 	npx -y meta init
 	cat .meta | jq -S --slurpfile repo $< '.projects += ([$$repo[][] | { "key": .name, "value": .sshUrl }] | from_entries)' | tee $@
+
+BUILDS.md:
+	printf "# Build dashboard\n\n" > BUILDS.md
+	find . -name deploy.yml | cut -d/ -f2 | sort | xargs -I REPO printf '## [REPO](/navikt/REPO/actions)\n* Build status: ![REPO](https://github.com/navikt/REPO/actions/workflows/deploy.yml/badge.svg)\n\n' | tee -a $@
+
