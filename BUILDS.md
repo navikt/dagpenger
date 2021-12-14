@@ -3,13 +3,12 @@
 | Repository | Status |
 | --- | --- |
 | [dagpenger-joark-mottak](https://github.com/navikt/dagpenger-joark-mottak/actions) | ![dagpenger-joark-mottak](https://github.com/navikt/dagpenger-joark-mottak/actions/workflows/deploy.yml/badge.svg) |
-| [dagpenger-journalforing-ferdigstill](https://github.com/navikt/dagpenger-journalforing-ferdigstill/actions) | ![dagpenger-journalforing-ferdigstill](https://github.com/navikt/REPO/actions/workflows/deploy.yml/badge.svg) |
+| [dagpenger-journalforing-ferdigstill](https://github.com/navikt/dagpenger-journalforing-ferdigstill/actions) | ![dagpenger-journalforing-ferdigstill](https://github.com/navikt/dagpenger-journalforing-ferdigstill/actions/workflows/deploy.yml/badge.svg) |
 | [dp-dagpenger](https://github.com/navikt/dp-dagpenger/actions) | ![dp-dagpenger](https://github.com/navikt/dp-dagpenger/actions/workflows/deploy.yml/badge.svg) |
 | [dp-datalaster-subsumsjonbrukt](https://github.com/navikt/dp-datalaster-subsumsjonbrukt/actions) | ![dp-datalaster-subsumsjonbrukt](https://github.com/navikt/dp-datalaster-subsumsjonbrukt/actions/workflows/deploy.yml/badge.svg) |
 | [dp-debug](https://github.com/navikt/dp-debug/actions) | ![dp-debug](https://github.com/navikt/dp-debug/actions/workflows/deploy.yml/badge.svg) |
 | [dp-doh](https://github.com/navikt/dp-doh/actions) | ![dp-doh](https://github.com/navikt/dp-doh/actions/workflows/deploy.yml/badge.svg) |
 | [dp-faktasider-frontend](https://github.com/navikt/dp-faktasider-frontend/actions) | ![dp-faktasider-frontend](https://github.com/navikt/dp-faktasider-frontend/actions/workflows/deploy.yml/badge.svg) |
-| [dp-frontend-template](https://github.com/navikt/dp-frontend-template/actions) | ![dp-frontend-template](https://github.com/navikt/dp-frontend-template/actions/workflows/deploy.yml/badge.svg) |
 | [dp-graphql](https://github.com/navikt/dp-graphql/actions) | ![dp-graphql](https://github.com/navikt/dp-graphql/actions/workflows/deploy.yml/badge.svg) |
 | [dp-innsyn](https://github.com/navikt/dp-innsyn/actions) | ![dp-innsyn](https://github.com/navikt/dp-innsyn/actions/workflows/deploy.yml/badge.svg) |
 | [dp-inntekt-klassifiserer](https://github.com/navikt/dp-inntekt-klassifiserer/actions) | ![dp-inntekt-klassifiserer](https://github.com/navikt/dp-inntekt-klassifiserer/actions/workflows/deploy.yml/badge.svg) |

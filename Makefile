@@ -83,5 +83,5 @@ BUILDS.md:
 	printf "# Build dashboard\n\n\
 	| Repository | Status |\n\
 	| --- | --- |\n" > BUILDS.md
-	find . -name deploy.yml | cut -d/ -f2 | sort | xargs -I REPO printf '| [REPO](https://github.com/navikt/REPO/actions) | ![REPO](https://github.com/navikt/REPO/actions/workflows/deploy.yml/badge.svg) |\n' | tee -a $@
+	find */.github -name deploy.yml | cut -d/ -f1 | sort | xargs -I REPO printf '| [REPO](https://github.com/navikt/REPO/actions) | ![REPO](https://github.com/navikt/REPO/actions/workflows/deploy.yml/badge.svg) |\n' | tee -a $@
 
