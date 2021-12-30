@@ -15,6 +15,7 @@
 | [dp-oppslag-inntekt](https://github.com/navikt/dp-oppslag-inntekt/actions) | ![dp-oppslag-inntekt](https://github.com/navikt/dp-oppslag-inntekt/actions/workflows/deploy.yml/badge.svg) |
 | [dp-oppslag-vedtak](https://github.com/navikt/dp-oppslag-vedtak/actions) | ![dp-oppslag-vedtak](https://github.com/navikt/dp-oppslag-vedtak/actions/workflows/deploy.yml/badge.svg) |
 | [dp-quiz](https://github.com/navikt/dp-quiz/actions) | ![dp-quiz](https://github.com/navikt/dp-quiz/actions/workflows/deploy.yml/badge.svg) |
+| [dp-quiz-birgitte](https://github.com/navikt/dp-quiz-birgitte/actions) | ![dp-quiz-birgitte](https://github.com/navikt/dp-quiz-birgitte/actions/workflows/deploy.yml/badge.svg) |
 | [dp-quiz-retting](https://github.com/navikt/dp-quiz-retting/actions) | ![dp-quiz-retting](https://github.com/navikt/dp-quiz-retting/actions/workflows/deploy.yml/badge.svg) |
 | [dp-quizshow](https://github.com/navikt/dp-quizshow/actions) | ![dp-quizshow](https://github.com/navikt/dp-quizshow/actions/workflows/deploy.yml/badge.svg) |
 | [dp-regel-api](https://github.com/navikt/dp-regel-api/actions) | ![dp-regel-api](https://github.com/navikt/dp-regel-api/actions/workflows/deploy.yml/badge.svg) |
