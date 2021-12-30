@@ -8,11 +8,13 @@
 | [dp-doh](https://github.com/navikt/dp-doh/actions) | ![dp-doh](https://github.com/navikt/dp-doh/actions/workflows/deploy.yml/badge.svg) |
 | [dp-faktasider-frontend](https://github.com/navikt/dp-faktasider-frontend/actions) | ![dp-faktasider-frontend](https://github.com/navikt/dp-faktasider-frontend/actions/workflows/deploy.yml/badge.svg) |
 | [dp-innsyn](https://github.com/navikt/dp-innsyn/actions) | ![dp-innsyn](https://github.com/navikt/dp-innsyn/actions/workflows/deploy.yml/badge.svg) |
+| [dp-inntekt-innsyn-ui](https://github.com/navikt/dp-inntekt-innsyn-ui/actions) | ![dp-inntekt-innsyn-ui](https://github.com/navikt/dp-inntekt-innsyn-ui/actions/workflows/deploy.yml/badge.svg) |
 | [dp-inntekt-klassifiserer](https://github.com/navikt/dp-inntekt-klassifiserer/actions) | ![dp-inntekt-klassifiserer](https://github.com/navikt/dp-inntekt-klassifiserer/actions/workflows/deploy.yml/badge.svg) |
 | [dp-kalkulator-frontend](https://github.com/navikt/dp-kalkulator-frontend/actions) | ![dp-kalkulator-frontend](https://github.com/navikt/dp-kalkulator-frontend/actions/workflows/deploy.yml/badge.svg) |
 | [dp-mellomlagring](https://github.com/navikt/dp-mellomlagring/actions) | ![dp-mellomlagring](https://github.com/navikt/dp-mellomlagring/actions/workflows/deploy.yml/badge.svg) |
 | [dp-oppslag-inntekt](https://github.com/navikt/dp-oppslag-inntekt/actions) | ![dp-oppslag-inntekt](https://github.com/navikt/dp-oppslag-inntekt/actions/workflows/deploy.yml/badge.svg) |
 | [dp-oppslag-vedtak](https://github.com/navikt/dp-oppslag-vedtak/actions) | ![dp-oppslag-vedtak](https://github.com/navikt/dp-oppslag-vedtak/actions/workflows/deploy.yml/badge.svg) |
+| [dp-quiz](https://github.com/navikt/dp-quiz/actions) | ![dp-quiz](https://github.com/navikt/dp-quiz/actions/workflows/deploy.yml/badge.svg) |
 | [dp-quiz-retting](https://github.com/navikt/dp-quiz-retting/actions) | ![dp-quiz-retting](https://github.com/navikt/dp-quiz-retting/actions/workflows/deploy.yml/badge.svg) |
 | [dp-quizshow](https://github.com/navikt/dp-quizshow/actions) | ![dp-quizshow](https://github.com/navikt/dp-quizshow/actions/workflows/deploy.yml/badge.svg) |
 | [dp-regel-api](https://github.com/navikt/dp-regel-api/actions) | ![dp-regel-api](https://github.com/navikt/dp-regel-api/actions/workflows/deploy.yml/badge.svg) |
