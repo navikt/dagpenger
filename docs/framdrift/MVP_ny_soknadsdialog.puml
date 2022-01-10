@@ -1,0 +1,39 @@
+@startgantt
+skinparam dpi 150
+ganttscale weekly
+Labels on first column
+
+Project starts 2022-01-01
+
+[SBS EOL] happens 2022-04-01 and is colored in Red
+
+-- Overordnet --
+[Lage ny frontend] starts 2022-01-01 and ends 2022-03-01
+[Utvikle det som trengs i Quiz for MVP-en] starts 2022-01-01 and ends 2022-03-01
+then [Sette aktivt i prod] lasts 1 week
+then [Stoppe apper som kjører i SBS] lasts 1 week
+then [Jobbe med neste versjon av søknadsdialogen] lasts 10 week
+[Innsikt og utforsking for versjon 2] starts 2022-01-01 and ends 2022-07-01
+
+-- Definerte oppgaver --
+[DAG-51 Gjøre innsikt av søknad] lasts 1 week
+
+--
+
+[DAG-56 Legge til et API på Quiz for faktahenting] lasts 1 week
+then [DAG-46 Bedre rekkefølgestyring quiz] lasts 2 week
+
+--
+
+[DAG-37 Oppsummering av søknad] lasts 2 weeks
+[DAG-37 Oppsummering av søknad] links to [[https://jira.adeo.no/browse/DAG-37]]
+then [DAG-48 Fylle ut søknad] lasts 2 weeks
+then [DAG-41 Opplasting av vedlegg] lasts 2 weeks
+then [DAG-43 Kvittering for innsendt søknad] lasts 2 weeks
+note bottom
+Eksempel på et notat
+som går over flere
+linjer
+end note
+
+@endgantt
