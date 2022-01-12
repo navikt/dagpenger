@@ -18,9 +18,10 @@ then [Jobbe med neste versjon av søknadsdialogen] lasts 10 week
 
 -- Design --
 [Skisser med nytt designsystem (samme rekkefølge)] starts 2022-01-01 and ends 2022-02-01 and is colored in Green
-then [Finne bedre måte å oppgi arbeidsforhold] lasts 4 weeks
-then [Brukerteste nye rekkefølge] lasts 8 weeks
-[Innsikt og utforsking for versjon 2] starts 2022-02-01 and ends 2022-07-01
+then [Finne bedre måte å oppgi arbeidsforhold] lasts 4 weeks and is colored in Green
+then [Brukerteste det nye designet] lasts 4 weeks and is colored in Green
+then [Brukerteste helt nye rekkefølge] lasts 8 weeks
+[Innsikt og utforsking for versjon 2] starts 2022-04-02 and ends 2022-07-01
 
 -- Annet --
 [Målinger av dagens brukeropplevelse] lasts 2 weeks
