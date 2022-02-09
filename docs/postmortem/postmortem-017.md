@@ -25,7 +25,7 @@ FetchError: invalid json response body at http://dp-innsyn/soknad?søktFom=2022-
 
 Vi var først inn på et spor der vi mistenkte en [endring](https://github.com/navikt/dp-innsyn/commit/ef22de1dd0bdf408d0feba55cd7bfd97c40df575) i det bakenforliggende APIet (dp-innsyn) som ble revertet. Det så tilsynelatende ut til at dette gjorde at kallet over fungerte. Vi gravde videre i endringen i testmiljøet og kunne ikke finne en klar årsaksssammenheng til oppførsel. Etter videre graving mistenkte vi ikke ASCII tegn som urlparameter (`?søktFom=202..`). Det kan virke det er et eller annet som terminerer "requests" mellom podder i klusteret. 
 
-Det korrelerer også sett tidligere incident ([slack tråd](https://nav-it.slack.com/archives/C5KUST8N6/p1637702309447700).
+Det korrelerer også sett tidligere incident ([slack tråd](https://nav-it.slack.com/archives/C5KUST8N6/p1637702309447700)).
 Sammendrag:
 
 > Tror kanskje har løst denne nå. Problemet er at oppførselen kommer og går.
