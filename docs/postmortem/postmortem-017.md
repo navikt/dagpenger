@@ -23,7 +23,7 @@ Det var dette kallet som feilet med:
 FetchError: invalid json response body at http://dp-innsyn/soknad?søktFom=2022-02-06 reason: Unexpected end of JSON input
 ```
 
-Vi var først inn på et spor der vi mistenkte en [endring](https://github.com/navikt/dp-innsyn/commit/ef22de1dd0bdf408d0feba55cd7bfd97c40df575) i det bakenforliggende APIet (dp-innsyn) som ble revertet. Det så tilsynelatende ut til at dette gjorde at kallet over fungerte. Vi gravde videre i endringen i testmiljøet og kunne ikke finne en klar årsaksssammenheng til oppførsel. Etter videre graving mistenkte vi ikke ASCII tegn som urlparameter (`?søktFom=202..`). Det kan virke det er et eller annet som terminerer "requests" mellom podder i klusteret. 
+Vi var først inn på et spor der vi mistenkte en [endring](https://github.com/navikt/dp-innsyn/commit/ef22de1dd0bdf408d0feba55cd7bfd97c40df575) i det bakenforliggende APIet (dp-innsyn) som ble revertet. Det så tilsynelatende ut til at dette gjorde at kallet over fungerte. Vi gravde videre i endringen i testmiljøet og kunne ikke finne en klar årsaksssammenheng til oppførsel. Etter videre graving mistenkte vi Unicode-tegn som urlparameter (`?søktFom=202..`). Det kan virke det er et eller annet som terminerer "requests" mellom podder i klusteret. 
 
 Det korrelerer også sett tidligere incident ([slack tråd](https://nav-it.slack.com/archives/C5KUST8N6/p1637702309447700)).
 Sammendrag:
@@ -45,7 +45,7 @@ Dagpengersøkere fikk feilmelding under opprettelse av søknad og kunne ikke for
 
 **Rotårsaker:** 
 
-Ikke ASCII tegn i url. 
+Unicode-tegn i url. 
 
 **Utløsende faktor:**
 
@@ -53,7 +53,7 @@ Deploy som endret/flyttet hvor poddene levde?
 
 **Løsning:**
 
-Fjernet ikke ASCII tegn i url. (`?søktFom=202..` til `?soktFom=202..`)
+Fjernet Unicode tegn i url. (`?søktFom=202..` til `?soktFom=202..`)
 
 
 **Påvisning:** 
