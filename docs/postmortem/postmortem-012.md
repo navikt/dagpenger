@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Applikasjonen soknaddagpenger-server klarte ikke å starte nye søknader.
+title: 16.03.2020 - Applikasjonen soknaddagpenger-server klarte ikke å starte nye søknader.
 parent: Postmortems
 nav_order: 3
 has_children: false

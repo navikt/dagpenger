@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Innløp stoppet opp og gikk i automatisk restart
+title: 14.02.2020 - Innløp stoppet opp og gikk i automatisk restart
 parent: Postmortems
 nav_order: 3
 has_children: false

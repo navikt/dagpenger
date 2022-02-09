@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tjenestekall for vurdering av minsteinntekt feilet
+title: 23.08.2019 - Tjenestekall for vurdering av minsteinntekt feilet
 parent: Postmortems
 nav_order: 3
 has_children: false

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Manglende inntekter for LEL1 2019
+title: 02.07.2019 -  Manglende inntekter for LEL1 2019
 parent: Postmortems
 nav_order: 3
 has_children: false

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Søknad om dagpenger har ikke generert noen oppgave til fordeling
+title: 27.01.2019 - Søknad om dagpenger har ikke generert noen oppgave til fordeling
 parent: Postmortems
 nav_order: 3
 has_children: false

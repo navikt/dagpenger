@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Brukere av kalkulator/forskuddsløsning har fått samme beregningsresultat
+title: 05.05.2020 - Brukere av kalkulator/forskuddsløsning har fått samme beregningsresultat
 parent: Postmortems
 nav_order: 3
 has_children: false

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Beregninger for vedtak som er brukt er fjernet
+title: 0.02.2020 - Beregninger for vedtak som er brukt er fjernet
 parent: Postmortems
 nav_order: 3
 has_children: false

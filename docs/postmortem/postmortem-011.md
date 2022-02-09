@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Innløpet stoppet da Arena var nede for vedlikehold
+title: 13.03.2020 -  Innløpet stoppet da Arena var nede for vedlikehold
 parent: Postmortems
 nav_order: 3
 has_children: false
