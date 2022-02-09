@@ -1,6 +1,6 @@
 ---
 layout: page
-title: template
+title: Problemer med søke Dagpenger
 parent: Postmortems
 nav_order: 3
 has_children: false
