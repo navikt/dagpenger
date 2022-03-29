@@ -10,7 +10,7 @@ sync: meta-update sync-template
 
 clean:
 	rm -rf node_modules
-	rm -rf repos/ .meta
+	rm -rf .repos/ .meta
 .PHONY: clean
 
 gradle-update:
@@ -88,5 +88,5 @@ BUILDS.md: .repos/active
 	printf "# Build dashboard\n\n\
 	| Repository | Status |\n\
 	| --- | --- |\n" > BUILDS.md
-	find */.github -name deploy.yml | cut -d/ -f1 | sort | xargs -I REPO printf '| [REPO](https://github.com/navikt/REPO/actions) | ![REPO](https://github.com/navikt/REPO/actions/workflows/deploy.yml/badge.svg) |\n' | tee -a $@
+	find */.github -name deploy.y*ml | cut -d/ -f1 | sort | xargs -I REPO printf '| [REPO](https://github.com/navikt/REPO/actions) | ![REPO](https://github.com/navikt/REPO/actions/workflows/deploy.yml/badge.svg) |\n' | tee -a $@
 
