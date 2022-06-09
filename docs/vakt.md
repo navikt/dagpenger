@@ -39,9 +39,30 @@ MÅ:
 BØR:
 * Fungerende utvikerimage.
 
+# HOWTO
 
+## Finne historikk over henvendelser (søknad sendt inn etc)
 
+Per 09.06.2022 kan en sjekke om en bruker har forsøkt sendt inn søknad gjennom å koble seg på henvendelses-databasen. Denne databasen må en eksplisitt spør om tilgangt til via identhåndtering.
+Databasenavn: `jdbc:oracle:thin:@//a01dbfl043.adeo.no:1521/henvendelse`
 
+Hvis du har tilgang til fødselsnummer eller aktørid kan en kjøre denne spørringen:
 
+```sql
 
+-- hvis du må finne aktørid 
+SELECT aktorid, fnr from HENVENDELSE.AKTOR_FNR_MAPPING where FNR = '<fnr>';
+
+SELECT BEHANDLINGSID, 
+       TYPE, 
+       STATUS, 
+       TEMA, 
+       OPPRETTETDATO, 
+       INNSENDTDATO, 
+       SISTENDRETDATO, 
+       JOURNALFORTTEMA, 
+       JOURNALPOSTID 
+FROM HENVENDELSE.HENVENDELSE WHERE AKTOR ='<aktoer_id>' AND TEMA = 'DAG' ORDER BY INNSENDTDATO ASC ;
+      
+```
 
