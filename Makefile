@@ -88,5 +88,4 @@ BUILDS.md: .repos/active
 	printf "# Build dashboard\n\n\
 	| Repository | Status |\n\
 	| --- | --- |\n" > BUILDS.md
-	find */.github -name deploy.y*ml | cut -d/ -f1 | sort | xargs -I REPO printf '| [REPO](https://github.com/navikt/REPO/actions) | ![REPO](https://github.com/navikt/REPO/actions/workflows/deploy.yml/badge.svg) |\n' | tee -a $@
-
+	find . -type f -path '*/.github/*' -name 'deploy.y*ml' | sort | awk '{split($$0,a,"/"); print "| ["a[2]"](https://github.com/navikt/"a[2]"/actions) | !["a[2]"](https://github.com/navikt/"a[2]"/actions/workflows/"a[5]"/badge.svg) |" }' | tee -a $@
