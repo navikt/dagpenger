@@ -13,6 +13,7 @@ som setter opp `meta` og automatiserer. Du kan også installere `meta` globalt m
 Enn så lenge må du sørge for å ha `nvm` installert (`brew install nvm`).
 
 ```
+brew install nvm jq gh
 git clone git@github.com:navikt/dagpenger.git
 cd dagpenger
 nvm install
