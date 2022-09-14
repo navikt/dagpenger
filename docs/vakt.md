@@ -41,6 +41,20 @@ BØR:
 
 # HOWTO
 
+## Scenario: "Kan du sjekke om bruker har forsøkt å sende inn søknad"
+
+Dette får man ofte når det kommer klage og ankesaker.
+
+Hvis det er mer enn 3 mnd siden bruker sier hen har sendt inn søknad, så har vi `ingen spor` på det. Grunnen:
+- Logger lagres ikke mer enn 3 mnd tilbake i tid
+- Av personvernhensyn så sletter vi søknader som er påbegynt og ikke endret av bruker på 7 dager.
+- Det lagres kun data om innsendte søknader
+
+Hvis det er under 3 mnd siden bruker sier hen har sendt inn søknad:
+- Sjekk logger: [dp-soknad i prod siste 3 mnd](https://logs.adeo.no/goto/482756b0-3402-11ed-8607-d590fd125f80)
+- Sjekk sikkerlogg: [tjenestekall for dp-soknad i prod siste 3 mnd](https://logs.adeo.no/goto/c1e0af60-3402-11ed-8607-d590fd125f80)
+- Se om det skjedde mye feil eller andre underlige ting i perioden bruker sier hen sendte inn søknad
+
 ## Finne historikk over henvendelser (søknad sendt inn etc)
 
 Per 09.06.2022 kan en sjekke om en bruker har forsøkt sendt inn søknad gjennom å koble seg på henvendelses-databasen. Denne databasen må en eksplisitt spør om tilgangt til via identhåndtering.
