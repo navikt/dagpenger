@@ -47,7 +47,9 @@ Vi benytter [Unleash](https://unleash.nais.io/) som verktøy for feature togglin
 
 ### Hva gikk dårlig
 
-- Funksjonalitet som manglet, spesielt rundt beskrivelse av felter i PDF'er ikke var klare.
+- Funksjonalitet som manglet;
+  - beskrivelse og informasjonstekster manglet/mangelfulle i selve søknaden. 
+  - spesielt rundt beskrivelse av felter i PDF'er ikke var klare.
 
 ## Tidslinje
 
