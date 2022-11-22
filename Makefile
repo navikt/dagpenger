@@ -8,6 +8,8 @@ MAKEFLAGS += --no-builtin-rules
 sync: meta-update sync-template
 .PHONY: sync
 
+sync-deps: sync-dependencies
+
 clean:
 	rm -rf node_modules
 	rm -rf .repos/ .meta
@@ -55,6 +57,8 @@ $(UAT_SCRIPT): dp-service-template/scripts/test/uatJob
 BUILD_SRC := $(CONSTANTS) $(BUILD_GRADLE) $(SETTINGS_GRADLE)
 
 sync-template: $(CODEOWNERS) $(LICENSES) $(BUILD_SRC) $(UAT_SCRIPT) $(SNYK) $(REVIEWDOG)
+
+sync-dependencies: $(CONSTANTS)
 
 #
 # Oppdatere repos
