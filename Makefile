@@ -63,7 +63,7 @@ sync-dependencies: $(CONSTANTS)
 #
 # Oppdatere repos
 #
-MAX_REPOS=4000
+MAX_REPOS=5000
 REPO_SELECTOR=^(dp|dagpenger)-.+
 
 .repos: .repos/active .repos/archived
