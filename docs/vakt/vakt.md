@@ -10,9 +10,11 @@ has_children: false
 
 [Status]
 
-[Kalkulator og innsyn](https://grafana.adeo.no/d/JxNaGSxZk/digitale-dagpenger-drift-sbs-apper?orgId=1)
+[Søknadsdialogen](https://grafana.nais.io/d/hOx7i8I4z/ny-soknadsdialog?orgId=1&refresh=30s)
 
-[Innløget og regler](https://grafana.adeo.no/d/cpFY0XiWz/digitale-dagpenger-drift-dashboard?orgId=1&refresh=30s)
+~~[Kalkulator og innsyn](https://grafana.nais.io/d/JxNaGSxZk/digitale-dagpenger-drift-sbs-apper?orgId=1)~~ TODO: hvor finnes denne nå?
+
+[Innløpet og regler](https://grafana.nais.io/d/hKaP1toMk/digitale-dagpenger-drift-dashboard-copy?orgId=1&refresh=30s)
 
 [Feil i logger](https://logs.adeo.no/goto/95ed7ef38f2930d6a09aa692872eca57)
 
@@ -21,7 +23,7 @@ has_children: false
 
 * Har vakt, en arbeidsuke om gangen, fra 08:00 - 16:00 (saksbehandlingstiden)
 * Skal følge med på #team-dagpenger-alert Slack kanalen
-* Skal følge med forespørsler fra andre kanaler (jira, slack meldinger @dagpenger-vakt et )
+* Skal følge med forespørsler fra andre kanaler (jira, slack meldinger @dagpenger-vakt etc )
 * Har beslutningsmyndighet til å prioritere over saker som er i gang ("stop-the-line")
 * Skal sørge for å mønstre på neste vakt hver fredag
 * Loggføre incidents/forespørsler
@@ -38,6 +40,15 @@ MÅ:
 
 BØR:
 * Fungerende utvikerimage.
+
+# Oppfølging av saker som kommer inn i #team-dagpenger-vakt
+Forventet SLA på å løse disse sakene er innen X timer.
+
+1. Les igjennom saken, og trekk inn andre som eventuelt trengs for å løse saken.
+   1. Marker innlegget med 👀 når du har begynt å se på saken 
+1. I det vi har funnet et svar eller løsning, så skal dette kommeteres på den tilhørende FAGSAK-jira-oppgaven.
+1. Skriv inn en kommentar, og trykk på knappen "Del internt".
+   1. Sett en ✅ på innslaget i slack-kanalen.
 
 # HOWTO
 
