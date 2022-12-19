@@ -14,7 +14,9 @@ Nei, det er ikke noe galt. Grunnen til at dette skjer er at hvis det blir kastet
 TODO: Legg til beskrivelse
 
 ## Mottok aldri løsning for `<et eller annet behov>`
-TODO: Legg til beskrivelse
+
+### Behov <behovId> mottok aldri løsning for "Barn" innen X minutter og Y sekunder
+Denne kan trygt ignoreres. TODO legge til begrunnelse.
 
 # Manuelle tiltak ved kjente feilsituasjoner
 Slettejobben stopper pga et event som blokkerer
