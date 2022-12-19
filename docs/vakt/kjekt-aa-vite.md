@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Kjekt å vite om våre løsninger
-parent: Postmortems
+parent: Rutiner ved vakt
 nav_order: 3
 has_children: false
 ---
