@@ -1,6 +1,6 @@
 ---
 layout: page
-title: template
+title: 27.10.2022 - Ny søknadsdialog for Dagpenger ble lansert for tidlig
 parent: Postmortems
 nav_order: 3
 has_children: false
