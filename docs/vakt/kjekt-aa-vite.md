@@ -13,21 +13,28 @@ Nei, det er ikke noe galt. Grunnen til at dette skjer er at hvis det blir kastet
 ## Hvordan gi seg selv midlertidig skrivetilgang til en database i prod?
 TODO: Legg til beskrivelse
 
-## Mottok aldri løsning for `<et eller annet behov>`
+## Hvordan restarte en pod?
 
-### Behov <behovId> mottok aldri løsning for "Barn" innen X minutter og Y sekunder
-Denne kan trygt ignoreres. TODO legge til begrunnelse.
+### Alternativ 1
+Bruke rollout restart, controlleren vil drepe en pod av gangen og *ReplicaSet* vil sørge for å skalere opp nye podder frem til alle er fornyet. Dette er ideelt fordi applikasjonen ikke vil bli påvirket eller være nede.
 
-# Manuelle tiltak ved kjente feilsituasjoner
-Slettejobben stopper pga et event som blokkerer
+>kubectl rollout restart deployment <app-navn> -n teamdagpenger
 
-## Hvordan identifisere
-```sql
-dp-soknad.public> SELECT count(1) FROM soknad_v1
-LEFT JOIN soknad_tekst_v1 s ON soknad_v1.uuid = s.uuid
-WHERE tilstand='Slettet' AND tekst is not null
-[2022-12-13 14:52:08] 1 row retrieved starting from 1 in 113 ms (execution: 36 ms, fetching: 77 ms)
-```
+> ReplicaSet: Et kubernetes-objekt som brukes til å opprettholde et stabilt sett med replikerte pods som kjører i et kluster til enhver tid.
 
-## Hvordan løse
-TODO: Legg til beskrivelse
+
+### Alternativ 2
+Slette podden. Kubernetes vil automatisk lage en ny pod.
+
+>kubectl delete pod <pod-navn> -n teamdagpenger
+
+### Alternativ 3
+Skalere antall replicas til null og deretter tilbake til minst 1:
+
+>kubectl scale deployment <app-navn> --replicas=0 -n teamdagpenger
+
+>kubectl scale deployment <app-navn> --replicas=2 -n teamdagpenger
+
+
+
+
