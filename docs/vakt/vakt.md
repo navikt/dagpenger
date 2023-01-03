@@ -14,7 +14,7 @@ has_children: false
 
 ~~[Kalkulator og innsyn](https://grafana.nais.io/d/JxNaGSxZk/digitale-dagpenger-drift-sbs-apper?orgId=1)~~ TODO: hvor finnes denne nå?
 
-[Innløpet og regler](https://grafana.nais.io/d/hKaP1toMk/digitale-dagpenger-drift-dashboard-copy?orgId=1&refresh=30s)
+[Innløpet og regler](https://grafana.nais.io/d/cpFY0XiWz/overvakning-og-alarmer-fra-tjeneste-vare-drift-dashboard?orgId=1&refresh=30s)
 
 [Feil i logger](https://logs.adeo.no/goto/95ed7ef38f2930d6a09aa692872eca57)
 
