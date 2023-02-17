@@ -1,7 +1,6 @@
 {
   "projects": {
     "dagpenger-analyse": "git@github.com:navikt/dagpenger-analyse.git",
-    "dagpenger-arena-vedtak": "git@github.com:navikt/dagpenger-arena-vedtak.git",
     "dagpenger-castlemock": "git@github.com:navikt/dagpenger-castlemock.git",
     "dagpenger-events": "git@github.com:navikt/dagpenger-events.git",
     "dagpenger-funksjonelle-tester": "git@github.com:navikt/dagpenger-funksjonelle-tester.git",
@@ -11,7 +10,6 @@
     "dagpenger-regel-ui": "git@github.com:navikt/dagpenger-regel-ui.git",
     "dagpenger-secrets": "git@github.com:navikt/dagpenger-secrets.git",
     "dagpenger-streams": "git@github.com:navikt/dagpenger-streams.git",
-    "dp-ansible": "git@github.com:navikt/dp-ansible.git",
     "dp-appkatalog": "git@github.com:navikt/dp-appkatalog.git",
     "dp-arena-sink": "git@github.com:navikt/dp-arena-sink.git",
     "dp-arena-trakt": "git@github.com:navikt/dp-arena-trakt.git",
@@ -29,11 +27,8 @@
     "dp-debug": "git@github.com:navikt/dp-debug.git",
     "dp-div-testing": "git@github.com:navikt/dp-div-testing.git",
     "dp-doh": "git@github.com:navikt/dp-doh.git",
-    "dp-fake-arena-api": "git@github.com:navikt/dp-fake-arena-api.git",
     "dp-faktasider-frontend": "git@github.com:navikt/dp-faktasider-frontend.git",
     "dp-frontend-template": "git@github.com:navikt/dp-frontend-template.git",
-    "dp-gcs": "git@github.com:navikt/dp-gcs.git",
-    "dp-glitchtip": "git@github.com:navikt/dp-glitchtip.git",
     "dp-gradle-plugins": "git@github.com:navikt/dp-gradle-plugins.git",
     "dp-grunnbelop": "git@github.com:navikt/dp-grunnbelop.git",
     "dp-innsyn": "git@github.com:navikt/dp-innsyn.git",
@@ -41,7 +36,6 @@
     "dp-inntekt": "git@github.com:navikt/dp-inntekt.git",
     "dp-inntekt-klassifiserer": "git@github.com:navikt/dp-inntekt-klassifiserer.git",
     "dp-kafka-connect": "git@github.com:navikt/dp-kafka-connect.git",
-    "dp-kafka-connect-applyer": "git@github.com:navikt/dp-kafka-connect-applyer.git",
     "dp-kafka-connect-operator": "git@github.com:navikt/dp-kafka-connect-operator.git",
     "dp-kronetillegg": "git@github.com:navikt/dp-kronetillegg.git",
     "dp-kustomize": "git@github.com:navikt/dp-kustomize.git",
@@ -49,7 +43,6 @@
     "dp-mellomlagring": "git@github.com:navikt/dp-mellomlagring.git",
     "dp-mock-quiz-behovloser": "git@github.com:navikt/dp-mock-quiz-behovloser.git",
     "dp-mottak": "git@github.com:navikt/dp-mottak.git",
-    "dp-openam": "git@github.com:navikt/dp-openam.git",
     "dp-oppdrag": "git@github.com:navikt/dp-oppdrag.git",
     "dp-oppslag-arbeidssoker": "git@github.com:navikt/dp-oppslag-arbeidssoker.git",
     "dp-oppslag-inntekt": "git@github.com:navikt/dp-oppslag-inntekt.git",
@@ -72,6 +65,7 @@
     "dp-regel-minsteinntekt": "git@github.com:navikt/dp-regel-minsteinntekt.git",
     "dp-regel-periode": "git@github.com:navikt/dp-regel-periode.git",
     "dp-regel-sats": "git@github.com:navikt/dp-regel-sats.git",
+    "dp-saksbehandling-frontend": "git@github.com:navikt/dp-saksbehandling-frontend.git",
     "dp-sanity-cms": "git@github.com:navikt/dp-sanity-cms.git",
     "dp-sanity-cms-new": "git@github.com:navikt/dp-sanity-cms-new.git",
     "dp-sanity-cms-v3": "git@github.com:navikt/dp-sanity-cms-v3.git",
@@ -85,7 +79,6 @@
     "dp-varsel": "git@github.com:navikt/dp-varsel.git",
     "dp-vedtak": "git@github.com:navikt/dp-vedtak.git",
     "dp-vedtakresultat-lytter": "git@github.com:navikt/dp-vedtakresultat-lytter.git",
-    "dp-videresending": "git@github.com:navikt/dp-videresending.git",
-    "dp-workflows": "git@github.com:navikt/dp-workflows.git"
+    "dp-videresending": "git@github.com:navikt/dp-videresending.git"
   }
 }
