@@ -18,6 +18,8 @@ has_children: false
 
 [Feil i logger](https://logs.adeo.no/goto/95ed7ef38f2930d6a09aa692872eca57)
 
+[Automatiseringsgrad og grunner til manuell behandling](https://grafana.nais.io/d/KJrxLjaGk/quizzing?orgId=1&from=now-7d&to=now)
+
 
 # Dagpengervakt - @dagpenger-vakt
 
