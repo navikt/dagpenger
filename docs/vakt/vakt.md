@@ -35,8 +35,8 @@ has_children: false
 
 MÅ:
 * kubectl tilgang til produksjonsklustrene.
-* [Tilgang til logger](https://logs.adeo.no) 
-* [Tilgang til grafana](https://grafana.adeo.no) 
+* [Tilgang til logger](https://logs.adeo.no)
+* [Tilgang til grafana](https://grafana.adeo.no)
 
 BØR:
 * Fungerende utvikerimage.
@@ -45,7 +45,7 @@ BØR:
 Forventet SLA på å løse disse sakene er innen X timer.
 
 1. Les igjennom saken, og trekk inn andre som eventuelt trengs for å løse saken.
-   1. Marker innlegget med 👀 når du har begynt å se på saken 
+   1. Marker innlegget med 👀 når du har begynt å se på saken
 1. I det vi har funnet et svar eller løsning, så skal dette kommeteres på den tilhørende FAGSAK-jira-oppgaven.
 1. Skriv inn en kommentar, og trykk på knappen "Del internt".
    1. Sett en ✅ på innslaget i slack-kanalen.
@@ -73,26 +73,28 @@ Hvis det er under 3 mnd siden bruker sier hen har sendt inn søknad:
 1. Bruk nais cli verktøyet for å logge på databasen
    Se instruksjoner for å innstallere [nais cli verktøyet](https://docs.nais.io/cli/commands/postgres/)
 2. Sørg for å være i riktig NAIS cluster (`prod-gpc`)
-3. Bruk proxy funksjonalitet: 
+3. Bruk proxy funksjonalitet:
    `nais postgres proxy dp-soknad`
    Kopier connection url inn i et DB verktøy (IntelliJ har en super en)
-   Connection url ser nå sånn ut: 
+   Connection url ser nå sånn ut:
   ```
    Starting proxy on localhost:5432
    Connection URL: jdbc:postgresql://localhost:5432/dp-soknad?user=<din.nav.epost>@nav.no
    ```
-4. Bruk `pgpass` autentisering og logg på 
-5. Finn historikk for en person ved å kjøre: 
+4. Bruk `pgpass` autentisering og logg på
+5. Finn historikk for en person ved å kjøre:
    ```
-   select 
-     opprettet, 
-     tilstand, 
-     sist_endret_av_bruker, 
-     endret, 
-     innsendt 
-   from soknad_v1 
+   select
+     opprettet,
+     tilstand,
+     sist_endret_av_bruker,
+     endret,
+     innsendt
+   from soknad_v1
      where person_ident = '<ident>'
    ```
+
+   [DB diagram for søknadsdialog](https://github.com/navikt/dp-soknad/tree/main/docs/arkitektur/database)
 
 
 ### Gammel søknadsdialog
@@ -103,19 +105,18 @@ Hvis du har tilgang til fødselsnummer eller aktørid kan en kjøre denne spørr
 
 ```sql
 
--- hvis du må finne aktørid 
+-- hvis du må finne aktørid
 SELECT aktorid, fnr from HENVENDELSE.AKTOR_FNR_MAPPING where FNR = '<fnr>';
 
-SELECT BEHANDLINGSID, 
-       TYPE, 
-       STATUS, 
-       TEMA, 
-       OPPRETTETDATO, 
-       INNSENDTDATO, 
-       SISTENDRETDATO, 
-       JOURNALFORTTEMA, 
-       JOURNALPOSTID 
+SELECT BEHANDLINGSID,
+       TYPE,
+       STATUS,
+       TEMA,
+       OPPRETTETDATO,
+       INNSENDTDATO,
+       SISTENDRETDATO,
+       JOURNALFORTTEMA,
+       JOURNALPOSTID
 FROM HENVENDELSE.HENVENDELSE WHERE AKTOR ='<aktoer_id>' AND TEMA = 'DAG' ORDER BY INNSENDTDATO ASC ;
-      
-```
 
+```
