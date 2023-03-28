@@ -84,7 +84,14 @@ Hvis det er under 3 mnd siden bruker sier hen har sendt inn søknad:
 4. Bruk `pgpass` autentisering og logg på 
 5. Finn historikk for en person ved å kjøre: 
    ```
-   select opprettet, tilstand, sist_endret_av_bruker, endret, innsendt from soknad_v1 where person_ident = '<iden>'
+   select 
+     opprettet, 
+     tilstand, 
+     sist_endret_av_bruker, 
+     endret, 
+     innsendt 
+   from soknad_v1 
+     where person_ident = '<ident>'
    ```
 
 
