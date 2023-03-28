@@ -68,6 +68,27 @@ Hvis det er under 3 mnd siden bruker sier hen har sendt inn søknad:
 
 ## Finne historikk over henvendelser (søknad sendt inn etc)
 
+### Ny søknadsdialog
+
+1. Bruk nais cli verktøyet for å logge på databasen
+   Se instruksjoner for å innstallere [nais cli verktøyet](https://docs.nais.io/cli/commands/postgres/)
+2. Sørg for å være i riktig NAIS cluster (`prod-gpc`)
+3. Bruk proxy funksjonalitet: 
+   `nais postgres proxy dp-soknad`
+   Kopier connection url inn i et DB verktøy (IntelliJ har en super en)
+   Connection url ser nå sånn ut: 
+  ```
+   Starting proxy on localhost:5432
+   Connection URL: jdbc:postgresql://localhost:5432/dp-soknad?user=<din.nav.epost>@nav.no
+   ```
+4. Bruk `pgpass` autentisering og logg på 
+5. Finn historikk for en person ved å kjøre: 
+   ```
+   select opprettet, tilstand, sist_endret_av_bruker, endret, innsendt from soknad_v1 where person_ident = '<iden>'
+   ```
+
+
+### Gammel søknadsdialog
 Per 09.06.2022 kan en sjekke om en bruker har forsøkt sendt inn søknad gjennom å koble seg på henvendelses-databasen. Denne databasen må en eksplisitt spør om tilgangt til via identhåndtering.
 Databasenavn: `jdbc:oracle:thin:@//a01dbfl043.adeo.no:1521/henvendelse`
 
