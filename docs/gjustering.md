@@ -101,7 +101,6 @@ Denne toggles PÅ når testerene og Arena er klar for det.
 
 ## 5. Når g-justering test er ferdig
 
-1. Toggle av toggelen: `dp-g-justeringstest` i unleash
+1. Toggle AV toggelen: `dp-g-justeringstest` i unleash
 2. Gå tilbake til test databasen i dp-inntekt (reverter commit i steg 1)
 3. Ferdig! 
-    
