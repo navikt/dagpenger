@@ -78,17 +78,17 @@ Oppdatere til ny versjon av dp-grunnbelop i:
    - Commit og push ([eksempel fra 2023](https://github.com/navikt/dp-regel-periode/commit/19a1538243187830616a76262b650a8e3dd7c9a5) )
 
 3. [dp-regel-grunnlag](https://github.com/navikt/dp-regel-grunnlag/)
-- Sett ny versjon av dp-grunnbelop
-- Sett virkningsdato for testgrunnbeløpet. Dette tidspunktet kalles "Fra dato ny G" og er spesifisert av testere
-- Oppdaterer tester
-- Commit og push ([eksempel fra 2023](https://github.com/navikt/dp-regel-grunnlag/commit/2c68224a3ae58e6694c34becedd27b17e8d4a966) )
+   - Sett ny versjon av dp-grunnbelop
+   - Sett virkningsdato for testgrunnbeløpet. Dette tidspunktet kalles "Fra dato ny G" og er spesifisert av testere
+   - Oppdaterer tester
+   - Commit og push ([eksempel fra 2023](https://github.com/navikt/dp-regel-grunnlag/commit/2c68224a3ae58e6694c34becedd27b17e8d4a966) )
 
 
 4. [dp-regel-sats](https://github.com/navikt/dp-regel-sats/)
-- Sett ny versjon av dp-grunnbelop
-- Sett virkningsdato for testgrunnbeløpet. Dette tidspunktet kalles "Fra dato ny G" og er spesifisert av testere
-- Oppdaterer tester
-- Commit og push ([eksempel fra 2023](https://github.com/navikt/dp-regel-sats/commit/66cb81c11916e3fa492a5a8304adbef5450b9a9a) )
+   - Sett ny versjon av dp-grunnbelop
+   - Sett virkningsdato for testgrunnbeløpet. Dette tidspunktet kalles "Fra dato ny G" og er spesifisert av testere
+   - Oppdaterer tester
+   - Commit og push ([eksempel fra 2023](https://github.com/navikt/dp-regel-sats/commit/66cb81c11916e3fa492a5a8304adbef5450b9a9a) )
 
 
 ## 4. Skru på g-justering i testmiljøet
