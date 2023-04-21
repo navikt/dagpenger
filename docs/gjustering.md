@@ -23,7 +23,7 @@ Fremgangsmåte for hvordan g-justeringer er beskrevet i [dp-grunnbelop](https://
 Arena vil kjøre en g-justeringstest mot LEL-2019 testmiljøet (dp-regel-*) der de krever en kopi av produksjonsdatabasen for [dp-inntekt](https://github.com/navikt/dp-inntekt)
 
 
-### 1. Bestill kopi av dp-inntekt produksjonsdatabasen
+## 1. Bestill kopi av dp-inntekt produksjonsdatabasen
     
 Arena vil i god tid før g-justeringstest forespør oss å ta kopi av dp-inntekt produksjonsdatabasen til testmiljøet.
 dp-inntekt bruker `q0` databasen `dp-inntekt-db-q0` (host: `b27dbvl013.preprod.local`). Denne databasen blir kopiert fra dp-inntekt sin produksjonsdatabase `dp-inntekt-db` (host: `a01dbfl039.adeo.no`)
@@ -48,7 +48,7 @@ dp-inntekt bruker `q0` databasen `dp-inntekt-db-q0` (host: `b27dbvl013.preprod.l
 - Commit og push ([eksempel fra 2023](https://github.com/navikt/dp-inntekt/commit/5f4f569670ade07b2d0d6beb4c2f0c9c122a84af)))
 - Sjekk at dp-inntekt-api kjører OK
 
-### 2. Legg til ny verdi for test Grunnbeløp
+## 2. Legg til ny verdi for test Grunnbeløp
 
   For Dagpenger ligger historiske G-verdier og Test-G-Verdier i [dp-grunnbelop](https://github.com/navikt/dp-grunnbelop) 
       
@@ -60,7 +60,7 @@ dp-inntekt bruker `q0` databasen `dp-inntekt-db-q0` (host: `b27dbvl013.preprod.l
    2. Commit og push til master
    3. En ny versjon av dp-grunnbelop vil [releases](https://github.com/navikt/dp-grunnbelop/releases) 
 
-### 3. Oppdatere reglene med ny versjon av dp-grunnbelop 
+## 3. Oppdatere reglene med ny versjon av dp-grunnbelop 
 
 Oppdatere til ny versjon av dp-grunnbelop i: 
 
@@ -91,7 +91,7 @@ Oppdatere til ny versjon av dp-grunnbelop i:
 - Commit og push ([eksempel fra 2023](https://github.com/navikt/dp-regel-sats/commit/66cb81c11916e3fa492a5a8304adbef5450b9a9a) )
 
 
-### 4. Skru på g-justering i testmiljøet
+## 4. Skru på g-justering i testmiljøet
 
 Selve `GjusteringsTest` toggles på via unleash toggelen: `dp-g-justeringstest`
 (https://unleash.nais.io/#/features/strategies/dp-g-justeringstest)
@@ -99,7 +99,7 @@ Selve `GjusteringsTest` toggles på via unleash toggelen: `dp-g-justeringstest`
 Denne toggles PÅ når testerene og Arena er klar for det. 
 
 
-### 5. Når g-justering test er ferdig
+## 5. Når g-justering test er ferdig
 
 1. Toggle av toggelen: `dp-g-justeringstest` i unleash
 2. Gå tilbake til test databasen i dp-inntekt (reverter commit i steg 1)
