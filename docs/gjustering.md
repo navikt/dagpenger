@@ -54,9 +54,9 @@ dp-inntekt bruker `q0` databasen `dp-inntekt-db-q0` (host: `b27dbvl013.preprod.l
       
   I en test av g-justering bruker vi [GjusteringsTest](https://github.com/navikt/dp-grunnbelop/blob/dd33088904de28eac3ddf6edeb5374b33c31ad50/src/main/kotlin/no/nav/dagpenger/grunnbelop/Grunnbelop.kt#L10) verdien for å simulere. 
       
-  Grunnbeløpverdien vil bestemmes av funksjonelle testere. (Fra 2022, sjekk kommentar i https://jira.adeo.no/browse/ARENA-8157)
+  Grunnbeløpverdien vil bestemmes av funksjonelle testere. (Fra 2023, sjekk kommentar i https://jira.adeo.no/browse/ARENA-8157)
     
-   1. Oppdaterer `GjusteringsTest` med ny test G ([Eksempel fra 2022](https://github.com/navikt/dp-grunnbelop/commit/dd33088904de28eac3ddf6edeb5374b33c31ad50))
+   1. Oppdaterer `GjusteringsTest` med ny test G ([Eksempel fra 2023](https://github.com/navikt/dp-grunnbelop/commit/dd33088904de28eac3ddf6edeb5374b33c31ad50))
    2. Commit og push til master
    3. En ny versjon av dp-grunnbelop vil [releases](https://github.com/navikt/dp-grunnbelop/releases) 
 
