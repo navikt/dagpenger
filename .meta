@@ -27,6 +27,7 @@
     "dp-debug": "git@github.com:navikt/dp-debug.git",
     "dp-div-testing": "git@github.com:navikt/dp-div-testing.git",
     "dp-doh": "git@github.com:navikt/dp-doh.git",
+    "dp-ekstern-integrasjon": "git@github.com:navikt/dp-ekstern-integrasjon.git",
     "dp-faktasider-frontend": "git@github.com:navikt/dp-faktasider-frontend.git",
     "dp-frontend-template": "git@github.com:navikt/dp-frontend-template.git",
     "dp-gradle-plugins": "git@github.com:navikt/dp-gradle-plugins.git",
