@@ -50,10 +50,6 @@ SETTINGS_GRADLE := $(shell ls */buildSrc/settings.gradle.kts)
 $(SETTINGS_GRADLE): dp-service-template/buildSrc/settings.gradle.kts
 	cp $< $@
 
-UAT_SCRIPT := $(shell ls */scripts/test/uatJob)
-$(UAT_SCRIPT): dp-service-template/scripts/test/uatJob
-	cp $< $@
-
 BUILD_SRC := $(CONSTANTS) $(BUILD_GRADLE) $(SETTINGS_GRADLE)
 
 sync-template: $(CODEOWNERS) $(LICENSES) $(BUILD_SRC) $(UAT_SCRIPT) $(SNYK) $(REVIEWDOG)
