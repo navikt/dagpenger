@@ -34,13 +34,16 @@ dp-inntekt bruker `q0` databasen `dp-inntekt-db-q0` (host: `b27dbvl013.preprod.l
   - Velg tjeneste: "Database"
   - Ansvarlig gruppe: "Team database"
     
-  Beskriv:
+  Beskriv: 
   - Hvilken database og host det skal kopieres **til** (`dp-inntekt-db-q0` (host: `b27dbvl013.preprod.local`)
   - Hvilken database og host det skal kopieres **fra** (`dp-inntekt-db` (host: `a01dbfl039.adeo.no`)
   - Når kopies skal tas. Arena vil at det skal gjøres på likt tidspunkt som det gjøres kopi av Arenadatabasen
+  - [Eksempel fra 2023](https://jira.adeo.no/browse/IKT-515839)
    
     
     ** NB! Dette må gjøres i god tid før selve g-justeringstestdag(ene) **
+
+     
 
 1.2 Gå mot `dp-inntekt-db-q0` for testmiljøet til dp-inntekt-api
 
