@@ -39,7 +39,7 @@ dokarkiv (applikasjon som journalfører i joark).
 Vi ser derimot at dokarkiv klarte å journalføre enkelte søknader før vi timet. Dette førte til at dp-behov-journalforing
 trodde at søknad journalposten ikke var opprettet og forsøkte igjen.
 Vi har en applikasjon (dp-mottak) som lytter på opprettede journalposter og sørger for å rute disse til
-saksbhandlerflate og ferdigstille journalposten, videre gir den beskjed til søknadsdialogen-backend (dp-soknad) om at søknaden er
+saksbehandlerflate og ferdigstille journalposten, videre gir den beskjed til søknadsdialogen-backend (dp-soknad) om at søknaden er
 ferdigstilt som en konsistenssjekk. Det var denne konsistenssjekken som feilet og førte til at backend for søknadsdialogen gikk ned.
 
 dp-soknad stod i en tilstand der den ventet på at journalposten var opprettet, men fikk aldri beskjed
@@ -53,7 +53,7 @@ fra dp-soknad som da var nede.
 **Utløsende faktor:**
 
 Den 23.05.2023 kl 20:06:19 ser vi i loggene at dp-behov-journalforing begynte å "timet ut" mot dokarkiv. Den 23.05.2023
-kl 01:09 ser vi at 1 enkelt søknad ble journalført etter kallet mot dokarkiv hadde timet ut og førte til inkonsistens
+kl 01:09 ser vi at 2 enkelte søknad ble journalført etter kallet mot dokarkiv hadde timet ut og førte til inkonsistens
 beskrevet i rotårsak over.
 
 **Løsning:**
@@ -68,7 +68,7 @@ Langsiktig: Se aksjonspunkter
 ## Aksjonspunkter
 
 ✅ Gjort:
-1. Øke timeout-konfig for [dp-behov-journalforing](https://github.com/navikt/dp-behov-journalforing/commit/56f84b5dd7fc7b6f2e1024d2b2931ecfc1349b46)
+1. Øke timeout-konfig for [dp-behov-journalforing](https://github.com/navikt/dp-behov-journalforing/commit/56f84b5dd7fc7b6f2e1024d2b2931ecfc1349b46) samt la på retry [logikk](https://github.com/navikt/dp-behov-journalforing/commit/b250d09c44c6d188c21eef9f8e501bcd09ded402) 
 2. Sørge for at ktor-client sin [validering](https://ktor.io/docs/response-validation.html#default) av http responser er [skrudd på](https://github.com/navikt/dp-behov-journalforing/commit/97d7d1b1cc0017735a63e0b890c2ab0a7a09ad49)
  
 🚧 Tiltak:
@@ -95,7 +95,11 @@ Langsiktig: Se aksjonspunkter
 - 23.05.2023 kl 20:06:19 : Første logginnslag om at vi hadde nettverksproblemer mot doarkiv (joark journalføring
 - 24.05.2023 kl 01:09 : Timeout mot dokarkiv som gjorde at vi kom i inkonsistens (beskrevet i rotårsaker)
 - 24.05.2023 kl 01:10 : dp-soknad begynte å varsle om tilstandsfeil og ble degradert
-- 24.05.2023 ca kl 07:25 : "Redteam" i dagpenger oppdaget varsler og starte analyse 
-- .... 
-
-## Linker
+- 24.05.2023 ca kl 07:25 : "Redteam" i dagpenger oppdaget varsler og starte analyse. Varslet [#produksjonshendelse](https://nav-it.slack.com/archives/C9P60F4F3/p1684906051189099) kanalen. 
+- 24.05.2023 ca kl 07:52 : Forsøkte på et plaster for å rette feil slik at søknadsdialogen kom opp igjen.
+- 24.05.2023 ca kl 08:00 : Søknadsdialogen kom [opp igjen](https://nav-it.slack.com/archives/C9P60F4F3/p1684907750980949?thread_ts=1684906051.189099&cid=C9P60F4F3). 
+- 24.05.2023 ca kl 09:00 : Samme [feilsituasjon kom opp igjen](https://nav-it.slack.com/archives/C9P60F4F3/p1684912956884609?thread_ts=1684906051.189099&cid=C9P60F4F3) og dp-soknad ble degradert
+- 24.05.2023 kl 09:00 og utover: Mer feilsøking. Økte timeout og robustifiserte http-klient i dp-behov-journalforing. Vi så da at søknader ble journalført riktig med at det var en stor kø av søknader jobben spiste seg igjennom
+- 24.05.2023 kl 10:30 - dp-soknad fikk riktig tilstand og kom opp igjen
+- 24.05.2023 kl 10:30 - [Sa ifra at søknadsdialogen var på vei opp igjen i #produksjonshendelser](https://nav-it.slack.com/archives/C9P60F4F3/p1684918655021419?thread_ts=1684906051.189099&cid=C9P60F4F3)
+- 24.05.2023 kl 11:15 - [Friskmeldte søknadsdialogen i #produksjonshendelser](https://nav-it.slack.com/archives/C9P60F4F3/p1684918655021419?thread_ts=1684906051.189099&cid=C9P60F4F3)
