@@ -79,8 +79,9 @@ Langsiktig: Se aksjonspunkter
 
 ## Hva lærte vi?
 
-1. Punkt 1 ("The network is reliable") i ["Fallacies of distributed computing"](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing) i høy grad fortsatt er gjeldene og løsningene våre må robustifiseres i henhold. 
-2. Feilhåndteringen i systemet fungerer - applikasjonene sørger for at flyten spilte opp igjen når feilen ble rettet.
+1. *igjen! Sørge for at du har kontroll over bibliotekene du bruker. Sørge for at ktor-client sin [validering](https://ktor.io/docs/response-validation.html#default) av http responser.* 
+2. Punkt 1 ("The network is reliable") i ["Fallacies of distributed computing"](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing) i høy grad fortsatt er gjeldene og løsningene våre må robustifiseres i henhold. 
+3. Feilhåndteringen i systemet fungerer - applikasjonene sørger for at flyten spilte opp igjen når feilen ble rettet.
 
 ### Hva gikk bra
 
