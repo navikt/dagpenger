@@ -29,7 +29,7 @@ has_children: false
 ## Aksjonspunkter
 
 | Aksjon | Type | Eier | Referanse |
-| ------ | ---- | ---- | --- |
+| ------ | ---- | ---- | --------- |
 
 ## Hva lærte vi?
 
