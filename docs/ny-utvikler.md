@@ -14,6 +14,7 @@ has_children: false
 - [Sett opp 2-faktor auth](https://myaccount.microsoft.com/)
 - [naisdevice](https://doc.nais.io/device/) - For diverse tilganger fra NAV eid laptop.
 - [Sikkerlogg](https://logs.adeo.no/goto/04048e28592b631c5279309c1adc00d0) - Be om tilgang til gruppen ```0000-GA-SECURE_LOG_DAGPENGER``` ved å sende mail til nav.it.identhandtering@nav.no med cc til personalleder 
+- [Confluence](https://confluence.adeo.no/) - Be om tilgang til Confluence ved å sende mail til nav.it.identhandtering@nav.no med cc til personalleder
 
 ## Managed Software Center
 - VMware Horizon Client
