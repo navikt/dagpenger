@@ -12,7 +12,7 @@ has_children: false
 
 **Av:** Knut M Riise & Rebecca Gjerstad
 
-**Status:** Pågående
+**Status:** Løst
 
 **Sammendrag:**
 Tekst forsvinner når bruker skriver inn i samtlige tekstfelt i søknadsdialogen. Identifikator er en tidligere fiks for å garantere riktig state fra backend i faktum felt. Problemet oppstår når man larger tekst mens brukeren skriver i tekstfelt. Dette skjer ved at vi har en debounce hvert 500 millisekund, men at vi allikevel lagrer hvert 2000 millisekund selv om bruker fortsatt skriver.
@@ -75,6 +75,10 @@ Feil sluttet å inntreffe
 15.06.2023
 Slettet kodelinjen som feilet
 [Github commit](https://github.com/navikt/dp-soknadsdialog/commit/70991958f84a6ac2685c556e2e2b199f1dcb5e58).
+
+20.06.2023
+Merget endringen
+[Github commit](https://github.com/navikt/dp-soknadsdialog/commit/16679392b7a106d454d6a73a030a50cdb09a75d5)
 
 ## Linker
 
