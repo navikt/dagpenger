@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Feil i registrering av timer ført på meldekort 26.03.2023
+title: 26.03.2023 - Feil i registrering av timer ført på meldekort
 parent: Postmortems
 nav_order: 3
 has_children: false
 ---
 
-# Feil i registrering av timer ført på meldekort 26.03.2023
+# Feil i registrering av timer ført på meldekort
 
 **Dato:** 15.06.2023
 

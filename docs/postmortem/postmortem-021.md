@@ -10,7 +10,7 @@ has_children: false
 
 **Dato:** 13.06.2023
 
-**Av:** Knut M Riise & Rebecca Gjerstad
+**Av:** Knut Magne Riise & Rebecca Gjerstad
 
 **Status:** Løst
 
