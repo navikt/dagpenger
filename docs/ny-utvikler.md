@@ -30,7 +30,7 @@ Innstaller disse mest brukte programmene:
 
 ```
 brew tap boz/repo
-brew install docker kail kube-ps1 kubectx kubernetes-cli maven gradle polipo nvm
+brew install docker kail kube-ps1 kubectx kubernetes-cli maven gradle polipo nvm colima
 ```
 
 Innstaller en myriade av Java-versjoner og [Jenv](https://www.jenv.be/) for å bytte mellom versjoner:
@@ -39,6 +39,22 @@ Innstaller en myriade av Java-versjoner og [Jenv](https://www.jenv.be/) for å b
 brew tap AdoptOpenJDK/openjdk
 brew cask install jenv adoptopenjdk8 adoptopenjdk1{1,2,3,4}
 ```
+
+### Colima
+
+[Colima](https://github.com/abiosoft/colima) er alternativ til Docker desktop for å kjøre containere. (Sjekk også nais dokken https://docs.nais.io/guides/basics/?h=colima#tools-required)
+
+For å få testcontainer til å snurre må en peke på en `DOCKER_HOST` og skru av ryuk, i din profile (`.bashrc`, `.zshrc`eller tilsvarende) eksporter disse: 
+
+```shell
+
+# Colima - docker host
+export DOCKER_HOST=unix:///$HOME/.colima/docker.sock
+
+# Disable ryuk - https://java.testcontainers.org/features/configuration/
+export TESTCONTAINERS_RYUK_DISABLED=true
+```
+
 
 ## Nyttige dashboards
 
