@@ -1,6 +1,7 @@
 {
   "projects": {
     "dagpenger-analyse": "git@github.com:navikt/dagpenger-analyse.git",
+    "dagpenger-analyse-utils": "git@github.com:navikt/dagpenger-analyse-utils.git",
     "dagpenger-events": "git@github.com:navikt/dagpenger-events.git",
     "dagpenger-funksjonelle-tester": "git@github.com:navikt/dagpenger-funksjonelle-tester.git",
     "dagpenger-iac": "git@github.com:navikt/dagpenger-iac.git",
@@ -13,11 +14,13 @@
     "dp-appkatalog": "git@github.com:navikt/dp-appkatalog.git",
     "dp-arena-sink": "git@github.com:navikt/dp-arena-sink.git",
     "dp-arena-trakt": "git@github.com:navikt/dp-arena-trakt.git",
+    "dp-audit-logger": "git@github.com:navikt/dp-audit-logger.git",
     "dp-auth": "git@github.com:navikt/dp-auth.git",
     "dp-behandling": "git@github.com:navikt/dp-behandling.git",
     "dp-behov-journalforing": "git@github.com:navikt/dp-behov-journalforing.git",
     "dp-behov-soknad-pdf": "git@github.com:navikt/dp-behov-soknad-pdf.git",
     "dp-behovsakkumulator": "git@github.com:navikt/dp-behovsakkumulator.git",
+    "dp-beregning-poc": "git@github.com:navikt/dp-beregning-poc.git",
     "dp-biblioteker": "git@github.com:navikt/dp-biblioteker.git",
     "dp-dagpenger": "git@github.com:navikt/dp-dagpenger.git",
     "dp-data-innlop": "git@github.com:navikt/dp-data-innlop.git",
@@ -61,6 +64,7 @@
     "dp-quiz-birgitte": "git@github.com:navikt/dp-quiz-birgitte.git",
     "dp-quiz-retting": "git@github.com:navikt/dp-quiz-retting.git",
     "dp-quizmaster": "git@github.com:navikt/dp-quizmaster.git",
+    "dp-rapid-skjema": "git@github.com:navikt/dp-rapid-skjema.git",
     "dp-rapidhose": "git@github.com:navikt/dp-rapidhose.git",
     "dp-rapportering": "git@github.com:navikt/dp-rapportering.git",
     "dp-rapportering-frontend": "git@github.com:navikt/dp-rapportering-frontend.git",
@@ -70,7 +74,9 @@
     "dp-regel-minsteinntekt": "git@github.com:navikt/dp-regel-minsteinntekt.git",
     "dp-regel-periode": "git@github.com:navikt/dp-regel-periode.git",
     "dp-regel-sats": "git@github.com:navikt/dp-regel-sats.git",
+    "dp-saksbehandling": "git@github.com:navikt/dp-saksbehandling.git",
     "dp-saksbehandling-frontend": "git@github.com:navikt/dp-saksbehandling-frontend.git",
+    "dp-saksbehandling-graphql": "git@github.com:navikt/dp-saksbehandling-graphql.git",
     "dp-sanity-cms": "git@github.com:navikt/dp-sanity-cms.git",
     "dp-sanity-cms-v3": "git@github.com:navikt/dp-sanity-cms-v3.git",
     "dp-service-template": "git@github.com:navikt/dp-service-template.git",
@@ -86,6 +92,7 @@
     "dp-vedtak": "git@github.com:navikt/dp-vedtak.git",
     "dp-vedtak-iverksett": "git@github.com:navikt/dp-vedtak-iverksett.git",
     "dp-vedtakresultat-lytter": "git@github.com:navikt/dp-vedtakresultat-lytter.git",
+    "dp-version-catalog": "git@github.com:navikt/dp-version-catalog.git",
     "dp-videresending": "git@github.com:navikt/dp-videresending.git"
   }
 }
