@@ -35,6 +35,16 @@ Skalere antall replicas til null og deretter tilbake til minst 1:
 
 >kubectl scale deployment <app-navn> --replicas=2 -n teamdagpenger
 
+### Hvordan resende en melding på rapiden?
+Hvis en melding feiler og den må resendes manuelt, kan det gjøres via https://dp-saksbehandling.intern.nav.no/internal/rapid.
+Husk å starte naisdevice. Meldingene logges i Securelogs (Kibana). Meldingen kan typisk finnes ved å søke på behovId til feilet melding.
+Hvis det er lagt inn ekskludering av behovId for feilende melding i applikasjon der feilen oppstår, 
+må ekskluderingen fjernes før du resender meldingen.
+>private val behovIdSkipSet = emptySet<String>()
+
+Husk å vente til pod'ene er oppe å kjøre igjen etter eventuell deploy, før du resender meldingen.
+
+
 
 
 
