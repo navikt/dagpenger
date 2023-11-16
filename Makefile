@@ -34,14 +34,6 @@ REVIEWDOG := $(shell ls */.github/workflows/reviewdog.yml)
 $(REVIEWDOG): dp-service-template/.github/workflows/reviewdog.yml
 	cp $< $@
 
-SNYK := $(shell ls */.github/workflows/snyk.yml)
-$(SNYK): dp-service-template/.github/workflows/snyk.yml
-	cp $< $@
-
-CONSTANTS := $(shell ls */buildSrc/src/main/kotlin/Constants.kt)
-$(CONSTANTS): dp-service-template/buildSrc/src/main/kotlin/Constants.kt
-	cp $< $@
-
 BUILD_GRADLE := $(shell ls */buildSrc/build.gradle.kts)
 $(BUILD_GRADLE): dp-service-template/buildSrc/build.gradle.kts
 	cp $< $@
