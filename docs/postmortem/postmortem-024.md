@@ -1,3 +1,11 @@
+---
+layout: page
+title: template
+parent: Postmortems
+nav_order: 3
+has_children: false
+---
+
 # Teknisk oppgradering førte til feil i mapping i grunnlagsberegning
 
 **Dato:** 15.11.2023
