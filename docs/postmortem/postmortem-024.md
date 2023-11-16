@@ -1,6 +1,6 @@
 ---
 layout: page
-title: template
+title: 15.11.2023 - Teknisk oppgradering førte til feil i mapping i grunnlagsberegning
 parent: Postmortems
 nav_order: 3
 has_children: false

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: template
+title: 13.02.2020 - Manglende inntekt og vedtak LEL-løsningen (dp-regel-)
 parent: Postmortems
 nav_order: 3
 has_children: false
