@@ -30,10 +30,6 @@ LICENSES := $(shell ls */LICENSE.md)
 $(LICENSES): dp-service-template/LICENSE.md
 	cp $< $@
 
-REVIEWDOG := $(shell ls */.github/workflows/reviewdog.yml)
-$(REVIEWDOG): dp-service-template/.github/workflows/reviewdog.yml
-	cp $< $@
-
 BUILD_GRADLE := $(shell ls */buildSrc/build.gradle.kts)
 $(BUILD_GRADLE): dp-service-template/buildSrc/build.gradle.kts
 	cp $< $@
@@ -42,12 +38,9 @@ SETTINGS_GRADLE := $(shell ls */buildSrc/settings.gradle.kts)
 $(SETTINGS_GRADLE): dp-service-template/buildSrc/settings.gradle.kts
 	cp $< $@
 
-BUILD_SRC := $(CONSTANTS) $(BUILD_GRADLE) $(SETTINGS_GRADLE)
+BUILD_SRC := $(BUILD_GRADLE) $(SETTINGS_GRADLE)
 
-sync-template: $(CODEOWNERS) $(LICENSES) $(BUILD_SRC) $(UAT_SCRIPT) $(SNYK) $(REVIEWDOG)
-
-sync-dependencies: $(CONSTANTS)
-
+sync-template: $(CODEOWNERS) $(LICENSES) $(BUILD_SRC)
 #
 # Oppdatere repos
 #
