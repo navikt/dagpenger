@@ -4,11 +4,10 @@ SHELL := bash
 .DELETE_ON_ERROR:
 MAKEFLAGS += --warn-undefined-variables
 MAKEFLAGS += --no-builtin-rules
+root_dir := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
 sync: meta-update sync-template
 .PHONY: sync
-
-sync-deps: sync-dependencies
 
 clean:
 	rm -rf node_modules
@@ -20,6 +19,9 @@ gradle-update:
 
 meta-update: .meta
 	npx -y meta git update
+
+mainline: ## Switch all repos to mainline (main/master)
+	meta exec "$(root_dir)script/switch_to_mainline.sh"  --parallel
 
 # Files to be kept in sync with template
 CODEOWNERS := $(shell ls */CODEOWNERS)
@@ -34,13 +36,14 @@ BUILD_GRADLE := $(shell ls */buildSrc/build.gradle.kts)
 $(BUILD_GRADLE): dp-service-template/buildSrc/build.gradle.kts
 	cp $< $@
 
-SETTINGS_GRADLE := $(shell ls */buildSrc/settings.gradle.kts)
-$(SETTINGS_GRADLE): dp-service-template/buildSrc/settings.gradle.kts
-	cp $< $@
+DEPENDABOT := $(shell ls */.github/dependabot.*)
+$(DEPENDABOT): dp-service-template/.github/dependabot.yml
+	cp -f $< $@
 
-BUILD_SRC := $(BUILD_GRADLE) $(SETTINGS_GRADLE)
+BUILD_SRC := $(BUILD_GRADLE)
 
-sync-template: $(CODEOWNERS) $(LICENSES) $(BUILD_SRC)
+sync-template: $(CODEOWNERS) $(LICENSES) $(BUILD_SRC) $(DEPENDABOT)
+
 #
 # Oppdatere repos
 #
