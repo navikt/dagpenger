@@ -13,7 +13,7 @@ meta_project := $(notdir $(patsubst %/,%,$(dir $(root_dir))))
 help:
 	@echo "$$(grep -hE '^\S+:.*##' $(MAKEFILE_LIST) | sed -e 's/:.*##\s*/:/' -e 's/^\(.\+\):\(.*\)/\\x1b[36m\1\\x1b[m:\2/' | column -c2 -t -s :)"
 
-meta-update: ## Add missing team-repos (needs 'gh'-command)
+meta-update: ## Add missing team-repos
 	@brew install jq gh -q
 	@npx meta git update
 	@npx meta init --force . # Remove archived repositories
@@ -48,11 +48,9 @@ prepush-review: ## let's you look at local commits across all projects and decid
 
 # Files to be kept in sync with template
 SYNC_FILES := CODEOWNERS LICENSE.md buildSrc/build.gradle.kts .github/dependabot.yml
-
 REPOSITORIES := $(filter-out dp-service-template/,$(wildcard */))
 
 .PHONY: sync-templates
-
 sync-templates: ## Sync files with template for each repository
 	@for repo in $(REPOSITORIES); do \
 		if [ ! -d "$$repo/.git" ]; then \
@@ -68,3 +66,9 @@ sync-templates: ## Sync files with template for each repository
 			fi; \
 		done; \
 	done
+
+BUILDS.md: .repos/active ## Generate build dashboard
+	printf "# Build dashboard\n\n\
+	| Repository | Status |\n\
+	| --- | --- |\n" > BUILDS.md
+	find . -type f -path '*/.github/*' -name 'deploy.y*ml' | sort | awk '{split($$0,a,"/"); print "| ["a[2]"](https://github.com/navikt/"a[2]"/actions) | !["a[2]"](https://github.com/navikt/"a[2]"/actions/workflows/"a[5]"/badge.svg) |" }' | tee -a $@
