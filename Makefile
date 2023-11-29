@@ -18,6 +18,7 @@ meta-update: ## Add missing team-repos
 	@npx meta git update
 	@npx meta init --force . # Remove archived repositories
 	@gh api orgs/navikt/teams/teamdagpenger/repos --paginate | jq 'map(select(.archived == false)) | .[] | "meta project import \(.name) \(.ssh_url)"' | grep -v "import dagpenger git" | grep -v "\-iac" | xargs -n 1 sh -c
+	@$(MAKE) clean-gitignore
 	@./bin/update_settings_gradle.sh
 	@git diff --exit-code || (echo "Please commit changes " && exit 1)
 
@@ -46,11 +47,16 @@ list-local-commits: ## shows local, unpushed, commits
 prepush-review: ## let's you look at local commits across all projects and decide if you want to push
 	@meta exec 'output=$$(git log --oneline origin/HEAD..HEAD) ; [ -n "$$output" ] && (git show --oneline origin/HEAD..HEAD | cat && echo "Pushe? (y/N)" && read a && [ "$$a" = "y" ] && git push) || true' --exclude "$(meta_project)"
 
+clean-gitignore: ## Remove duplicates from .gitignore
+	@awk '!seen[$$0]++' .gitignore > .gitignore.tmp && mv .gitignore.tmp .gitignore
+
+list-local-changes: ## shows local, uncommited changes
+	@meta exec 'git status --porcelain' --exclude "$(meta_project)"
+
 # Files to be kept in sync with template
 SYNC_FILES := CODEOWNERS LICENSE.md buildSrc/build.gradle.kts .github/dependabot.yml
 REPOSITORIES := $(filter-out dp-service-template/,$(wildcard */))
 
-.PHONY: sync-templates
 sync-templates: ## Sync files with template for each repository
 	@for repo in $(REPOSITORIES); do \
 		if [ ! -d "$$repo/.git" ]; then \
@@ -67,7 +73,7 @@ sync-templates: ## Sync files with template for each repository
 		done; \
 	done
 
-BUILDS.md: .repos/active ## Generate build dashboard
+BUILDS.md: .repos/active ## Update build dashboard
 	printf "# Build dashboard\n\n\
 	| Repository | Status |\n\
 	| --- | --- |\n" > BUILDS.md
