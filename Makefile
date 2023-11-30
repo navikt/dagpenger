@@ -8,6 +8,7 @@ MAKEFLAGS += --no-builtin-rules
 root_dir := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 meta_project := $(notdir $(patsubst %/,%,$(dir $(root_dir))))
 
+# Dynamically generate phony targets from target names found in Makefile
 .PHONY: $(shell sed -n -e '/^$$/ { n ; /^[^ .\#][^ ]*:/ { s/:.*$$// ; p ; } ; }' $(MAKEFILE_LIST))
 
 help:
@@ -17,7 +18,7 @@ init: ## Initialize a fresh clone of this repository
 	@brew install jq gh -q
 	@npx meta git update
 
-meta-update: ## Add missing team-repos
+refresh-repos: ## Add missing team-repos
 	@brew install jq gh -q
 	@npx meta git update
 	@npx meta init --force . # Remove archived repositories
