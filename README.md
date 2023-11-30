@@ -4,34 +4,21 @@ En samling mikrotjenester for å behandle Dagpenger.
 
 # Komme i gang
 
-[meta](https://github.com/mateodelnorte/meta) brukes til å sette opp
-repositories for alle microservicene.
+[meta](https://github.com/mateodelnorte/meta) brukes til å sette opp repositories for alle microservicene.
 
 For å gjøre det litt enklere å komme i gang finnes det en [Makefile](Makefile)
 som setter opp `meta` og automatiserer. Du kan også installere `meta` globalt med `npm install -g meta`.
-
-Enn så lenge må du sørge for å ha `nvm` installert (`brew install nvm`).
 
 ```
 brew install nvm jq gh
 git clone git@github.com:navikt/dagpenger.git
 cd dagpenger
-nvm install
 make sync
 ```
 
 Nå kan git brukes som normalt for hvert repo.
 
 Se [meta](https://github.com/mateodelnorte/meta) for flere kommandoer.
-
-
-## Bygg
-
-Gradle brukes som byggverktøy og er bundlet inn. Composite build brukes for
-å unngå å bygge nye versjoner av fellesbibliotekene på nytt hver gang, men løses
-automatisk av Gradle.
-
-`./gradlew build`
 
 ---
 
@@ -48,24 +35,16 @@ Make vil holde [enkelte filer](Makefile) i synk med tilsvarende filer i [.servic
 3. Kjør `make sync-template` for synkronisere `buildSrc` filene til mikrotjenestene.
 4. Bygg og sjekk inn `buildSrc` filene for mikrotjenestene.
 
-# Teste lokalt med docker-compose
-
-Se [Docker-compose](docker-compose/README.md) for prosjektet
-
 # Architectural Decision Log
 
 Se [Architectural Decision Log](docs/adr/index.md) for prosjektet
-
-# Hvordan vi jobber
-* Nevne commits og PR i GitHub Issues
-* Skrive postmortems
-* Oppdatere diagrammet ved større endringer
 
 # Henvendelser
 
 Spørsmål knyttet til koden eller prosjektet kan rettes mot:
 
 * André Roaldseth, andre.roaldseth@nav.no
+* #team-dagpenger-dev på Slack
 * Eller en annen måte for omverden å kontakte teamet på
 
 ## For NAV-ansatte
@@ -74,18 +53,12 @@ Interne henvendelser kan sendes via Slack i kanalen #team-dagpenger.
 
 # HOWTO
 
-## Teste lokalt
-I prosjektet finnes det en docker-compose.yml under docker-compose-kafka katalogen - kjør opp denne med `docker-compose up`
-
-I dagpenger-joark-mottak katalogen finnes det en `DummyJoarkProducer` som en kan starte opp for å simulere journalpost hendelser - start deretter `JoarkMottak` i dagpenger-joark-mottak for å starte første ledd i innløpet.
-
-
 ## Oppdatere Gradle for alle prosjekter i monorepeoet
 
 Stå i rotkatalogen og kjør:
 
 ```bash
- export GRADLE_VERSION=xxxx && ./script/update-gradle.sh
+ export GRADLE_VERSION=xxxx && make update-gradle
 ```
 
 Sjekk inn og push filer som er endret.
