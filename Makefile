@@ -78,7 +78,7 @@ sync-templates: ## Sync files with template for each repository
 		done; \
 	done
 
-BUILDS.md: .repos/active ## Update build dashboard
+BUILDS.md: ## Update build dashboard
 	printf "# Build dashboard\n\n\
 	| Repository | Status |\n\
 	| --- | --- |\n" > BUILDS.md
