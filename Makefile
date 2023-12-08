@@ -59,7 +59,7 @@ list-local-changes: ## shows local, uncommited changes
 	@meta exec 'git status --porcelain' --exclude "$(meta_project)"
 
 # Files to be kept in sync with template
-SYNC_FILES := CODEOWNERS LICENSE.md buildSrc/build.gradle.kts .github/dependabot.yml
+SYNC_FILES := CODEOWNERS LICENSE.md buildSrc/build.gradle.kts .github/dependabot.yaml .github/workflows/dependabot-build.yaml
 REPOSITORIES := $(filter-out dp-service-template/,$(wildcard */))
 
 sync-templates: ## Sync files with template for each repository
