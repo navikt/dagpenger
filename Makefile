@@ -61,6 +61,9 @@ clean-gitignore: ## Remove duplicates from .gitignore
 list-local-changes: ## shows local, uncommited changes
 	@meta exec 'git status --porcelain' --exclude "$(meta_project)"
 
+distribute-template: ## Distribute template to all repositories
+	@meta exec --exclude "$(meta_project)" "$(root_dir)bin/distribute-template.sh $(filter-out $@,$(MAKECMDGOALS))"
+
 # Files to be kept in sync with template
 SYNC_FILES := CODEOWNERS LICENSE.md buildSrc/build.gradle.kts .github/dependabot.yaml .github/workflows/dependabot-build.yaml
 REPOSITORIES := $(filter-out dp-service-template/,$(wildcard */))
