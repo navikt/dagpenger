@@ -33,6 +33,9 @@ pull: ## Run git pull --all --rebase --autostash on all repos
 mainline: ## Switch all repos to mainline (main/master)
 	@meta exec "$(root_dir)bin/switch_to_mainline.sh"  --parallel
 
+enforce_branch_protection: ## Set up standard branch protection for all repos
+	@meta exec "$(root_dir)bin/enforce_branch_protection.sh"
+
 build: ## Run ./gradlew build
 	@meta exec "$(root_dir)bin/build.sh" --exclude "dagpenger" --parallel
 
