@@ -15,6 +15,13 @@ gh api repos/"$owner"/"$repo_name"/branches/"$main_branch"/protection \
   --header "Accept: application/vnd.github.v3+json" \
   --input ../.protection_settings.json
 
+# Enable auto-merge on repository
+echo '{ "allow_auto_merge": true, "delete_branch_on_merge": true }' | gh api repos/"$owner"/"$repo_name" \
+  --method PATCH \
+  --silent \
+  --header "Accept: application/vnd.github.v3+json" \
+  --input -
+
 if [ $? -eq 0 ]; then
   echo "Branch protection configured for $owner/$repo_name on branch $main_branch"
 else
