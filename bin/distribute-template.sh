@@ -18,4 +18,11 @@ TARGET_DIR=$(dirname "$TEMPLATE_PATH" | sed 's/^[^\/]*\///')
 
 mkdir -p "$TARGET_DIR"
 cp "../$TEMPLATE_PATH" "$TARGET_DIR/"
-echo "Copied file $TEMPLATE_PATH to $TARGET_DIR"
+
+if [ $? -ne 0 ]; then
+    echo "Error: Failed to copy file $TEMPLATE_PATH to $TARGET_DIR"
+    exit 1
+else
+    echo "Copied file $TEMPLATE_PATH to $TARGET_DIR"
+fi
+
