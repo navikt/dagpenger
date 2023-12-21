@@ -20,6 +20,8 @@ jobs:
           PRS=$(./bin/list-open-prs.sh | wc -l | tr -d '[:space:]')
           DATE=$(date +"%Y-%m-%d")
           echo $DATE,$PRS >> .stats/open-prs
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Lagre endringer
         run: |
