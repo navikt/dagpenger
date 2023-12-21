@@ -1,10 +1,20 @@
 #/usr/bin/env bash
+set +x
 
-gh api graphql --paginate -f query='
-  query($endCursor: String) {
+# Set default values
+TEAM="teamdagpenger"
+REPO_ARG=""
+
+# Check if a repository argument is provided
+if [ $# -eq 1 ]; then
+  REPO_ARG=$1
+fi
+
+gh api graphql --paginate -F team=$TEAM -F repoArg=$REPO_ARG -f  query='
+  query($endCursor: String, $team: String!, $repoArg: String!) {
     organization(login: "navikt") {
-      team(slug: "teamdagpenger") {
-        repositories(first: 10, after: $endCursor) {
+      team(slug: $team) {
+        repositories(first: 10, after: $endCursor, query: $repoArg) {
           pageInfo {
             endCursor
             hasNextPage

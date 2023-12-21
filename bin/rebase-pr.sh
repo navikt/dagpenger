@@ -3,6 +3,14 @@ set +x
 
 ORG_NAME="navikt"
 TEAM_NAME="teamdagpenger"
+REPO_QUERY=""
+
+# Check if a repository argument is provided
+if [ $# -eq 1 ]; then
+  REPO_QUERY=$1
+fi
+
+
 
 # Function to comment on a pull request
 comment_on_pr() {
@@ -14,18 +22,18 @@ comment_on_pr() {
 
 # Function to loop through repositories and pull requests
 process_repositories() {
-    response=$(gh api graphql --paginate -f query='
-      query($endCursor: String) {
-        organization(login: "'$ORG_NAME'") {
-          team(slug: "'$TEAM_NAME'") {
-            repositories(first: 10, after: $endCursor) {
+    response=$(gh api graphql --paginate -F org=$ORG_NAME -F team=$TEAM_NAME -F repoQuery=$REPO_QUERY -f query='
+      query($endCursor: String, $org: String!, $team: String!, $repoQuery: String!) {
+        organization(login: $org) {
+          team(slug: $team) {
+            repositories(first: 10, after: $endCursor, query: $repoQuery) {
               pageInfo {
                 endCursor
                 hasNextPage
               }
               nodes {
                 name
-                pullRequests(states: OPEN, labels: ["dependencies"], first: 1) {
+                pullRequests(states: OPEN, labels: ["dependencies"], first: 10) {
                   nodes {
                     number
                   }
