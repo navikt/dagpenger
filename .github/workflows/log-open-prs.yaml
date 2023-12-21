@@ -19,10 +19,10 @@ jobs:
           DATE=$(date +"%Y-%m-%d")
           echo $DATE,$PRS >> .stats/open-prs
 
-      - name: Commit and Push Changes
+      - name: Lagre endringer
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add output.txt
+          git add .stats/open-prs
           git commit -m "Tell åpne Pull Requests - $(date +"%Y-%m-%d")"
           git push
