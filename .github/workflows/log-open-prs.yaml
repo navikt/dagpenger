@@ -1,0 +1,28 @@
+name: Logg åpne PRs
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  log-open-prs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Hent antall PRs
+        run: |
+          PRS=$(./bin/list-open-prs.sh | wc -l | tr -d '[:space:]')
+          DATE=$(date +"%Y-%m-%d")
+          echo $DATE,$PRS >> .stats/open-prs
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add output.txt
+          git commit -m "Tell åpne Pull Requests - $(date +"%Y-%m-%d")"
+          git push
