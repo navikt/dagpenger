@@ -8,7 +8,7 @@ has_children: false
 
 # Bruk ULID (Universally Unique Lexicographically Sortable Identifier) som ID-generingsmekanisme
 
-* Status: Accepted
+* Status: superseeded by [ADR-0015 - Bruk UUID versjon 7 til ID generering](./0015-bruk-uuid-versjon7-id-generering.md)
 * Deciders: Team Digitale dagpenger
 * Date: 2019-01-23
 
