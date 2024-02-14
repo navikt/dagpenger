@@ -34,7 +34,8 @@ Som vi mener burde bli renamet *dp-behandling* og har ansvar for
 - reagere på behandlingsverdige hendelser
 - å starte behandling
 - si ifra når behandling er opprettet
-- si ifra når behandling er ferdig (Forslag til vedtak?)
+- si ifra når behandling har nok opplysninger til å kunne ferdigstilles. (Bekrefte opplysninger (Gjøre hypoteser til faktum))
+- har tilstand som vet hva som skal til for å ferdigstille behandling og lage vedtak/forslag til vedtak
 
 [dp-behandling](https://github.com/navikt/dp-behandling)
 Som vi mener burde bli renamet *dp-saksbehandling* og har ansvar for
