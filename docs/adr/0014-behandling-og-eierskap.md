@@ -33,6 +33,7 @@ I dag har vi to repositories:
 Som vi mener burde bli renamet *dp-behandling* og har ansvar for 
 - reagere på behandlingsverdige hendelser
 - å starte behandling
+- innhente opplysninger som trengs for å ferdigstille behandling
 - si ifra når behandling er opprettet
 - si ifra når behandling har nok opplysninger til å kunne ferdigstilles. (Bekrefte opplysninger (Gjøre hypoteser til faktum))
 - har tilstand som vet hva som skal til for å ferdigstille behandling og lage vedtak/forslag til vedtak
