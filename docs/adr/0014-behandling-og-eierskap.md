@@ -9,7 +9,7 @@ has_children: false
 # Hvor skal eierskap av behandling ligge?
 
 * Status: proposed
-* Deciders: André Roaldseth, Marius Eriksen, Knut M. Kriise, Geir A. Lund, Mona Kjeldsrud
+* Deciders: André Roaldseth, Marius Eriksen, Knut M. Kriise, Geir A. Lund, Mona Kjeldsrud, Sindre Sægrov
 * Date: 13.02.2024
 
 Technical Story:
