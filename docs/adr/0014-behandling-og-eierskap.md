@@ -22,7 +22,7 @@ Dro fram fra diskusjon på [Slack #team-dagpenger-vedtaksmodell](https://nav-it.
 
 > En er behandling av hendelsen - altså fra noe vedtaksverdig skjer til vi fatter vedtak. Målet må være at denne behandlingen klarer å gjøre alt på egenhånd, men tidvis (ganske ofte) må vi få hjelp fra saksbehandlere.
 
-> Så finnes det en annen behandling som rammer inn hva bruker gjør. Kan kanskje også fort kalles oppgave? Men vi har mange ulike typer oppgaver. Men noe som er nærmere og fungerer som en innramming av det saksbehandler gjør.
+> Så finnes det en annen behandling som rammer inn hva saksbehandler gjør. Kan kanskje også fort kalles oppgave? Men vi har mange ulike typer oppgaver. Men noe som er nærmere og fungerer som en innramming av det saksbehandler gjør.
 
 
 ## Beslutning
