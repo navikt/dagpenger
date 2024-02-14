@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Template
+title: Arkitektur for vedtaksløsningen (WIP)
 parent: ADR
 nav_order: 3
 has_children: false

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Template
+title: Hvor skal eierskap av behandling ligge?
 parent: ADR
 nav_order: 3
 has_children: false
