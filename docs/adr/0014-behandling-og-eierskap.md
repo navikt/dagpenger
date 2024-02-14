@@ -41,6 +41,6 @@ Som vi mener burde bli renamet *dp-behandling* og har ansvar for
 Som vi mener burde bli renamet *dp-saksbehandling* og har ansvar for
 - spisset mot saksbehandlerflate
 - å gi saksbehandler mulighet til å se hva som er behandlet
-- opprette oppgaver for saksbehandler
+- opprette oppgaver for saksbehandler. Eks: bekrefte/avkrefte hypoteser fra regelmotor
 
 
