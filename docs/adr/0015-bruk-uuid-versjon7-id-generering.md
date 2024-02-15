@@ -31,7 +31,7 @@ Alle valgene over kan leses som "string" i alle språk.
 
 ## Decision Outcome
 
-Valgt ID format er "[ULID v7](https://www.ietf.org/archive/id/draft-peabody-dispatch-new-uuid-format-04.html#name-uuid-version-7) ", fordi den kombinerer både løpenummer og unikhet på tvers av distribuerte systemer, og kan leses av alle språk (det er fortsatt bare en UUID).
+Preferert ID format er "[UUID v7](https://www.ietf.org/archive/id/draft-peabody-dispatch-new-uuid-format-04.html#name-uuid-version-7) ", fordi den kombinerer både løpenummer og unikhet på tvers av distribuerte systemer, og kan leses av alle språk (det er fortsatt bare en UUID).
 
 ### Positive Consequences 
 
@@ -42,7 +42,7 @@ Valgt ID format er "[ULID v7](https://www.ietf.org/archive/id/draft-peabody-disp
 
 ### Negative consequences 
 
-* UUId v7 er ikke implementert i noen språk uten bibliotek enda. Den som lager UUIDen må ha et bibliotek.
+* UUID v7 er ikke implementert i noen språk uten bibliotek enda. Den som lager UUIDen må ha et bibliotek.
 * Forholdvis nytt forslag, kan være uferdig?
 * Verktøystøtte?
 
