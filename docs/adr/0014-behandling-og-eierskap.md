@@ -29,8 +29,8 @@ Dro fram fra diskusjon på [Slack #team-dagpenger-vedtaksmodell](https://nav-it.
 
 I dag har vi to repositories:
 
-[dp-vedtak](https://github.com/navikt/dp-vedtak)
-Som vi mener burde bli renamet *dp-behandling* og har ansvar for 
+[dp-behandling](https://github.com/navikt/dp-behandling) (tidligere dp-vedtak)
+
 - reagere på behandlingsverdige hendelser
 - å starte behandling
 - innhente opplysninger som trengs for å ferdigstille behandling
@@ -38,8 +38,8 @@ Som vi mener burde bli renamet *dp-behandling* og har ansvar for
 - si ifra når behandling har nok opplysninger til å kunne ferdigstilles. (Bekrefte opplysninger (Gjøre hypoteser til faktum))
 - har tilstand som vet hva som skal til for å ferdigstille behandling og lage vedtak/forslag til vedtak
 
-[dp-behandling](https://github.com/navikt/dp-behandling)
-Som vi mener burde bli renamet *dp-saksbehandling* og har ansvar for
+[dp-saksbehandling](https://github.com/navikt/dp-saksbehandling)
+
 - spisset mot saksbehandlerflate
 - å gi saksbehandler mulighet til å se hva som er behandlet
 - opprette oppgaver for saksbehandler. Eks: bekrefte/avkrefte hypoteser fra regelmotor
