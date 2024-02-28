@@ -47,6 +47,6 @@ Og for personer bruker vi:
 
 ## Vurderte Alternativer
 
-* Ingen navnekonvensjon for ID-er blir for kaos
+* Ingen navnekonvensjon for ID-er blir fort kaos
 * Med genetiv-s f.eks. `søknadsId`, `vedtaksId`, `oppgavesId`, `behandlingsId` men det blir for mye s (stemt ned https://nav-it.slack.com/archives/CCP6QNBSN/p1707814178959489 )
 
