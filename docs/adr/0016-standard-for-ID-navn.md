@@ -1,9 +1,9 @@
 ---
 layout: page
-tittel: Navnekonvensjon for ID-er
-forelder: ADR
+title: Navnekonvensjon for ID-er
+parent: ADR
 nav_order: 3
-har_barn: false
+has_children: false
 ---
 
 # Navnekonvensjon for ID-er

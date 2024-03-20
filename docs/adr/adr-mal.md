@@ -1,8 +1,9 @@
-layout: side
-tittel: Mal
-forelder: ADR
+---
+layout: page
+title: MAL
+parent: ADR
 nav_order: 3
-har_barn: false
+has_children: false
 ---
 
 # [kort tittel på løst problem og løsning]
