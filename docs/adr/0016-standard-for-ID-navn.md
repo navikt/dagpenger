@@ -1,4 +1,5 @@
-'layout: side
+---
+layout: side
 tittel: Navnekonvensjon for ID-er
 forelder: ADR
 nav_order: 3
