@@ -1,5 +1,5 @@
 ---
-layout: side
+layout: page
 tittel: Navnekonvensjon for ID-er
 forelder: ADR
 nav_order: 3
