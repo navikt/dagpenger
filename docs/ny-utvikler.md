@@ -13,6 +13,7 @@ has_children: false
 - [Legg til i Teams](https://teams.microsoft.com/l/channel/19%3a78080dcbfa6d4d449642aa7c64f02a72%40thread.tacv2/General?groupId=4edb2ce5-4f0e-4f6f-9b82-b8e75e9dd09e&tenantId=62366534-1ec3-4962-8869-9b5535279d0b)
 - [Sett opp 2-faktor auth](https://myaccount.microsoft.com/)
 - [naisdevice](https://doc.nais.io/device/) - For diverse tilganger fra NAV eid laptop.
+- Tilgang til Kibana (logger). Sjekk https://docs.nais.io/how-to-guides/observability/logs/kibana/?h=0000+ga+logganalyse#get-access-to-kibana 
 - [Sikkerlogg](https://logs.adeo.no/goto/04048e28592b631c5279309c1adc00d0) - Be om tilgang til gruppen ```0000-GA-SECURE_LOG_DAGPENGER``` ved å sende mail til nav.it.identhandtering@nav.no med cc til personalleder 
 - [Confluence](https://confluence.adeo.no/) - Be om tilgang til Confluence ved å sende mail til nav.it.identhandtering@nav.no med cc til personalleder
 
