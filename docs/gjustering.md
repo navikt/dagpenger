@@ -22,36 +22,59 @@ i [dp-grunnbelop](https://github.com/navikt/dp-grunnbelop#g-justering)
 
 ## Årlig G-justeringtest mot Arena
 
-Arena vil kjøre en g-justeringstest mot LEL-2019 testmiljøet (dp-regel-*) der de krever en kopi av produksjonsdatabasen
-for [dp-inntekt](https://github.com/navikt/dp-inntekt)
+Arena vil kjøre en G-justeringstest mot LEL-2019 testmiljøet (dp-regel-*) der de krever en kopi av produksjonsdatabasen
+for [dp-inntekt](https://github.com/navikt/dp-inntekt).
 
-## 1. Bestill kopi av dp-inntekt produksjonsdatabasen
+## 1. Ta en kopi av databasen til dp-inntekt i produksjon
 
-Arena vil i god tid før g-justeringstest forespør oss å ta kopi av dp-inntekt produksjonsdatabasen til testmiljøet.
-dp-inntekt bruker `q0` databasen `dp-inntekt-db-q0` (host: `b27dbvl013.preprod.local`). Denne databasen blir kopiert fra
-dp-inntekt sin produksjonsdatabase `dp-inntekt-db` (host: `a01dbfl039.adeo.no`)
+For selve datalasten kan det gjøres på to ulike måter:
 
-1.1 Bestill bistand fra [team database](https://teamkatalog.nav.no/team/b6e266b0-9d76-480e-ae1f-585f04ace257) for å
-gjøre selve kopien.
+1. Via [Consolet til GCP](https://tbd.intern.nav.no/docs/bomlo-wiki/eksportere-database-gcp)
+2. Via [gcloud CLI](https://cloud.google.com/sql/docs/postgres/import-export/import-export-sql)
 
-- Lag sak i porten - https://jira.adeo.no/plugins/servlet/desk/portal/542 - "Meld sak til IT"
-    - Velg tjeneste: "Database"
-    - Ansvarlig gruppe: "Team database"
+> [!IMPORTANT]
+> Dette må gjøres i god tid før selve g-justeringstestdag(ene). Det kan ta flere timer å kjøre.
 
-  Beskriv:
-    - Hvilken database og host det skal kopieres **til** (`dp-inntekt-db-q0` (host: `b27dbvl013.preprod.local`)
-    - Hvilken database og host det skal kopieres **fra** (`dp-inntekt-db` (host: `a01dbfl039.adeo.no`)
-    - Når kopies skal tas. Arena vil at det skal gjøres på likt tidspunkt som det gjøres kopi av Arenadatabasen
-    - [Eksempel fra 2023](https://jira.adeo.no/browse/IKT-515839)
+For at det skal gå raskere er det mulig å øke mengden CPU til SQL instansen før man begynner. Det enkleste er å gjøre
+dette via `kubectl edit app dp-inntekt` og endre `tier: db-custom-1-3840` til `tier: db-custom-4-3840`. Etter datalasten
+er ferdig så kan den skrus ned til 1 CPU igjen.
 
-    ** NB! Dette må gjøres i god tid før selve g-justeringstestdag(ene) **
 
-1.2 Gå mot `dp-inntekt-db-q0` for testmiljøet til dp-inntekt-api
+For å unngå at vi blir liggende med produksjonsdata i testmiljøet, kan vi lage en midlertidlig database som brukes under
+G-justering.
 
-- Endre database miljøkonfigurasjon for `dev` til å gå mot db `dp-inntekt-db-q0` og host `b27dbvl013.preprod.local`
-- Commit og
-  push ([eksempel fra 2023](https://github.com/navikt/dp-inntekt/commit/5f4f569670ade07b2d0d6beb4c2f0c9c122a84af)))
-- Sjekk at dp-inntekt-api kjører OK
+Dette kan gjøres med `gcloud`:
+
+```shell
+gcloud sql databases create inntekt-gjustering --instance=dp-inntekt-api --project=teamdagpenger-dev-885f 
+```
+
+### Kopi via gcloud CLI
+
+1. Lag en ny database
+   for [instansen i dev](https://console.cloud.google.com/sql/instances/dp-inntekt-api/databases?authuser=1&project=teamdagpenger-dev-885f)
+2. Kjør `gcloud sql import` i henhold
+   til [dokumentasjonen](https://cloud.google.com/sql/docs/postgres/import-export/import-export-sql)
+3. Endre hvilken database som skal brukes av dp-inntekt-api
+    - Endre `databases.name`
+      i [nais.yaml](https://github.com/navikt/dp-inntekt/blob/a17c75bc03db8b8a8a8e154c9de22cae05f41d44/nais/dev/nais.yaml#L68)
+4. Sjekk at dp-inntekt-api kjører OK
+
+### Logg av alt som må gjøres:
+```shell
+kubectx dev-gcp
+gcloud sql databases create inntekt-gjustering --instance=dp-inntekt-api --project=teamdagpenger-dev-885f 
+gcloud sql export sql dp-inntekt-api gs://db-migrering/dp-inntekt-prod.sql.gz --offload --database=inntekt --project=teamdagpenger-prod-9042
+gcloud sql import sql dp-inntekt-api gs://db-migrering/dp-inntekt-prod.sql.gz --database=inntekt-gjustering --project=teamdagpenger-dev-885f
+# Endre nais.yaml til å peke til inntekt-gjustering som database og deploye
+
+# Fordi det er noe grums i NAIS må database-navnet manuelt oppdateres
+echo -n inntekt-gjustering | base64 # Putt dette inn som DB_DATABASE
+kubectl edit secret google-sql-dp-inntekt-api
+
+# Slett databasekopi
+gsutil rm gs://db-migrering/dp-inntekt-prod.sql.gz
+```
 
 ## 2. Legg til ny verdi for test Grunnbeløp
 
@@ -110,10 +133,19 @@ Oppdatere til ny versjon av dp-grunnbelop i:
 Selve `GjusteringsTest` toggles på via unleash toggelen: `dp-g-justeringstest`
 (https://unleash.nais.io/#/features/strategies/dp-g-justeringstest)
 
-Denne toggles PÅ når testerene og Arena er klar for det.
+Denne skrus PÅ når testerene og Arena er klar for det.
 
-## 5. Når g-justering test er ferdig
+## 5. Når G-justering test er ferdig
 
-1. Toggle AV toggelen: `dp-g-justeringstest` i unleash
+1. Skru AV feature toggle: `dp-g-justeringstest` i Unleash
 2. Gå tilbake til test databasen i dp-inntekt (reverter commit i steg 1)
-3. Ferdig! 
+3. Skru ned CPU på SQL instansen til dp-inntekt-api
+
+### Opprydding
+Når Arena er ferdig å teste kan vi endre `nais.yaml` til å bruke den gamle databasen igjen, og slette den midlertidige.
+
+```shell
+echo -n inntekt | base64 # Putt dette inn som DB_DATABASE
+kubectl edit secret google-sql-dp-inntekt-api
+kubectl delete sqldatabase inntekt-gjustering
+```
