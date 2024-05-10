@@ -37,7 +37,7 @@ Make vil holde [enkelte filer](Makefile) i synk med tilsvarende filer i [.servic
 
 # Architectural Decision Log
 
-Se [Architectural Decision Log](docs/adr/index.md) for prosjektet
+Vi bruker [ADR](https://navikt.github.io/dp-dokumentasjon/adr) for å dokumentere arkitekturelle beslutninger.
 
 # Henvendelser
 
