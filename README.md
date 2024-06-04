@@ -2,6 +2,10 @@
 
 En samling mikrotjenester for å behandle Dagpenger.
 
+## Dokumentasjon 
+
+Ligger på https://dagpenger-dokumentasjon.ansatt.nav.no/ 
+
 # Komme i gang
 
 [meta](https://github.com/mateodelnorte/meta) brukes til å sette opp repositories for alle microservicene.
@@ -34,10 +38,6 @@ Make vil holde [enkelte filer](Makefile) i synk med tilsvarende filer i [.servic
 2. Sjekk inn og push endringen
 3. Kjør `make sync-template` for synkronisere `buildSrc` filene til mikrotjenestene.
 4. Bygg og sjekk inn `buildSrc` filene for mikrotjenestene.
-
-# Architectural Decision Log
-
-Vi bruker [ADR](https://navikt.github.io/dp-dokumentasjon/adr) for å dokumentere arkitekturelle beslutninger.
 
 # Henvendelser
 
