@@ -221,3 +221,15 @@ target
 /oasis/
 /dp-kafka-connect-operator/
 /dp-saksbehandling/
+/dp-data-kvalitet/
+/dp-kodiak/
+/dp-innbyggerflate-infoskjerm/
+/dp-soknad-orkestrator/
+/dp-manuell-behandling/
+/dp-mine-dagpenger-frontend/
+/dp-postgres-test/
+/dp-arena-meldeplikt-adapter/
+/dp-soknad-frontend/
+/dp-oppslag-journalpost-id/
+/dp-behov-distribuering/
+/dp-behov-pdf-generator/
