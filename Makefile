@@ -22,7 +22,7 @@ refresh-repos: ## Add missing team-repos
 	@brew install jq gh -q
 	@npx meta git update
 	@npx meta init --force . # Remove archived repositories
-	@gh api orgs/navikt/teams/teamdagpenger/repos --paginate | jq 'map(select(.archived == false)) | .[] | "meta project import \(.name) \(.ssh_url)"' | grep -v "import dagpenger git" | grep -v "\-iac" | xargs -n 1 sh -c
+	@gh api orgs/navikt/teams/teamdagpenger/repos --paginate | jq 'map(select(.archived == false)) | .[] | "npx meta project import \(.name) \(.ssh_url)"' | grep -v "import dagpenger git" | grep -v "\-iac" | xargs -n 1 sh -c
 	@$(MAKE) clean-gitignore
 	@./bin/update_settings_gradle.sh
 	@git diff --exit-code || (echo "Please commit changes " && exit 1)
