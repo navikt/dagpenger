@@ -1,0 +1,41 @@
+name: "attest-sign"
+description: "Generate SBOM, attest and sign docker image"
+branding:
+  icon: "lock"
+  color: "green"
+inputs:
+  digest:
+    description: "Docker image digest"
+    required: true
+  project_id:
+    description: "Google Cloud project ID"
+    required: true
+  identity_provider:
+    description: "Workload Identity Provider"
+    required: true
+outputs:
+  sbom:
+    description: "SBOM.json in cyclonedx format"
+    value: ${{ steps.set-outputs.outputs.sbom }}
+runs:
+  using: "composite"
+  steps:
+    - name: NAIS login
+      uses: nais/login@v0
+      id: login
+      with:
+        project_id: ${{ inputs.project_id }}
+        identity_provider: ${{ inputs.identity_provider }}
+        team: ${{ inputs.team }}
+    - id: setup
+      run: |
+        repo_name="${GITHUB_REPOSITORY/$GITHUB_REPOSITORY_OWNER\//}"
+        repo_name="$(tr "[:upper:]" "[:lower:]" <<< "$repo_name")"
+        echo "REPO_NAME=$repo_name" >> $GITHUB_OUTPUT
+    - name: Generate SBOM, attest and sign image
+      id: attest-sign
+      uses: nais/attest-sign@v1
+      with:
+        image_ref: ${{ steps.login.outputs.registry }}/${{ steps.setup.outputs.REPO_NAME }}@${{ inputs.digest }}
+  outputs:
+    sbom: ${{ steps.attest-sign.outputs.sbom }}
