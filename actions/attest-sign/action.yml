@@ -16,7 +16,7 @@ inputs:
 outputs:
   sbom:
     description: "SBOM.json in cyclonedx format"
-    value: ${{ steps.set-outputs.outputs.sbom }}
+    value: ${{ steps.attest-sign.outputs.sbom }}
 runs:
   using: "composite"
   steps:
@@ -28,6 +28,7 @@ runs:
         identity_provider: ${{ inputs.identity_provider }}
         team: ${{ inputs.team }}
     - id: setup
+      shell: bash
       run: |
         repo_name="${GITHUB_REPOSITORY/$GITHUB_REPOSITORY_OWNER\//}"
         repo_name="$(tr "[:upper:]" "[:lower:]" <<< "$repo_name")"
@@ -37,5 +38,3 @@ runs:
       uses: nais/attest-sign@v1
       with:
         image_ref: ${{ steps.login.outputs.registry }}/${{ steps.setup.outputs.REPO_NAME }}@${{ inputs.digest }}
-  outputs:
-    sbom: ${{ steps.attest-sign.outputs.sbom }}
