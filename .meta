@@ -28,8 +28,6 @@
     "dagpenger-analyse": "git@github.com:navikt/dagpenger-analyse.git",
     "dp-quiz": "git@github.com:navikt/dp-quiz.git",
     "dp-soknad": "git@github.com:navikt/dp-soknad.git",
-    "dp-quizmaster": "git@github.com:navikt/dp-quizmaster.git",
-    "dp-quiz-retting": "git@github.com:navikt/dp-quiz-retting.git",
     "dp-oppslag-inntekt": "git@github.com:navikt/dp-oppslag-inntekt.git",
     "dp-quiz-birgitte": "git@github.com:navikt/dp-quiz-birgitte.git",
     "dp-dagpenger": "git@github.com:navikt/dp-dagpenger.git",
