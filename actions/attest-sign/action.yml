@@ -13,6 +13,9 @@ inputs:
   identity_provider:
     description: "Workload Identity Provider"
     required: true
+  team:
+    description: "Team"
+    required: true
 outputs:
   sbom:
     description: "SBOM.json in cyclonedx format"
