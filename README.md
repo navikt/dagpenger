@@ -28,9 +28,9 @@ Se [meta](https://github.com/mateodelnorte/meta) for flere kommandoer.
 
 # Håndtering av gradle avhengigheter
 
-En del felles versjonerte avhengigheter for appene våre er definert i [dp-version-catalog](/navikt/dp-version-catalog/blob/main/gradle/libs.versions.toml).
+En del felles versjonerte avhengigheter for appene våre er definert i [dp-version-catalog](https://www.github.com/navikt/dp-version-catalog/blob/main/gradle/libs.versions.toml).
 
-Make vil holde [enkelte filer](Makefile) i synk med tilsvarende filer i [.service-template](/navikt/dp-version-catalog/blob/main/gradle/libs.versions.toml).
+Make vil holde [enkelte filer](Makefile) i synk med tilsvarende filer i [.service-template](https://www.github.com/navikt/dp-version-catalog/blob/main/gradle/libs.versions.toml).
 
 ## Oppdatere avhengigheter
 
