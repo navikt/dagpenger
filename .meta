@@ -70,7 +70,6 @@
     "dp-aktivitetslogg-bibliotek": "git@github.com:navikt/dp-aktivitetslogg-bibliotek.git",
     "dp-giao": "git@github.com:navikt/dp-giao.git",
     "meldekort-frontend": "git@github.com:navikt/meldekort-frontend.git",
-    "dp-kodiak": "git@github.com:navikt/dp-kodiak.git",
     "dp-innbyggerflate-infoskjerm": "git@github.com:navikt/dp-innbyggerflate-infoskjerm.git",
     "dp-soknad-orkestrator": "git@github.com:navikt/dp-soknad-orkestrator.git",
     "dp-manuell-behandling": "git@github.com:navikt/dp-manuell-behandling.git",
@@ -85,8 +84,10 @@
     "dp-sanity-cms-v3-fork": "git@github.com:navikt/dp-sanity-cms-v3-fork.git",
     "dp-rapportering-fabrikk": "git@github.com:navikt/dp-rapportering-fabrikk.git",
     "dp-rapportering-personregister": "git@github.com:navikt/dp-rapportering-personregister.git",
-    "dp-data-analysetrakt": "git@github.com:navikt/dp-data-analysetrakt.git",
     "dp-oppslag-ytelser": "git@github.com:navikt/dp-oppslag-ytelser.git",
-    "dp-behandling-argus": "git@github.com:navikt/dp-behandling-argus.git"
+    "dp-behandling-argus": "git@github.com:navikt/dp-behandling-argus.git",
+    "dp-behandling-admin": "git@github.com:navikt/dp-behandling-admin.git",
+    "dp-brukerdialog-frontend": "git@github.com:navikt/dp-brukerdialog-frontend.git",
+    "dp-arbeidssokerregister-adapter": "git@github.com:navikt/dp-arbeidssokerregister-adapter.git"
   }
 }

@@ -241,3 +241,6 @@ target
 /dp-data-analysetrakt/
 /dp-oppslag-ytelser/
 /dp-behandling-argus/
+/dp-behandling-admin/
+/dp-brukerdialog-frontend/
+/dp-arbeidssokerregister-adapter/
