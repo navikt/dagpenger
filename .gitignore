@@ -244,3 +244,7 @@ target
 /dp-behandling-admin/
 /dp-brukerdialog-frontend/
 /dp-arbeidssokerregister-adapter/
+/dp-pdl-cache/
+/dp-rapportering-saksbehandling-frontend/
+/dp-ruting/
+/dp-inntekt-frontend/

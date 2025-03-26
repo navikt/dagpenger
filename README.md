@@ -34,10 +34,11 @@ Make vil holde [enkelte filer](Makefile) i synk med tilsvarende filer i [.servic
 
 ## Oppdatere avhengigheter
 
-1. Oppdater/endre i [dp-version-catalog](.service-template/buildSrc/src/main/kotlin/Constants.kt)
+1. Oppdater/endre i [dp-version-catalog](https://github.com/navikt/dp-version-catalog/)
 2. Sjekk inn og push endringen
 3. Kjør `make sync-template` for synkronisere `buildSrc` filene til mikrotjenestene.
 4. Bygg og sjekk inn `buildSrc` filene for mikrotjenestene.
+5. Eventuelt la dependabot oppdatere avhengighetene i mikrotjenestene.
 
 # Henvendelser
 

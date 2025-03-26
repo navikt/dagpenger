@@ -2,7 +2,6 @@
   "projects": {
     "dagpenger-joark-mottak": "git@github.com:navikt/dagpenger-joark-mottak.git",
     "dagpenger-events": "git@github.com:navikt/dagpenger-events.git",
-    "dagpenger-streams": "git@github.com:navikt/dagpenger-streams.git",
     "dp-regel-api": "git@github.com:navikt/dp-regel-api.git",
     "dagpenger-regel-ui": "git@github.com:navikt/dagpenger-regel-ui.git",
     "dp-inntekt": "git@github.com:navikt/dp-inntekt.git",
@@ -28,7 +27,6 @@
     "dp-soknad": "git@github.com:navikt/dp-soknad.git",
     "dp-oppslag-inntekt": "git@github.com:navikt/dp-oppslag-inntekt.git",
     "dp-quiz-birgitte": "git@github.com:navikt/dp-quiz-birgitte.git",
-    "dp-dagpenger": "git@github.com:navikt/dp-dagpenger.git",
     "dp-innsyn": "git@github.com:navikt/dp-innsyn.git",
     "dp-mottak": "git@github.com:navikt/dp-mottak.git",
     "dp-proxy": "git@github.com:navikt/dp-proxy.git",
@@ -55,7 +53,6 @@
     "dp-varsel": "git@github.com:navikt/dp-varsel.git",
     "dp-sanity-cms-v3": "git@github.com:navikt/dp-sanity-cms-v3.git",
     "dp-saksbehandling-frontend": "git@github.com:navikt/dp-saksbehandling-frontend.git",
-    "dp-maskinporten-client": "git@github.com:navikt/dp-maskinporten-client.git",
     "dp-rapportering-frontend": "git@github.com:navikt/dp-rapportering-frontend.git",
     "dp-datadeling": "git@github.com:navikt/dp-datadeling.git",
     "dp-kontrakter": "git@github.com:navikt/dp-kontrakter.git",
@@ -88,6 +85,9 @@
     "dp-behandling-argus": "git@github.com:navikt/dp-behandling-argus.git",
     "dp-behandling-admin": "git@github.com:navikt/dp-behandling-admin.git",
     "dp-brukerdialog-frontend": "git@github.com:navikt/dp-brukerdialog-frontend.git",
-    "dp-arbeidssokerregister-adapter": "git@github.com:navikt/dp-arbeidssokerregister-adapter.git"
+    "dp-pdl-cache": "git@github.com:navikt/dp-pdl-cache.git",
+    "dp-rapportering-saksbehandling-frontend": "git@github.com:navikt/dp-rapportering-saksbehandling-frontend.git",
+    "dp-ruting": "git@github.com:navikt/dp-ruting.git",
+    "dp-inntekt-frontend": "git@github.com:navikt/dp-inntekt-frontend.git"
   }
 }
