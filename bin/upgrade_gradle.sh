@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 source $(dirname -- "$0")/java_use.sh
-DEFAULT_JAVA=17
+DEFAULT_JAVA=21
 export JAVA_VERSION=$(test -f .java-version && cat .java-version || echo "$DEFAULT_JAVA")
 java_use $JAVA_VERSION
 
