@@ -84,8 +84,9 @@ sync-templates: ## Sync files with template for each repository
 		done; \
 	done
 
-BUILDS.md: ## Update build dashboard
-	printf "# Build dashboard\n\n\
-	| Repository | Status |\n\
-	| --- | --- |\n" > BUILDS.md
-	find . -type f -path '*/.github/*' -name 'deploy.y*ml' | sort | awk '{split($$0,a,"/"); print "| ["a[2]"](https://github.com/navikt/"a[2]"/actions) | !["a[2]"](https://github.com/navikt/"a[2]"/actions/workflows/"a[5]"/badge.svg) |" }' | tee -a $@
+BUILDS.md: .meta ## Update build dashboard
+	echo "# Build dashboard\n" > $@
+	echo "| Repository | Status |" >> $@
+	echo "| --- | --- |" >> $@
+	jq -r '.projects | to_entries[] | "| [\(.key)](https://github.com/navikt/\(.key)/actions) | ![\(.key)](https://github.com/navikt/\(.key)/actions/workflows/deploy.yaml/badge.svg) |"' .meta | sort >> $@
+
