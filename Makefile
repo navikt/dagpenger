@@ -88,5 +88,8 @@ BUILDS.md: .meta ## Update build dashboard
 	echo "# Build dashboard\n" > $@
 	echo "| Repository | Status |" >> $@
 	echo "| --- | --- |" >> $@
-	jq -r '.projects | to_entries[] | "| [\(.key)](https://github.com/navikt/\(.key)/actions) | ![\(.key)](https://github.com/navikt/\(.key)/actions/workflows/deploy.yaml/badge.svg) |"' .meta | sort >> $@
-
+	jq -r '.projects | keys[]' .meta | sort | while read repo; do \
+	  if [ -f "$$repo/.github/workflows/deploy.yaml" ]; then \
+	    echo "| [$$repo](https://github.com/navikt/$$repo/actions) | ![$$repo](https://github.com/navikt/$$repo/actions/workflows/deploy.yaml/badge.svg) |"; \
+	  fi \
+	done >> $@
