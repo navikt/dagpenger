@@ -85,7 +85,7 @@ sync-templates: ## Sync files with template for each repository
 	done
 
 BUILDS.md: .meta ## Update build dashboard
-	echo "# Build dashboard\n" > $@
+	echo "# Build dashboard" > $@
 	echo "| Repository | Status |" >> $@
 	echo "| --- | --- |" >> $@
 	jq -r '.projects | keys[]' .meta | sort | while read repo; do \

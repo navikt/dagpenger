@@ -1,4 +1,4 @@
-# Build dashboard\n
+# Build dashboard
 | Repository | Status |
 | --- | --- |
 | [dagpenger-joark-mottak](https://github.com/navikt/dagpenger-joark-mottak/actions) | ![dagpenger-joark-mottak](https://github.com/navikt/dagpenger-joark-mottak/actions/workflows/deploy.yaml/badge.svg) |
