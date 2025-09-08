@@ -59,7 +59,6 @@
     "dp-aktivitetslogg-frontend": "git@github.com:navikt/dp-aktivitetslogg-frontend.git",
     "dp-audit-logger": "git@github.com:navikt/dp-audit-logger.git",
     "dp-version-catalog": "git@github.com:navikt/dp-version-catalog.git",
-    "biljard": "git@github.com:navikt/biljard.git",
     "dp-dokumentasjon": "git@github.com:navikt/dp-dokumentasjon.git",
     "dp-aktivitetslogg-bibliotek": "git@github.com:navikt/dp-aktivitetslogg-bibliotek.git",
     "dp-giao": "git@github.com:navikt/dp-giao.git",
