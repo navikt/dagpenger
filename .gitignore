@@ -251,3 +251,7 @@ target
 /dp-mellom-barken-og-veden/
 /dp-meldekortregister/
 /dp-behov-send-til-ka/
+/dp-kafka-manager/
+/dp-events/
+/dp-meldekort-testdata/
+/dp-sokomaten/

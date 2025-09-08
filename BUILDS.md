@@ -24,6 +24,7 @@
 | [dp-debug](https://github.com/navikt/dp-debug/actions) | ![dp-debug](https://github.com/navikt/dp-debug/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-doh](https://github.com/navikt/dp-doh/actions) | ![dp-doh](https://github.com/navikt/dp-doh/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-dokumentasjon](https://github.com/navikt/dp-dokumentasjon/actions) | ![dp-dokumentasjon](https://github.com/navikt/dp-dokumentasjon/actions/workflows/deploy.yaml/badge.svg) |
+| [dp-events](https://github.com/navikt/dp-events/actions) | ![dp-events](https://github.com/navikt/dp-events/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-faktasider-frontend](https://github.com/navikt/dp-faktasider-frontend/actions) | ![dp-faktasider-frontend](https://github.com/navikt/dp-faktasider-frontend/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-innsyn](https://github.com/navikt/dp-innsyn/actions) | ![dp-innsyn](https://github.com/navikt/dp-innsyn/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-inntekt](https://github.com/navikt/dp-inntekt/actions) | ![dp-inntekt](https://github.com/navikt/dp-inntekt/actions/workflows/deploy.yaml/badge.svg) |
@@ -34,6 +35,7 @@
 | [dp-manuell-behandling](https://github.com/navikt/dp-manuell-behandling/actions) | ![dp-manuell-behandling](https://github.com/navikt/dp-manuell-behandling/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-meldekortregister](https://github.com/navikt/dp-meldekortregister/actions) | ![dp-meldekortregister](https://github.com/navikt/dp-meldekortregister/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-melding-om-vedtak](https://github.com/navikt/dp-melding-om-vedtak/actions) | ![dp-melding-om-vedtak](https://github.com/navikt/dp-melding-om-vedtak/actions/workflows/deploy.yaml/badge.svg) |
+| [dp-mellom-barken-og-veden](https://github.com/navikt/dp-mellom-barken-og-veden/actions) | ![dp-mellom-barken-og-veden](https://github.com/navikt/dp-mellom-barken-og-veden/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-mellomlagring](https://github.com/navikt/dp-mellomlagring/actions) | ![dp-mellomlagring](https://github.com/navikt/dp-mellomlagring/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-mine-dagpenger-frontend](https://github.com/navikt/dp-mine-dagpenger-frontend/actions) | ![dp-mine-dagpenger-frontend](https://github.com/navikt/dp-mine-dagpenger-frontend/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-mottak](https://github.com/navikt/dp-mottak/actions) | ![dp-mottak](https://github.com/navikt/dp-mottak/actions/workflows/deploy.yaml/badge.svg) |
@@ -64,10 +66,10 @@
 | [dp-service-template](https://github.com/navikt/dp-service-template/actions) | ![dp-service-template](https://github.com/navikt/dp-service-template/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-soknad](https://github.com/navikt/dp-soknad/actions) | ![dp-soknad](https://github.com/navikt/dp-soknad/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-soknadsdialog](https://github.com/navikt/dp-soknadsdialog/actions) | ![dp-soknadsdialog](https://github.com/navikt/dp-soknadsdialog/actions/workflows/deploy.yaml/badge.svg) |
+| [dp-sokomaten](https://github.com/navikt/dp-sokomaten/actions) | ![dp-sokomaten](https://github.com/navikt/dp-sokomaten/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-speider](https://github.com/navikt/dp-speider/actions) | ![dp-speider](https://github.com/navikt/dp-speider/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-testdata](https://github.com/navikt/dp-testdata/actions) | ![dp-testdata](https://github.com/navikt/dp-testdata/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-vaktmester-mellomlagring](https://github.com/navikt/dp-vaktmester-mellomlagring/actions) | ![dp-vaktmester-mellomlagring](https://github.com/navikt/dp-vaktmester-mellomlagring/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-varsel](https://github.com/navikt/dp-varsel/actions) | ![dp-varsel](https://github.com/navikt/dp-varsel/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-videresending](https://github.com/navikt/dp-videresending/actions) | ![dp-videresending](https://github.com/navikt/dp-videresending/actions/workflows/deploy.yaml/badge.svg) |
 | [meldekort-frontend](https://github.com/navikt/meldekort-frontend/actions) | ![meldekort-frontend](https://github.com/navikt/meldekort-frontend/actions/workflows/deploy.yaml/badge.svg) |
-| [oasis](https://github.com/navikt/oasis/actions) | ![oasis](https://github.com/navikt/oasis/actions/workflows/deploy.yaml/badge.svg) |

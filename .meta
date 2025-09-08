@@ -31,7 +31,6 @@
     "dp-mottak": "git@github.com:navikt/dp-mottak.git",
     "dp-proxy": "git@github.com:navikt/dp-proxy.git",
     "dp-grunnbelop": "git@github.com:navikt/dp-grunnbelop.git",
-    "oasis": "git@github.com:navikt/oasis.git",
     "dp-behandling": "git@github.com:navikt/dp-behandling.git",
     "dp-dataprodukter": "git@github.com:navikt/dp-dataprodukter.git",
     "dp-debug": "git@github.com:navikt/dp-debug.git",
@@ -65,7 +64,6 @@
     "dp-aktivitetslogg-bibliotek": "git@github.com:navikt/dp-aktivitetslogg-bibliotek.git",
     "dp-giao": "git@github.com:navikt/dp-giao.git",
     "meldekort-frontend": "git@github.com:navikt/meldekort-frontend.git",
-    "dp-innbyggerflate-infoskjerm": "git@github.com:navikt/dp-innbyggerflate-infoskjerm.git",
     "dp-soknad-orkestrator": "git@github.com:navikt/dp-soknad-orkestrator.git",
     "dp-manuell-behandling": "git@github.com:navikt/dp-manuell-behandling.git",
     "dp-mine-dagpenger-frontend": "git@github.com:navikt/dp-mine-dagpenger-frontend.git",
@@ -85,6 +83,10 @@
     "dp-inntekt-frontend": "git@github.com:navikt/dp-inntekt-frontend.git",
     "dp-mellom-barken-og-veden": "git@github.com:navikt/dp-mellom-barken-og-veden.git",
     "dp-meldekortregister": "git@github.com:navikt/dp-meldekortregister.git",
-    "dp-behov-send-til-ka": "git@github.com:navikt/dp-behov-send-til-ka.git"
+    "dp-behov-send-til-ka": "git@github.com:navikt/dp-behov-send-til-ka.git",
+    "dp-kafka-manager": "git@github.com:navikt/dp-kafka-manager.git",
+    "dp-events": "git@github.com:navikt/dp-events.git",
+    "dp-meldekort-testdata": "git@github.com:navikt/dp-meldekort-testdata.git",
+    "dp-sokomaten": "git@github.com:navikt/dp-sokomaten.git"
   }
 }
