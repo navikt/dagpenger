@@ -84,8 +84,8 @@
     "dp-meldekortregister": "git@github.com:navikt/dp-meldekortregister.git",
     "dp-behov-send-til-ka": "git@github.com:navikt/dp-behov-send-til-ka.git",
     "dp-kafka-manager": "git@github.com:navikt/dp-kafka-manager.git",
-    "dp-events": "git@github.com:navikt/dp-events.git",
     "dp-meldekort-testdata": "git@github.com:navikt/dp-meldekort-testdata.git",
-    "dp-sokomaten": "git@github.com:navikt/dp-sokomaten.git"
+    "dp-sokomaten": "git@github.com:navikt/dp-sokomaten.git",
+    "meldekort-mikrofrontend": "git@github.com:navikt/meldekort-mikrofrontend.git"
   }
 }
