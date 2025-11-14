@@ -53,7 +53,6 @@
     "dp-saksbehandling-frontend": "git@github.com:navikt/dp-saksbehandling-frontend.git",
     "dp-rapportering-frontend": "git@github.com:navikt/dp-rapportering-frontend.git",
     "dp-datadeling": "git@github.com:navikt/dp-datadeling.git",
-    "dp-kontrakter": "git@github.com:navikt/dp-kontrakter.git",
     "dp-testdata": "git@github.com:navikt/dp-testdata.git",
     "dp-aktivitetslogg": "git@github.com:navikt/dp-aktivitetslogg.git",
     "dp-aktivitetslogg-frontend": "git@github.com:navikt/dp-aktivitetslogg-frontend.git",
