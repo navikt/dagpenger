@@ -7,12 +7,6 @@ inputs:
   digest:
     description: "Docker image digest"
     required: true
-  project_id:
-    description: "Google Cloud project ID"
-    required: true
-  identity_provider:
-    description: "Workload Identity Provider"
-    required: true
   team:
     description: "Team"
     required: true
@@ -27,8 +21,6 @@ runs:
       uses: nais/login@v0
       id: login
       with:
-        project_id: ${{ inputs.project_id }}
-        identity_provider: ${{ inputs.identity_provider }}
         team: ${{ inputs.team }}
     - id: setup
       shell: bash
