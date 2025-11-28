@@ -60,12 +60,10 @@
     "dp-version-catalog": "git@github.com:navikt/dp-version-catalog.git",
     "dp-dokumentasjon": "git@github.com:navikt/dp-dokumentasjon.git",
     "dp-aktivitetslogg-bibliotek": "git@github.com:navikt/dp-aktivitetslogg-bibliotek.git",
-    "dp-giao": "git@github.com:navikt/dp-giao.git",
     "meldekort-frontend": "git@github.com:navikt/meldekort-frontend.git",
     "dp-soknad-orkestrator": "git@github.com:navikt/dp-soknad-orkestrator.git",
     "dp-manuell-behandling": "git@github.com:navikt/dp-manuell-behandling.git",
     "dp-mine-dagpenger-frontend": "git@github.com:navikt/dp-mine-dagpenger-frontend.git",
-    "dp-postgres-test": "git@github.com:navikt/dp-postgres-test.git",
     "dp-arena-meldeplikt-adapter": "git@github.com:navikt/dp-arena-meldeplikt-adapter.git",
     "dp-rapportering": "git@github.com:navikt/dp-rapportering.git",
     "dp-behov-distribuering": "git@github.com:navikt/dp-behov-distribuering.git",
@@ -85,6 +83,7 @@
     "dp-kafka-manager": "git@github.com:navikt/dp-kafka-manager.git",
     "dp-meldekort-testdata": "git@github.com:navikt/dp-meldekort-testdata.git",
     "dp-sokomaten": "git@github.com:navikt/dp-sokomaten.git",
-    "meldekort-mikrofrontend": "git@github.com:navikt/meldekort-mikrofrontend.git"
+    "meldekort-mikrofrontend": "git@github.com:navikt/meldekort-mikrofrontend.git",
+    "dp-dbt": "git@github.com:navikt/dp-dbt.git"
   }
 }
