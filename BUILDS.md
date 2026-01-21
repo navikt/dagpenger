@@ -14,7 +14,6 @@
 | [dp-behov-distribuering](https://github.com/navikt/dp-behov-distribuering/actions) | ![dp-behov-distribuering](https://github.com/navikt/dp-behov-distribuering/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-behov-journalforing](https://github.com/navikt/dp-behov-journalforing/actions) | ![dp-behov-journalforing](https://github.com/navikt/dp-behov-journalforing/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-behov-pdf-generator](https://github.com/navikt/dp-behov-pdf-generator/actions) | ![dp-behov-pdf-generator](https://github.com/navikt/dp-behov-pdf-generator/actions/workflows/deploy.yaml/badge.svg) |
-| [dp-behov-send-til-ka](https://github.com/navikt/dp-behov-send-til-ka/actions) | ![dp-behov-send-til-ka](https://github.com/navikt/dp-behov-send-til-ka/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-behov-soknad-pdf](https://github.com/navikt/dp-behov-soknad-pdf/actions) | ![dp-behov-soknad-pdf](https://github.com/navikt/dp-behov-soknad-pdf/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-behovsakkumulator](https://github.com/navikt/dp-behovsakkumulator/actions) | ![dp-behovsakkumulator](https://github.com/navikt/dp-behovsakkumulator/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-brukerdialog-frontend](https://github.com/navikt/dp-brukerdialog-frontend/actions) | ![dp-brukerdialog-frontend](https://github.com/navikt/dp-brukerdialog-frontend/actions/workflows/deploy.yaml/badge.svg) |
@@ -29,6 +28,7 @@
 | [dp-inntekt](https://github.com/navikt/dp-inntekt/actions) | ![dp-inntekt](https://github.com/navikt/dp-inntekt/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-inntekt-frontend](https://github.com/navikt/dp-inntekt-frontend/actions) | ![dp-inntekt-frontend](https://github.com/navikt/dp-inntekt-frontend/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-inntekt-klassifiserer](https://github.com/navikt/dp-inntekt-klassifiserer/actions) | ![dp-inntekt-klassifiserer](https://github.com/navikt/dp-inntekt-klassifiserer/actions/workflows/deploy.yaml/badge.svg) |
+| [dp-kabal-integrasjon](https://github.com/navikt/dp-kabal-integrasjon/actions) | ![dp-kabal-integrasjon](https://github.com/navikt/dp-kabal-integrasjon/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-kafka-connect](https://github.com/navikt/dp-kafka-connect/actions) | ![dp-kafka-connect](https://github.com/navikt/dp-kafka-connect/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-kafka-connect-operator](https://github.com/navikt/dp-kafka-connect-operator/actions) | ![dp-kafka-connect-operator](https://github.com/navikt/dp-kafka-connect-operator/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-manuell-behandling](https://github.com/navikt/dp-manuell-behandling/actions) | ![dp-manuell-behandling](https://github.com/navikt/dp-manuell-behandling/actions/workflows/deploy.yaml/badge.svg) |
