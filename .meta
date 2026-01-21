@@ -79,11 +79,10 @@
     "dp-inntekt-frontend": "git@github.com:navikt/dp-inntekt-frontend.git",
     "dp-mellom-barken-og-veden": "git@github.com:navikt/dp-mellom-barken-og-veden.git",
     "dp-meldekortregister": "git@github.com:navikt/dp-meldekortregister.git",
-    "dp-behov-send-til-ka": "git@github.com:navikt/dp-behov-send-til-ka.git",
-    "dp-kafka-manager": "git@github.com:navikt/dp-kafka-manager.git",
     "dp-meldekort-testdata": "git@github.com:navikt/dp-meldekort-testdata.git",
     "dp-sokomaten": "git@github.com:navikt/dp-sokomaten.git",
     "meldekort-mikrofrontend": "git@github.com:navikt/meldekort-mikrofrontend.git",
-    "dp-dbt": "git@github.com:navikt/dp-dbt.git"
+    "dp-dbt": "git@github.com:navikt/dp-dbt.git",
+    "dp-kabal-integrasjon": "git@github.com:navikt/dp-kabal-integrasjon.git"
   }
 }
