@@ -5,6 +5,7 @@
 | [dagpenger-regel-ui](https://github.com/navikt/dagpenger-regel-ui/actions) | ![dagpenger-regel-ui](https://github.com/navikt/dagpenger-regel-ui/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-aktivitetslogg](https://github.com/navikt/dp-aktivitetslogg/actions) | ![dp-aktivitetslogg](https://github.com/navikt/dp-aktivitetslogg/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-aktivitetslogg-frontend](https://github.com/navikt/dp-aktivitetslogg-frontend/actions) | ![dp-aktivitetslogg-frontend](https://github.com/navikt/dp-aktivitetslogg-frontend/actions/workflows/deploy.yaml/badge.svg) |
+| [dp-andre-ytelser](https://github.com/navikt/dp-andre-ytelser/actions) | ![dp-andre-ytelser](https://github.com/navikt/dp-andre-ytelser/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-arena-meldeplikt-adapter](https://github.com/navikt/dp-arena-meldeplikt-adapter/actions) | ![dp-arena-meldeplikt-adapter](https://github.com/navikt/dp-arena-meldeplikt-adapter/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-arena-sink](https://github.com/navikt/dp-arena-sink/actions) | ![dp-arena-sink](https://github.com/navikt/dp-arena-sink/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-audit-logger](https://github.com/navikt/dp-audit-logger/actions) | ![dp-audit-logger](https://github.com/navikt/dp-audit-logger/actions/workflows/deploy.yaml/badge.svg) |
@@ -21,9 +22,10 @@
 | [dp-datadeling](https://github.com/navikt/dp-datadeling/actions) | ![dp-datadeling](https://github.com/navikt/dp-datadeling/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-dataprodukter](https://github.com/navikt/dp-dataprodukter/actions) | ![dp-dataprodukter](https://github.com/navikt/dp-dataprodukter/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-debug](https://github.com/navikt/dp-debug/actions) | ![dp-debug](https://github.com/navikt/dp-debug/actions/workflows/deploy.yaml/badge.svg) |
+| [dp-doffen](https://github.com/navikt/dp-doffen/actions) | ![dp-doffen](https://github.com/navikt/dp-doffen/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-doh](https://github.com/navikt/dp-doh/actions) | ![dp-doh](https://github.com/navikt/dp-doh/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-dokumentasjon](https://github.com/navikt/dp-dokumentasjon/actions) | ![dp-dokumentasjon](https://github.com/navikt/dp-dokumentasjon/actions/workflows/deploy.yaml/badge.svg) |
-| [dp-faktasider-frontend](https://github.com/navikt/dp-faktasider-frontend/actions) | ![dp-faktasider-frontend](https://github.com/navikt/dp-faktasider-frontend/actions/workflows/deploy.yaml/badge.svg) |
+| [dp-helse-dashboard](https://github.com/navikt/dp-helse-dashboard/actions) | ![dp-helse-dashboard](https://github.com/navikt/dp-helse-dashboard/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-innsyn](https://github.com/navikt/dp-innsyn/actions) | ![dp-innsyn](https://github.com/navikt/dp-innsyn/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-inntekt](https://github.com/navikt/dp-inntekt/actions) | ![dp-inntekt](https://github.com/navikt/dp-inntekt/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-inntekt-frontend](https://github.com/navikt/dp-inntekt-frontend/actions) | ![dp-inntekt-frontend](https://github.com/navikt/dp-inntekt-frontend/actions/workflows/deploy.yaml/badge.svg) |
@@ -38,6 +40,7 @@
 | [dp-mellomlagring](https://github.com/navikt/dp-mellomlagring/actions) | ![dp-mellomlagring](https://github.com/navikt/dp-mellomlagring/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-mine-dagpenger-frontend](https://github.com/navikt/dp-mine-dagpenger-frontend/actions) | ![dp-mine-dagpenger-frontend](https://github.com/navikt/dp-mine-dagpenger-frontend/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-mottak](https://github.com/navikt/dp-mottak/actions) | ![dp-mottak](https://github.com/navikt/dp-mottak/actions/workflows/deploy.yaml/badge.svg) |
+| [dp-oppfolging](https://github.com/navikt/dp-oppfolging/actions) | ![dp-oppfolging](https://github.com/navikt/dp-oppfolging/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-oppslag-arbeidssoker](https://github.com/navikt/dp-oppslag-arbeidssoker/actions) | ![dp-oppslag-arbeidssoker](https://github.com/navikt/dp-oppslag-arbeidssoker/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-oppslag-inntekt](https://github.com/navikt/dp-oppslag-inntekt/actions) | ![dp-oppslag-inntekt](https://github.com/navikt/dp-oppslag-inntekt/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-oppslag-person](https://github.com/navikt/dp-oppslag-person/actions) | ![dp-oppslag-person](https://github.com/navikt/dp-oppslag-person/actions/workflows/deploy.yaml/badge.svg) |
@@ -48,6 +51,7 @@
 | [dp-quiz](https://github.com/navikt/dp-quiz/actions) | ![dp-quiz](https://github.com/navikt/dp-quiz/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-quiz-birgitte](https://github.com/navikt/dp-quiz-birgitte/actions) | ![dp-quiz-birgitte](https://github.com/navikt/dp-quiz-birgitte/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-rapidhose](https://github.com/navikt/dp-rapidhose/actions) | ![dp-rapidhose](https://github.com/navikt/dp-rapidhose/actions/workflows/deploy.yaml/badge.svg) |
+| [dp-rapportering](https://github.com/navikt/dp-rapportering/actions) | ![dp-rapportering](https://github.com/navikt/dp-rapportering/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-rapportering-frontend](https://github.com/navikt/dp-rapportering-frontend/actions) | ![dp-rapportering-frontend](https://github.com/navikt/dp-rapportering-frontend/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-rapportering-personregister](https://github.com/navikt/dp-rapportering-personregister/actions) | ![dp-rapportering-personregister](https://github.com/navikt/dp-rapportering-personregister/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-rapportering-saksbehandling-frontend](https://github.com/navikt/dp-rapportering-saksbehandling-frontend/actions) | ![dp-rapportering-saksbehandling-frontend](https://github.com/navikt/dp-rapportering-saksbehandling-frontend/actions/workflows/deploy.yaml/badge.svg) |
@@ -60,15 +64,17 @@
 | [dp-saksbehandling](https://github.com/navikt/dp-saksbehandling/actions) | ![dp-saksbehandling](https://github.com/navikt/dp-saksbehandling/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-saksbehandling-frontend](https://github.com/navikt/dp-saksbehandling-frontend/actions) | ![dp-saksbehandling-frontend](https://github.com/navikt/dp-saksbehandling-frontend/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-sanity-cms-v3](https://github.com/navikt/dp-sanity-cms-v3/actions) | ![dp-sanity-cms-v3](https://github.com/navikt/dp-sanity-cms-v3/actions/workflows/deploy.yaml/badge.svg) |
-| [dp-sanity-cms-v3-fork](https://github.com/navikt/dp-sanity-cms-v3-fork/actions) | ![dp-sanity-cms-v3-fork](https://github.com/navikt/dp-sanity-cms-v3-fork/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-service-template](https://github.com/navikt/dp-service-template/actions) | ![dp-service-template](https://github.com/navikt/dp-service-template/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-soknad](https://github.com/navikt/dp-soknad/actions) | ![dp-soknad](https://github.com/navikt/dp-soknad/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-soknadsdialog](https://github.com/navikt/dp-soknadsdialog/actions) | ![dp-soknadsdialog](https://github.com/navikt/dp-soknadsdialog/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-sokomaten](https://github.com/navikt/dp-sokomaten/actions) | ![dp-sokomaten](https://github.com/navikt/dp-sokomaten/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-speider](https://github.com/navikt/dp-speider/actions) | ![dp-speider](https://github.com/navikt/dp-speider/actions/workflows/deploy.yaml/badge.svg) |
-| [dp-testdata](https://github.com/navikt/dp-testdata/actions) | ![dp-testdata](https://github.com/navikt/dp-testdata/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-vaktmester-mellomlagring](https://github.com/navikt/dp-vaktmester-mellomlagring/actions) | ![dp-vaktmester-mellomlagring](https://github.com/navikt/dp-vaktmester-mellomlagring/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-varsel](https://github.com/navikt/dp-varsel/actions) | ![dp-varsel](https://github.com/navikt/dp-varsel/actions/workflows/deploy.yaml/badge.svg) |
 | [dp-videresending](https://github.com/navikt/dp-videresending/actions) | ![dp-videresending](https://github.com/navikt/dp-videresending/actions/workflows/deploy.yaml/badge.svg) |
+| [meldekort-api](https://github.com/navikt/meldekort-api/actions) | ![meldekort-api](https://github.com/navikt/meldekort-api/actions/workflows/deploy.yaml/badge.svg) |
 | [meldekort-frontend](https://github.com/navikt/meldekort-frontend/actions) | ![meldekort-frontend](https://github.com/navikt/meldekort-frontend/actions/workflows/deploy.yaml/badge.svg) |
 | [meldekort-mikrofrontend](https://github.com/navikt/meldekort-mikrofrontend/actions) | ![meldekort-mikrofrontend](https://github.com/navikt/meldekort-mikrofrontend/actions/workflows/deploy.yaml/badge.svg) |
+| [meldekortkontroll-api](https://github.com/navikt/meldekortkontroll-api/actions) | ![meldekortkontroll-api](https://github.com/navikt/meldekortkontroll-api/actions/workflows/deploy.yaml/badge.svg) |
+| [meldekortservice](https://github.com/navikt/meldekortservice/actions) | ![meldekortservice](https://github.com/navikt/meldekortservice/actions/workflows/deploy.yaml/badge.svg) |
+| [meldeplikt-alerts](https://github.com/navikt/meldeplikt-alerts/actions) | ![meldeplikt-alerts](https://github.com/navikt/meldeplikt-alerts/actions/workflows/deploy.yaml/badge.svg) |
