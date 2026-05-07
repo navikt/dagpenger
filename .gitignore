@@ -258,3 +258,13 @@ target
 /meldekort-mikrofrontend/
 /dp-dbt/
 /dp-kabal-integrasjon/
+/meldekort-api/
+/meldekortservice/
+/meldeplikt-alerts/
+/meldekortkontroll-api/
+/meldekortkontroll-api-gatling/
+/dp-doffen/
+/meldekort-landingsside/
+/dp-helse-dashboard/
+/dp-andre-ytelser/
+/dp-oppfolging/
