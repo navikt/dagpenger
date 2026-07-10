@@ -6,10 +6,10 @@ branding:
 inputs:
   image:
     description: "Docker image reference"
-    required: false
+    required: true
   digest:
     description: "Docker image digest"
-    required: true
+    required: false
   team:
     description: "Team"
     required: true
@@ -42,4 +42,4 @@ runs:
       id: attest-sign
       uses: nais/attest-sign@v2
       with:
-        image_ref: ${{ steps.image.outputs.IMAGE }}@${{ inputs.digest }}
+        image_ref: ${{ steps.image.outputs.IMAGE }}
