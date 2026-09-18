@@ -4,7 +4,6 @@
     "dagpenger-joark-mottak": "git@github.com:navikt/dagpenger-joark-mottak.git",
     "dagpenger-events": "git@github.com:navikt/dagpenger-events.git",
     "dp-regel-api": "git@github.com:navikt/dp-regel-api.git",
-    "dagpenger-regel-ui": "git@github.com:navikt/dagpenger-regel-ui.git",
     "dp-inntekt": "git@github.com:navikt/dp-inntekt.git",
     "dp-regel-api-arena-adapter": "git@github.com:navikt/dp-regel-api-arena-adapter.git",
     "dp-regel-minsteinntekt": "git@github.com:navikt/dp-regel-minsteinntekt.git",
@@ -79,15 +78,18 @@
     "meldekort-mikrofrontend": "git@github.com:navikt/meldekort-mikrofrontend.git",
     "dp-dbt": "git@github.com:navikt/dp-dbt.git",
     "dp-kabal-integrasjon": "git@github.com:navikt/dp-kabal-integrasjon.git",
+    "dp-sanity-sync": "git@github.com:navikt/dp-sanity-sync.git",
     "dp-doffen": "git@github.com:navikt/dp-doffen.git",
     "meldekort-landingsside": "git@github.com:navikt/meldekort-landingsside.git",
     "dp-helse-dashboard": "git@github.com:navikt/dp-helse-dashboard.git",
     "dp-andre-ytelser": "git@github.com:navikt/dp-andre-ytelser.git",
-    "dp-oppfolging": "git@github.com:navikt/dp-oppfolging.git",
     "dp-oppgave-integrasjon": "git@github.com:navikt/dp-oppgave-integrasjon.git",
     "dp-kalkulator-frontend": "git@github.com:navikt/dp-kalkulator-frontend.git",
     "dp-migrering": "git@github.com:navikt/dp-migrering.git",
     "dp-arena-innsyn-klient": "git@github.com:navikt/dp-arena-innsyn-klient.git",
-    "dp-stpeter": "git@github.com:navikt/dp-stpeter.git"
+    "dp-stpeter": "git@github.com:navikt/dp-stpeter.git",
+    "dp-renovate": "git@github.com:navikt/dp-renovate.git",
+    "dp-meldekort": "git@github.com:navikt/dp-meldekort.git",
+    "dp-tilbakekreving": "git@github.com:navikt/dp-tilbakekreving.git"
   }
 }
