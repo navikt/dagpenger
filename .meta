@@ -41,7 +41,6 @@
     "dp-kafka-connect-operator": "git@github.com:navikt/dp-kafka-connect-operator.git",
     "dp-rapidhose": "git@github.com:navikt/dp-rapidhose.git",
     "dp-data-kvalitet": "git@github.com:navikt/dp-data-kvalitet.git",
-    "dp-produktside-frontend": "git@github.com:navikt/dp-produktside-frontend.git",
     "dp-videresending": "git@github.com:navikt/dp-videresending.git",
     "dp-vaktmester-mellomlagring": "git@github.com:navikt/dp-vaktmester-mellomlagring.git",
     "dp-saksbehandling": "git@github.com:navikt/dp-saksbehandling.git",
@@ -90,6 +89,8 @@
     "dp-stpeter": "git@github.com:navikt/dp-stpeter.git",
     "dp-renovate": "git@github.com:navikt/dp-renovate.git",
     "dp-meldekort": "git@github.com:navikt/dp-meldekort.git",
-    "dp-tilbakekreving": "git@github.com:navikt/dp-tilbakekreving.git"
+    "dp-tilbakekreving": "git@github.com:navikt/dp-tilbakekreving.git",
+    "dp-historikk-pdf": "git@github.com:navikt/dp-historikk-pdf.git",
+    "dagpenger-dataanalyse-etl": "git@github.com:navikt/dagpenger-dataanalyse-etl.git"
   }
 }
